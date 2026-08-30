@@ -1,14 +1,15 @@
 import type { MarketingPageContent } from "../types";
 
+/** Live copy from prevaylos.com/platform/compliance */
 export const compliance: MarketingPageContent = {
   slug: "platform/compliance",
   bandImage: "/brand/bands/platform-compliance.jpg",
-  title: "The compliance burden, lifted.",
   eyebrow: "Platform · Compliance",
-  lead: "Vetting at assignment, eBOL on the order, insurance that is current — not a folder from last year.",
-  description: "Compliance at assignment: insurance, eBOL, audit trail, dealer-facing proof.",
+  title: "The compliance burden, lifted.",
+  lead: "DOT and FMCSA documentation, eBOL generation, insurance tracking, and audit-ready records — built into the same platform that runs your loads.",
+  description: "Compliance for auto transport: DOT, FMCSA, eBOL, insurance tracking, audit-ready records.",
   primaryCta: { label: "Start Free Trial", href: "/register" },
-  secondaryCta: { label: "Talk to sales", href: "/contact" },
+  secondaryCta: { label: "Book a Demo", href: "/contact" },
   sections: [
     {
       heading: "What runs before the truck moves",

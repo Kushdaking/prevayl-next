@@ -1,11 +1,15 @@
 import type { MarketingPageContent } from "../types";
 
+/**
+ * Live copy from prevaylos.com/platform/flolens
+ * Note: not in main marketing nav — kept as deep-link / platform module page.
+ */
 export const flolens: MarketingPageContent = {
   slug: "platform/flolens",
   bandImage: "/brand/bands/platform-flolens.jpg",
-  title: "FloLens — workflow suggestions that stay in context.",
   eyebrow: "Platform · FloLens",
-  lead: "Surface the next best step on the board you already work — without another dashboard to babysit.",
+  title: "Watches your workflow, suggests the fix.",
+  lead: "The platform watches its own gaps — then tells you where automation would help. FloLens surfaces friction in how your team actually works, not a generic productivity lecture.",
   description: "FloLens workflow intelligence for auto transport operations.",
   primaryCta: { label: "Start Free Trial", href: "/register" },
   secondaryCta: { label: "See platform", href: "/platform" },

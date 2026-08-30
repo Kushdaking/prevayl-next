@@ -1,18 +1,25 @@
 import type { MarketingPageContent } from "../types";
 
+/** Live copy from prevaylos.com/platform/agentic-ai */
 export const agenticAi: MarketingPageContent = {
   slug: "platform/agentic-ai",
   bandImage: "/brand/bands/platform-agentic-ai.jpg",
-  title: "One AI. Eight personas. A different set of powers for every role.",
   eyebrow: "Platform · Agentic AI",
-  lead: "Trust-layered agents that act inside clear thresholds — never a black box that awards loads on its own.",
-  description: "Agentic AI with role personas for brokers, carriers, dealers, and dispatchers.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
-  secondaryCta: { label: "Meet the Agents", href: "/platform/agents" },
+  title: "One AI. Eight personas. A different set of powers for every role.",
+  lead: "Every other platform ships a chatbot. Prevayl ships agents with a different set of powers for every role in the lane — broker, carrier, dealer, dispatcher — each one layered by trust so automation never silently awards a load or invents a rate.",
+  description: "Agentic AI — eight personas layered by trust for every role in auto transport.",
+  primaryCta: { label: "Meet the Agents", href: "/platform/agents" },
+  secondaryCta: { label: "Start Free Trial", href: "/register" },
   sections: [
     {
-      heading: "Eight personas. One control plane.",
-      body: "Each persona inherits the same data, audit trail, and policy layer — then specializes.",
+      heading: "Layered by trust",
+      paragraphs: [
+        "Agents that act inside bounded workflows: suggest, notify, re-engage, reprice. Each layer has a trust boundary so automation never silently awards a load or invents a rate.",
+        "Human-in-the-loop by design. Suggestions require confirm. Empty rules that match everything are refused. Cooldowns prevent spam. Thresholds are yours to set.",
+      ],
+    },
+    {
+      heading: "Eight personas, one platform",
       features: [
         { n: "01", title: "Broker agent", body: "Matching, margin, rate suggestions, exception routing for the desk that runs the lane." },
         { n: "02", title: "Carrier agent", body: "Load offers, payout status, document expiry, re-engagement without the spam." },
@@ -22,19 +29,18 @@ export const agenticAi: MarketingPageContent = {
       cols: 2,
     },
     {
-      heading: "Trust layers first.",
+      heading: "What never happens silently",
       bullets: [
-        "Every agent action is policy-checked before it fires",
-        "Suggest vs auto-award is a setting, not a surprise",
-        "Insert-only audit for privileged agent writes",
-        "Kill switches per agent and per workspace",
+        "No auto-award of a load without a human confirm",
+        "No invented rate without lane history behind it",
+        "No customer spam outside the configured status moments",
+        "No empty matching rules that would match every carrier",
       ],
     },
   ],
   finalCta: {
-    title: "Put agents on the desk that already ships cars.",
-    lead: "Start with matching and margin. Expand when the thresholds earn trust.",
-    primary: { label: "Start Free Trial", href: "/register" },
-    secondary: { label: "Talk to sales", href: "/contact" },
+    title: "See the agents on your lanes.",
+    primary: { label: "Meet the Agents", href: "/platform/agents" },
+    secondary: { label: "Book a Demo", href: "/contact" },
   },
 };
