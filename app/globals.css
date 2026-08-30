@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Locked design utilities ── */
+@layer components {
+  .glass {
+    background: rgba(17, 24, 39, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(201, 168, 76, 0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  }
+
+  .glass-strong {
+    background: rgba(13, 18, 30, 0.75);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(201, 168, 76, 0.18);
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #c9a84c 0%, #e8d48b 50%, #c9a84c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .module-card {
+    @apply transition-all duration-250;
+  }
+  .module-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(201, 168, 76, 0.35);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
+      0 0 30px rgba(201, 168, 76, 0.12);
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-prevayl-navy text-prevayl-soft antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0f1a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e2d40;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c9a84c;
+  }
+}
