@@ -2,24 +2,27 @@ import type { MarketingPageContent } from "../types";
 
 export const routeOptimizer: MarketingPageContent = {
   slug: "platform/route-optimizer",
+  bandImage: "/brand/bands/platform-route-optimizer.jpg",
+  title: "Route Optimizer — multi-stop sequences that respect real lanes.",
   eyebrow: "Platform · Route Optimizer",
-  title: "Route Optimizer for multi-stop auto transport.",
-  lead: "Sequence pickups and deliveries across multi-VIN, multi-stop runs. Built for how auto transport actually moves — not generic last-mile routing.",
-  description: "Route optimization for multi-stop vehicle transport loads.",
+  lead: "Sequence pickups and deliveries with the same VIN-level data the rest of the platform already trusts.",
+  description: "Multi-stop route optimization for auto transport.",
   primaryCta: { label: "Start Free Trial", href: "/register" },
+  secondaryCta: { label: "See platform", href: "/platform" },
   sections: [
     {
-      heading: "Routing that respects the lane",
-      body: "Auto transport routes are constrained by auction lot hours, dealer receiving windows, and carrier equipment. Route Optimizer sequences stops with those constraints in mind and stays connected to the same order and VIN records as Dispatch.",
-      features: [
-        { title: "Multi-stop sequences", body: "Order pickups and dropoffs across a multi-VIN run without a separate spreadsheet." },
-        { title: "Window-aware", body: "Respect pickup and delivery windows from auctions and dealers." },
-        { title: "Tied to dispatch", body: "Same live load board and carrier assignment flow — not a disconnected map toy." },
+      heading: "Routes that match how you actually ship",
+      bullets: [
+        "Multi-stop sequences across real US lanes",
+        "Constraints from equipment, hours, and commitments",
+        "Suggestions first — dispatch still owns the award",
+        "Same board language as load matching and BI",
       ],
     },
   ],
   finalCta: {
-    title: "Optimize the next multi-stop run.",
+    title: "Plan the path. Keep the control.",
     primary: { label: "Start Free Trial", href: "/register" },
+    secondary: { label: "Contact", href: "/contact" },
   },
 };

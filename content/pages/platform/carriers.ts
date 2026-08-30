@@ -2,36 +2,28 @@ import type { MarketingPageContent } from "../types";
 
 export const carriers: MarketingPageContent = {
   slug: "platform/carriers",
+  bandImage: "/brand/bands/platform-carriers.jpg",
+  title: "Free for carriers. Built to be used.",
   eyebrow: "Platform · Carriers",
-  title: "Always free for carriers.",
-  lead: "Owner-operators and small fleets pay nothing. Driver app, BOL, IFTA, Stripe payouts in 1–2 days. Free forever.",
-  description: "Free carrier tools: driver app, eBOL, IFTA, Stripe payouts.",
-  primaryCta: { label: "Get the Free Driver App", href: "/register" },
+  lead: "Driver app, eBOL, photos, and payouts — free forever for carriers who run with Prevayl brokers.",
+  description: "Carrier tools free forever: live loads, eBOL, offline photos, Stripe payouts.",
+  primaryCta: { label: "Start Free Trial", href: "/register" },
+  secondaryCta: { label: "See carrier app", href: "/solutions/carriers" },
   sections: [
     {
-      heading: "Why free for carriers?",
-      body: "The brokers and dealers who profit from the lane are the ones who pay for the tooling. Not the truckers. Better carrier relationships mean better loads, fewer no-shows, and faster payouts.",
+      heading: "What carriers get without a seat tax",
       features: [
-        { title: "Driver app", body: "iOS + Android. Live loads, eBOL, photo capture, offline mode." },
-        { title: "Fast payouts", body: "Stripe Connect. 1–2 day settlements after delivery — not mailed paper checks." },
-        { title: "IFTA + compliance", body: "Hours-of-service support, IFTA tools, BOL audit trail — free forever." },
+        { title: "Live loads", body: "See assigned loads, addresses, and notes without calling dispatch." },
+        { title: "Photos + eBOL", body: "Required-photo enforcement and digital signature at pickup and delivery." },
+        { title: "Offline capable", body: "Capture evidence when signal is bad; sync when you're back online." },
+        { title: "Payouts", body: "Stripe Connect. 1–2 day settlements after delivery confirmation." },
       ],
-    },
-    {
-      heading: "What carriers get",
-      bullets: [
-        "Accept and decline loads from your phone",
-        "Photo inspections required at pickup and delivery",
-        "Digital BOL with signature capture",
-        "Real-time status updates back to the broker",
-        "Stripe Connect KYC once — payouts after that are automatic",
-        "No subscription, no per-load fee, no hidden cut",
-      ],
+      cols: 2,
     },
   ],
   finalCta: {
-    title: "Free for carriers. Always.",
-    primary: { label: "Get the Free App", href: "/register" },
-    secondary: { label: "I'm a broker", href: "/solutions/brokers" },
+    title: "Give carriers tools they will actually open.",
+    primary: { label: "Start Free Trial", href: "/register" },
+    secondary: { label: "Contact", href: "/contact" },
   },
 };

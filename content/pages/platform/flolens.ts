@@ -2,24 +2,27 @@ import type { MarketingPageContent } from "../types";
 
 export const flolens: MarketingPageContent = {
   slug: "platform/flolens",
+  bandImage: "/brand/bands/platform-flolens.jpg",
+  title: "FloLens — workflow suggestions that stay in context.",
   eyebrow: "Platform · FloLens",
-  title: "FloLens — watches your workflow, suggests the fix.",
-  lead: "FloLens observes how your team actually runs dispatch, accounting, and carrier follow-up — then surfaces bottlenecks and suggested process fixes. Operator-first, not surveillance theater.",
-  description: "FloLens — workflow observation and process suggestions for auto transport ops.",
+  lead: "Surface the next best step on the board you already work — without another dashboard to babysit.",
+  description: "FloLens workflow intelligence for auto transport operations.",
   primaryCta: { label: "Start Free Trial", href: "/register" },
+  secondaryCta: { label: "See platform", href: "/platform" },
   sections: [
     {
-      heading: "Built to help operators, not score them",
-      body: "FloLens looks at workflow patterns — where loads stall, where notes pile up, where margin checks get skipped — and suggests concrete changes. You decide what to adopt.",
-      features: [
-        { title: "Bottleneck spotting", body: "Surfaces where orders wait longest in your real process." },
-        { title: "Suggested fixes", body: "Process recommendations tied to Prevayl modules you already run." },
-        { title: "Operator-first", body: "Insights for dispatch leads and owners — not a people-scoring product." },
+      heading: "Suggestions, not another stack",
+      bullets: [
+        "Context from the live order and lane history",
+        "Hints appear where dispatch already looks",
+        "Human confirms before anything awards or messages",
+        "Quiet when there is nothing useful to say",
       ],
     },
   ],
   finalCta: {
-    title: "See FloLens on your workflow.",
-    primary: { label: "Book a demo", href: "/contact" },
+    title: "Focus the board, not the noise.",
+    primary: { label: "Start Free Trial", href: "/register" },
+    secondary: { label: "Contact", href: "/contact" },
   },
 };

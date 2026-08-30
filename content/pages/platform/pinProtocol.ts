@@ -2,24 +2,27 @@ import type { MarketingPageContent } from "../types";
 
 export const pinProtocol: MarketingPageContent = {
   slug: "platform/pin-protocol",
+  bandImage: "/brand/bands/platform-pin-protocol.jpg",
+  title: "PIN Protocol — secure handoff without the phone tree.",
   eyebrow: "Platform · PIN Protocol",
-  title: "PIN Protocol",
-  lead: "Secure handoff and identity verification for vehicle pickup and delivery. Keep chain of custody tight without adding another disconnected app.",
-  description: "PIN Protocol — secure vehicle handoff and verification on Prevayl.",
+  lead: "Identity and proof at pickup and delivery so handoffs stop living in texts and voicemail.",
+  description: "PIN Protocol secure handoff for auto transport pickup and delivery.",
   primaryCta: { label: "Start Free Trial", href: "/register" },
+  secondaryCta: { label: "See platform", href: "/platform" },
   sections: [
     {
-      heading: "Handoff you can audit",
-      body: "PIN Protocol ties verification events to the order and VIN record — so pickup and delivery authorization lives with the same eBOL and photo trail your compliance team already uses.",
-      features: [
-        { title: "Order-linked verification", body: "PINs and confirmations attach to the load, not a side channel." },
-        { title: "Works with driver app", body: "Carriers complete handoff steps in the same free app they already use." },
-        { title: "Audit-ready", body: "Timestamps and outcomes stored with the order for claims and reviews." },
+      heading: "Trust at the curb",
+      bullets: [
+        "PIN-based confirmation at critical handoff moments",
+        "Tied to the order and the carrier on file",
+        "Evidence lands on the same record as eBOL and photos",
+        "Fewer ‘who has the keys’ threads",
       ],
     },
   ],
   finalCta: {
-    title: "Tighten pickup and delivery handoffs.",
+    title: "Handoffs that leave a trail.",
     primary: { label: "Start Free Trial", href: "/register" },
+    secondary: { label: "Contact", href: "/contact" },
   },
 };
