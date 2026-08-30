@@ -18,6 +18,13 @@ export const E = {
   truckGold: "/brand/elements/truck-gold.png",
   chartGold: "/brand/elements/chart-gold.png",
   glassPanel: "/brand/elements/glass-panel.png",
+  pinHolo: "/brand/elements/pin-hologram.png",
+  brainHolo: "/brand/elements/brain-hologram.png",
+  brokersConsole: "/brand/elements/brokers-console.png",
+  carriersPhone: "/brand/elements/carriers-phone.png",
+  dealersPortal: "/brand/elements/dealers-portal.png",
+  agentsCards: "/brand/elements/agents-cards.png",
+  ordersFlow: "/brand/elements/orders-flow.png",
 } as const;
 
 export const layouts: Record<string, PageLayout> = {
@@ -31,10 +38,23 @@ export const layouts: Record<string, PageLayout> = {
   "platform/ai": {
     band: "/brand/bands/platform-ai.jpg",
     elements: [
-      { art: E.pinGold, x: "22%", y: "58%", artW: 120, opacity: 0.95, hideBelow: "md" },
-      { art: E.brainGold, x: "52%", y: "55%", artW: 140, opacity: 0.9, hideBelow: "md" },
-      { art: E.brainBlue, x: "82%", y: "48%", artW: 110, opacity: 0.85, hideBelow: "md" },
-      { art: E.nodesGold, x: "72%", y: "28%", artW: 90, opacity: 0.9, hideBelow: "md" },
+      { art: E.pinHolo, x: "18%", y: "62%", artW: 140, opacity: 0.95, hideBelow: "md" },
+      { art: E.brainHolo, x: "78%", y: "48%", artW: 220, opacity: 0.9, hideBelow: "md" },
+      { art: E.nodesGold, x: "88%", y: "28%", artW: 90, opacity: 0.85, hideBelow: "lg" },
+    ],
+  },
+  "platform/agents": {
+    band: "/brand/bands/platform-agents.jpg",
+    elements: [
+      { art: E.agentsCards, x: "78%", y: "48%", artW: 340, opacity: 0.92, hideBelow: "md" },
+      { art: E.nodesGold, x: "60%", y: "72%", artW: 100, opacity: 0.8, hideBelow: "lg" },
+    ],
+  },
+  "platform/orders": {
+    band: "/brand/bands/platform-orders.jpg",
+    elements: [
+      { art: E.ordersFlow, x: "78%", y: "50%", artW: 320, opacity: 0.95, hideBelow: "md" },
+      { art: E.pinGold, x: "62%", y: "28%", artW: 90, opacity: 0.8, hideBelow: "lg" },
     ],
   },
   "platform/dispatch": {
@@ -49,13 +69,6 @@ export const layouts: Record<string, PageLayout> = {
     elements: [
       { art: E.nodesGold, x: "75%", y: "40%", artW: 150, opacity: 0.9, hideBelow: "md" },
       { art: E.brainGold, x: "88%", y: "62%", artW: 100, opacity: 0.8, hideBelow: "lg" },
-    ],
-  },
-  "platform/agents": {
-    band: "/brand/bands/platform-agents.jpg",
-    elements: [
-      { art: E.glassPanel, x: "78%", y: "38%", artW: 140, opacity: 0.85, hideBelow: "md" },
-      { art: E.nodesGold, x: "88%", y: "65%", artW: 100, opacity: 0.8, hideBelow: "lg" },
     ],
   },
   "platform/carriers": {
@@ -96,17 +109,23 @@ export const layouts: Record<string, PageLayout> = {
   "solutions/brokers": {
     band: "/brand/bands/solutions-brokers.jpg",
     elements: [
-      { art: E.nodesGold, x: "80%", y: "45%", artW: 140, opacity: 0.9, hideBelow: "md" },
-      { art: E.pinGold, x: "70%", y: "70%", artW: 90, opacity: 0.8, hideBelow: "lg" },
+      { art: E.brokersConsole, x: "78%", y: "52%", artW: 320, opacity: 0.95, hideBelow: "md" },
+      { art: E.nodesGold, x: "68%", y: "28%", artW: 90, opacity: 0.8, hideBelow: "lg" },
     ],
   },
   "solutions/carriers": {
     band: "/brand/bands/solutions-carriers.jpg",
-    elements: [{ art: E.truckGold, x: "80%", y: "48%", artW: 150, opacity: 0.9, hideBelow: "md" }],
+    elements: [
+      { art: E.carriersPhone, x: "78%", y: "50%", artW: 220, opacity: 0.98, hideBelow: "md" },
+      { art: E.truckGold, x: "62%", y: "72%", artW: 100, opacity: 0.75, hideBelow: "lg" },
+    ],
   },
   "solutions/dealers": {
     band: "/brand/bands/solutions-dealers.jpg",
-    elements: [{ art: E.pinGold, x: "80%", y: "45%", artW: 130, opacity: 0.9, hideBelow: "md" }],
+    elements: [
+      { art: E.dealersPortal, x: "78%", y: "50%", artW: 300, opacity: 0.95, hideBelow: "md" },
+      { art: E.pinGold, x: "62%", y: "28%", artW: 90, opacity: 0.8, hideBelow: "lg" },
+    ],
   },
   "solutions/wholesale": {
     band: "/brand/bands/solutions-wholesale.jpg",
