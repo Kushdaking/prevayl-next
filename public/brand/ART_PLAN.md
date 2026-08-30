@@ -1,26 +1,22 @@
 # Marketing art plan — Band-first
 
-## Decisions (locked)
-1. **Band first, then art.** Marketing pages use `Band` full-bleed (`bandImage`) before generating remaining heroes.
-2. **Generate by themed batch; review between batches.** Not one-at-a-time, not all 23 blind.
+## Division of labor (locked)
+| Role | Owns |
+|------|------|
+| **Grok** | Code, content, `bandImage` paths, MANIFEST (filename / route / concept) |
+| **Marvin** | Binary generation into `public/brand/bands/`, git add, build, wrangler deploy |
 
-## Docs
-**No art.** Keep `DocsShell` dense.
+Grok **does not** generate or push JPEGs. Sandbox cannot put binaries in the GitHub repo.
 
-## Counts
-| Bucket | Pages needing band art | Visual language |
-|--------|------------------------|-----------------|
-| Platform | ~10–14 | Holographic panels, constellation, glass UI |
-| Solutions | 5 | Maps, lanes, role-specific |
-| Resources + About | ~8 | Quieter light fields, depth |
-| Docs | 0 | — |
-| **Total new** | **~23** | |
+## Band-first layout
+- `bandImage` → `/brand/bands/{slug}.jpg` full-bleed atmosphere
+- `heroImage` → `/brand/pages/{slug}.jpg` optional product mockup under CTAs
+- Docs: **no art** (DocsShell)
 
-## Path convention
-- Full-bleed atmosphere → `public/brand/bands/{slug}.jpg` → `bandImage`
-- Product mockup → `public/brand/pages/{slug}.jpg` → `heroImage`
+## Batches
+1. **Platform** — 12 files — MANIFEST.md — Marvin generating
+2. **Solutions** — 5 files — MANIFEST-BATCH2-SOLUTIONS.md
+3. **Resources + About** — ~8 — quieter abstract (after Batch 2)
 
-## Batch order
-1. Platform
-2. Solutions
-3. Resources + About
+## Coherence
+Navy #0a0f1a, gold #C9A84C, left third dark for type, no readable UI text.

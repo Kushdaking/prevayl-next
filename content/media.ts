@@ -1,6 +1,7 @@
 /**
  * bandImage = full-bleed Band art under /brand/bands/
  * heroImage / pages = product mockups under /brand/pages/
+ * Binaries: Marvin only. Grok wires paths + MANIFEST.
  */
 export const bandMedia = {
   "platform": "/brand/bands/platform-index.jpg",
@@ -15,6 +16,11 @@ export const bandMedia = {
   "platform/route-optimizer": "/brand/bands/platform-route-optimizer.jpg",
   "platform/flolens": "/brand/bands/platform-flolens.jpg",
   "platform/pin-protocol": "/brand/bands/platform-pin-protocol.jpg",
+  "solutions": "/brand/bands/solutions-index.jpg",
+  "solutions/brokers": "/brand/bands/solutions-brokers.jpg",
+  "solutions/carriers": "/brand/bands/solutions-carriers.jpg",
+  "solutions/dealers": "/brand/bands/solutions-dealers.jpg",
+  "solutions/wholesale": "/brand/bands/solutions-wholesale.jpg",
 } as const;
 
 export const pageMedia = {

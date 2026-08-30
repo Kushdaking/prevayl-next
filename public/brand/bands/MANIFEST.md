@@ -1,12 +1,15 @@
-# Platform batch — band art (Batch 1)
+# Band art MANIFEST
 
-Generated 2026-08-30. Navy #0a0f1a + gold #C9A84C holographic constellation language.
-All 1792×1008 JPEG, atmospheric (no readable UI text).
+## Policy
+- **Grok ships code + this MANIFEST only** (filename, route, concept).
+- **Marvin generates binaries** into `public/brand/bands/` and deploys.
+- Grok must not generate/push JPEGs.
 
+## Batch 1 — Platform (12)
 | File | Route | Concept |
 |------|-------|---------|
 | platform-index.jpg | /platform | Command-center constellation |
-| platform-dispatch.jpg | /platform/dispatch | Load board + route filaments |
+| platform-dispatch.jpg | /platform/dispatch | US map + route filaments + glass panels |
 | platform-ai.jpg | /platform/ai | Neural match constellation |
 | platform-agentic-ai.jpg | /platform/agentic-ai | Agent nodes + decision paths |
 | platform-agents.jpg | /platform/agents | Floating agent glass panels |
@@ -18,4 +21,5 @@ All 1792×1008 JPEG, atmospheric (no readable UI text).
 | platform-flolens.jpg | /platform/flolens | Optical lens / focus rings |
 | platform-pin-protocol.jpg | /platform/pin-protocol | Chain-of-trust nodes |
 
-Binary JPGs: add via `git add public/brand/bands/*.jpg` (or unpack platform-bands-batch1.tar.gz).
+## Batch 2 — Solutions (5)
+See `MANIFEST-BATCH2-SOLUTIONS.md`
