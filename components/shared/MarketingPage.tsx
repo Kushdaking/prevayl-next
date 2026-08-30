@@ -14,6 +14,8 @@ export function MarketingPage({ page }: { page: MarketingPageContent }) {
         lead={page.lead}
         primaryCta={page.primaryCta}
         secondaryCta={page.secondaryCta}
+        heroImage={page.heroImage}
+        heroImageAlt={page.heroImageAlt}
       />
       {page.sections?.map((section, i) => (
         <Band key={section.heading ?? i} alt={i % 2 === 1} height="md">
@@ -50,7 +52,9 @@ export function MarketingPage({ page }: { page: MarketingPageContent }) {
           <div className="flex flex-wrap justify-center gap-4">
             <LinkButton href={page.finalCta.primary.href} size="md">{page.finalCta.primary.label}</LinkButton>
             {page.finalCta.secondary && (
-              <LinkButton href={page.finalCta.secondary.href} variant="ghost" size="md">{page.finalCta.secondary.label}</LinkButton>
+              <LinkButton href={page.finalCta.secondary.href} variant="ghost" size="md">
+                {page.finalCta.secondary.label}
+              </LinkButton>
             )}
           </div>
         </Band>
