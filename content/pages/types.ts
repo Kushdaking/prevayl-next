@@ -41,6 +41,7 @@ export type DocPageContent = {
   slug: string;
   title: string;
   description?: string;
+  /** Markdown-ish body as structured blocks */
   blocks: DocBlock[];
 };
 
