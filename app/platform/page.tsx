@@ -5,7 +5,8 @@ import { Band } from "@/components/shared/Band";
 
 export const metadata: Metadata = {
   title: "Platform",
-  description: "Dispatch, carriers, compliance, AI, BI, optimizers, FloLens, PIN Protocol.",
+  description:
+    "Dispatch, carriers, compliance, AI, BI, load optimizer, route optimizer, FloLens, PIN Protocol — one Prevayl platform.",
 };
 
 const LINKS = [
@@ -28,9 +29,10 @@ export default function PlatformOverviewPage() {
       <PageHero
         eyebrow="Platform"
         title="One platform. Every workflow."
-        lead="Dispatch, compliance, AI, BI, and carrier tools share the same VIN-level data."
+        lead="Dispatch, compliance, AI, BI, and carrier tools share the same VIN-level data. No duct-taped stack."
         primaryCta={{ label: "Start Free Trial", href: "/register" }}
         secondaryCta={{ label: "Meet the Agents", href: "/platform/agents" }}
+        bandImage="/brand/bands/platform-index.jpg"
       />
       <Band height="md">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
