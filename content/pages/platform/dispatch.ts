@@ -2,26 +2,29 @@ import type { MarketingPageContent } from "../types";
 
 export const dispatch: MarketingPageContent = {
   slug: "platform/dispatch",
-  eyebrow: "Platform · Dispatch",
+  eyebrow: "Platform \u00b7 Dispatch",
   title: "Dispatch built for humans, augmented by AI.",
-  lead: "A real-time load board with drag-and-drop assignment, AI-suggested carrier matches, photo-verified inspections, and a digital BOL — all in one screen.",
+  lead: "A real-time load board with drag-and-drop assignment, AI-suggested carrier matches, photo-verified inspections, and a digital BOL \u2014 all in one screen.",
   description:
     "Real-time dispatch board with AI carrier matching, drag-and-drop assignment, photo-verified pickup and delivery.",
   primaryCta: { label: "Start Free Trial", href: "/register" },
   secondaryCta: { label: "Tour the Platform", href: "/platform" },
+  heroImage: "/brand/pages/platform-dispatch.jpg",
+  heroImageAlt:
+    "Prevayl Dispatch \u2014 live load board, AI top-3 matching, eBOL and photo inspections",
   sections: [
     {
       heading: "One board. Every load.",
       body: "No more switching between multiple load boards and a spreadsheet. Active, pending, and completed loads in one filterable view. Color-coded by status, sortable by ETA or margin, with inline notes that everyone on your team can see.",
       bullets: [
         "Filter by status, carrier, dealer, lane, ETA, margin, or any custom field",
-        "Inline notes with @mentions — your dispatcher and accounting teams stay aligned",
+        "Inline notes with @mentions \u2014 your dispatcher and accounting teams stay aligned",
         "Live map with active loads and carrier locations",
       ],
     },
     {
-      heading: "AI matching that suggests — never auto-awards.",
-      body: "For every load, the AI ranks your network by historical performance on that exact lane: on-time rate, claim history, rate competitiveness, and current location. You see the top 3 with one click — accept, override, or post to the broader network.",
+      heading: "AI matching that suggests \u2014 never auto-awards.",
+      body: "For every load, the AI ranks your network by historical performance on that exact lane: on-time rate, claim history, rate competitiveness, and current location. You see the top 3 with one click \u2014 accept, override, or post to the broader network.",
       features: [
         {
           title: "Top-3 carrier rank",
@@ -29,7 +32,7 @@ export const dispatch: MarketingPageContent = {
         },
         {
           title: "Auto-vetting at assign",
-          body: "MC, DOT, insurance, BOC-3 — all checked at assignment. Flagged the moment something expires.",
+          body: "MC, DOT, insurance, BOC-3 \u2014 all checked at assignment. Flagged the moment something expires.",
         },
         {
           title: "Human final call",
@@ -43,7 +46,7 @@ export const dispatch: MarketingPageContent = {
       bullets: [
         "Mobile-driven inspections with required-photo enforcement",
         "eBOL: signature capture, FMCSA-compliant",
-        "Auto-archived to the order — searchable, exportable",
+        "Auto-archived to the order \u2014 searchable, exportable",
         "DamageDesk integration if a claim is filed",
       ],
     },
@@ -55,7 +58,7 @@ export const dispatch: MarketingPageContent = {
         { title: "Rate confirmations", body: "One-click PDF generation with your branding, signed by carrier in 30 seconds." },
         { title: "Status texts", body: "Auto-text dealers at pickup, in-transit, and delivery." },
         { title: "Driver app", body: "iOS + Android. Free for carriers. Works offline. Photo + signature capture." },
-        { title: "Escalations", body: "Late, breakdown, no-show — escalations route to the right person." },
+        { title: "Escalations", body: "Late, breakdown, no-show \u2014 escalations route to the right person." },
       ],
       cols: 3,
     },
