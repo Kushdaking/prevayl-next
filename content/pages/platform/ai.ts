@@ -1,32 +1,60 @@
 import type { MarketingPageContent } from "../types";
 
+/** Live copy from prevaylos.com/platform/ai */
 export const ai: MarketingPageContent = {
   slug: "platform/ai",
-  eyebrow: "Platform · AI",
-  title: "AI that sits inside the work — not on top of it.",
-  lead: "Carrier matching, pricing, margin guardrails, and status automation run as real workflows with real thresholds. Not a chat box bolted onto a TMS.",
-  description: "AI platform for auto transport: matching, pricing, margin, status bots.",
-  primaryCta: { label: "Meet the Agents", href: "/platform/agents" },
-  secondaryCta: { label: "Start Free Trial", href: "/register" },
+  eyebrow: "Platform \u00b7 AI",
+  title: "17 workflows. Built for auto transport.",
+  lead: "15 specialized AI agents handle pricing, carrier matching, vetting, invoicing, and exception management. Human-in-the-loop by design \u2014 every AI action can be reviewed, overridden, or escalated. Activates at 200 orders/month.",
+  description: "15 specialized AI agents for auto transport. Activates at 200 orders/month.",
+  primaryCta: { label: "Start Free Trial", href: "/register" },
+  secondaryCta: { label: "Book a Demo", href: "/contact" },
   sections: [
     {
-      heading: "What the AI actually does",
-      features: [
-        { title: "Carrier Match", body: "Ranks carriers for a load by lane history, on-time rate, claims, and location. Suggests — never auto-awards." },
-        { title: "Pricer", body: "Lane pricing that refuses to guess without history. Surfaces a recommended rate with context." },
-        { title: "Margin Guard", body: "Computes real margin when a rate is set. Negative margin critical; low margin warning; healthy margin silent." },
-        { title: "Status automation", body: "Branded email and SMS only at real customer moments — accepted, picked up, on hold, delivered." },
+      bullets: [
+        "17 AI workflows across pricing, matching, vetting, operations, and finance",
+        "15 specialized bots trained on auto-transport data \u2014 not generic LLM prompts",
+        "Auto-pricing: lane + season + fuel cost model, updated daily",
+        "Auto-matching: top-3 carrier recommendation per load",
+        "Activates at 200 orders/month \u2014 costs $1/VIN, no per-seat license on top",
+        "Human override on every AI decision",
       ],
-      cols: 2,
     },
     {
-      heading: "Operators stay in control",
-      body: "Every agent has thresholds you can configure. Empty rules that match everything are refused. Suggestions require a human confirm before award.",
+      heading: "01 \u00b7 Pricing Intelligence",
+      body: "Rate every lane. Automatically. Historical job data, seasonal demand, fuel costs, carrier supply. It doesn't guess \u2014 it scores.",
+      bullets: [
+        "Lane-level rate model updated daily",
+        "Seasonal demand weighting",
+        "Fuel cost passthrough",
+        "Confidence band and margin calculator before you commit",
+      ],
+    },
+    {
+      heading: "02 \u00b7 Carrier Matching & Vetting",
+      body: "Right carrier. First try. Top 3 with one click. Auto-vetting at assignment: MC, DOT, insurance, BOC-3.",
+      bullets: [
+        "Per-lane carrier scoring",
+        "Real-time location weighting",
+        "Top-3 recommendations",
+        "Expiry alerts 60/30/7 days",
+      ],
+    },
+    {
+      heading: "03 \u00b7 Operations Automation",
+      body: "Status notifications, exception escalations, invoice generation, carrier re-engagement \u2014 thresholds you control.",
+      bullets: [
+        "Status only at real customer moments",
+        "Exception escalations with severity",
+        "Invoice on delivery",
+        "Re-engagement with cooldown",
+      ],
     },
   ],
   finalCta: {
-    title: "See the agents on your lanes.",
-    primary: { label: "Meet the Agents", href: "/platform/agents" },
-    secondary: { label: "Book a demo", href: "/contact" },
+    title: "Ready to move?",
+    lead: "Get started in under 10 minutes. Pricing is built around your volume.",
+    primary: { label: "Start Free Trial", href: "/register" },
+    secondary: { label: "Book a Demo", href: "/contact" },
   },
 };
