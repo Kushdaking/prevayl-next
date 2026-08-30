@@ -1,32 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { DOCS_NAV } from "@/content/docs-nav";
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 
-export const DOCS_NAV = [
-  {
-    group: "Start",
-    items: [{ href: "/resources/docs/getting-started", label: "Getting started" }],
-  },
-  {
-    group: "Modules",
-    items: [
-      { href: "/resources/docs/dispatch", label: "Dispatch" },
-      { href: "/resources/docs/accounting", label: "Accounting" },
-      { href: "/resources/docs/compliance", label: "Compliance" },
-      { href: "/resources/docs/dealer-portal", label: "Dealer portal" },
-    ],
-  },
-  {
-    group: "Developers",
-    items: [
-      { href: "/resources/docs/api", label: "REST API" },
-      { href: "/resources/docs/webhooks", label: "Webhooks" },
-      { href: "/resources/docs/zapier", label: "Zapier" },
-    ],
-  },
-] as const;
 
 export function DocsShell({
   title,

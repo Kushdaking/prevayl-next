@@ -1,36 +1,28 @@
 import Link from "next/link";
+import { Band } from "@/components/ui/Band";
 import { roles } from "@/content/site";
 
-/** Edit role cards in content/site.ts → roles */
 export function BuiltForEveryone() {
   return (
-    <section className="py-24 bg-prevayl-navy-2/50">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <h2 className="font-display text-4xl sm:text-5xl text-white mb-4">
-            {roles.title} <span className="text-prevayl-gold">{roles.titleGold}</span>
-          </h2>
-          <p className="text-prevayl-muted">{roles.lead}</p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {roles.items.map((role) => (
-            <Link
-              key={role.href}
-              href={role.href}
-              className="glass module-card rounded-2xl p-6 block group"
-            >
-              <div className="text-prevayl-gold text-xs font-mono tracking-widest mb-3">
-                {role.n}
-              </div>
-              <h3 className="text-white font-semibold text-xl mb-2 group-hover:text-prevayl-gold transition-colors">
-                {role.title}
-              </h3>
-              <p className="text-prevayl-muted text-sm leading-relaxed mb-4">{role.body}</p>
-              <span className="text-prevayl-gold text-sm font-medium">Explore →</span>
-            </Link>
-          ))}
-        </div>
+    <Band image="/art/roles.webp" align="right" height="tall">
+      <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[0.95] tracking-wide mb-6">
+        <span className="text-white">{roles.title} </span>
+        <span className="text-gold-gradient">{roles.titleGold}</span>
+      </h2>
+      <p className="text-prevayl-soft/85 text-lg leading-relaxed mb-8">{roles.lead}</p>
+      <div className="grid sm:grid-cols-2 gap-4">
+        {roles.items.map((r) => (
+          <Link
+            key={r.title}
+            href={r.href}
+            className="glass rounded-xl p-5 transition hover:border-prevayl-gold/40"
+          >
+            <span className="text-prevayl-gold/60 font-mono text-xs">{r.n}</span>
+            <h3 className="text-white font-semibold text-lg mt-1 mb-1.5">{r.title}</h3>
+            <p className="text-prevayl-soft/70 text-sm leading-relaxed">{r.body}</p>
+          </Link>
+        ))}
       </div>
-    </section>
+    </Band>
   );
 }

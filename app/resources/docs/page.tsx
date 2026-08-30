@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { DOCS_NAV } from "@/components/docs/DocsShell";
+import { DOCS_NAV } from "@/content/docs-nav";
 
 export const metadata: Metadata = {
   title: "Documentation",

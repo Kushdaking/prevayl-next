@@ -28,7 +28,10 @@
   }
 
   .module-card {
-    @apply transition-all duration-250;
+    /* Tailwind's duration scale has no 250 (150/200/300/500/700/1000), so
+       @apply duration-250 fails the build. Written as plain CSS to keep the
+       intended 250ms rather than rounding to 200 or 300. */
+    transition: all 250ms ease;
   }
   .module-card:hover {
     transform: translateY(-4px);

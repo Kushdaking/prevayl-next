@@ -10,7 +10,7 @@ export {
   routeOptimizer,
   flolens,
   pinProtocol,
-} from "./platform";
+} from "./platform/index";
 
 import type { MarketingPageContent } from "./types";
 import {
@@ -24,7 +24,7 @@ import {
   routeOptimizer,
   flolens,
   pinProtocol,
-} from "./platform";
+} from "./platform/index";
 
 export const platformPages: Record<string, MarketingPageContent> = {
   dispatch,
