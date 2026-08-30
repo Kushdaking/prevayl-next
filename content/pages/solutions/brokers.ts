@@ -3,15 +3,16 @@ import type { MarketingPageContent } from "../types";
 /** Live copy from https://prevaylos.com/solutions/brokers */
 export const solutionsBrokers: MarketingPageContent = {
   slug: "solutions/brokers",
-  eyebrow: "Solutions \u00b7 For Brokers",
+  bandImage: "/brand/bands/solutions-brokers.jpg",
+  eyebrow: "Solutions · For Brokers",
   title: "One platform for every broker job.",
   goldTitle: true,
-  lead: "No duct tape. Auto transport brokers are running their load board, QuickBooks, a carrier rate spreadsheet, and email chains simultaneously. Prevayl replaces all of it \u2014 dispatch, billing, compliance, and customer communication in one place.",
+  lead: "No duct tape. Auto transport brokers are running their load board, QuickBooks, a carrier rate spreadsheet, and email chains simultaneously. Prevayl replaces all of it — dispatch, billing, compliance, and customer communication in one place.",
   description: "Prevayl for auto transport brokers: real-time load board, AI carrier matching, QuickBooks sync, per-VIN pricing, Stripe carrier payouts.",
   primaryCta: { label: "Start Free Trial", href: "/register" },
   secondaryCta: { label: "Book a Demo", href: "/contact" },
   heroImage: "/brand/pages/solutions-brokers.jpg",
-  heroImageAlt: "Prevayl for Brokers \u2014 operations console, AI matching, per-VIN pricing",
+  heroImageAlt: "Prevayl for Brokers — operations console, AI matching, per-VIN pricing",
   sections: [
     {
       heading: "The problems every broker knows.",
@@ -28,7 +29,7 @@ export const solutionsBrokers: MarketingPageContent = {
       heading: "One platform. Dispatch, billing, compliance.",
       body: "Prevayl consolidates the tools a broker actually needs: a real-time load board with AI carrier matching, an invoicing and AR module that syncs to QuickBooks Online, carrier document tracking, and a customer-facing VIN tracker.",
       bullets: [
-        "Load board with AI-suggested carrier matching \u2014 top 3 per load based on lane history and rate",
+        "Load board with AI-suggested carrier matching — top 3 per load based on lane history and rate",
         "Auto-invoice on delivery: branded PDF sent within 60 seconds of BOL signature",
         "AR aging and QuickBooks Online 2-way sync",
         "Customer portal: dealers track their own VINs",
@@ -46,9 +47,9 @@ export const solutionsBrokers: MarketingPageContent = {
     },
     {
       heading: "Carrier vetting runs itself.",
-      body: "MC/DOT status, insurance currency, BOC-3 verification \u2014 checked automatically at every load assignment.",
+      body: "MC/DOT status, insurance currency, BOC-3 verification — checked automatically at every load assignment.",
       bullets: [
-        "FMCSA check at every assignment \u2014 not just onboarding",
+        "FMCSA check at every assignment — not just onboarding",
         "Insurance expiry alerts: 60/30/7 days",
         "Assignment block if MC is inactive or insurance is expired",
       ],
