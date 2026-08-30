@@ -17,16 +17,27 @@ export const brand = {
   email: "hello@prevaylos.com",
 } as const;
 
+/**
+ * Platform includes core modules + advanced tools.
+ * load-optimizer, route-optimizer, flolens, pin-protocol KEPT
+ * (live product pages with real copy).
+ */
 export const nav = [
   {
     label: "Platform",
     href: "/platform",
     children: [
       { label: "Dispatch", href: "/platform/dispatch" },
-      { label: "Orders", href: "/platform/orders" },
+      { label: "AI", href: "/platform/ai" },
+      { label: "Agentic AI", href: "/platform/agentic-ai" },
+      { label: "Business Intelligence", href: "/platform/business-intelligence" },
+      { label: "Carriers", href: "/platform/carriers" },
+      { label: "Compliance", href: "/platform/compliance" },
       { label: "Meet the Agents", href: "/platform/agents" },
-      { label: "Accounting", href: "/platform/accounting" },
-      { label: "Dealer Portal", href: "/platform/dealer-portal" },
+      { label: "Load Optimizer", href: "/platform/load-optimizer" },
+      { label: "Route Optimizer", href: "/platform/route-optimizer" },
+      { label: "FloLens", href: "/platform/flolens" },
+      { label: "PIN Protocol", href: "/platform/pin-protocol" },
       { label: "Overview", href: "/platform" },
     ],
   },
@@ -42,8 +53,24 @@ export const nav = [
   },
   { label: "Pricing", href: "/pricing" },
   { label: "Customers", href: "/customers" },
-  { label: "Resources", href: "/resources" },
-  { label: "About", href: "/about" },
+  {
+    label: "Resources",
+    href: "/resources",
+    children: [
+      { label: "Documentation", href: "/resources/docs" },
+      { label: "Security", href: "/resources/security" },
+      { label: "Blog", href: "/resources/blog" },
+    ],
+  },
+  {
+    label: "About",
+    href: "/about",
+    children: [
+      { label: "Company", href: "/about/company" },
+      { label: "Leadership", href: "/about/leadership" },
+      { label: "Careers", href: "/about/careers" },
+    ],
+  },
   { label: "Contact", href: "/contact" },
 ] as const;
 
@@ -122,12 +149,12 @@ export const modules = {
   tourHref: "/platform",
   items: [
     { href: "/platform/dispatch", title: "Dispatch", body: "Live load board, AI top-3 matching, drag-and-drop, eBOL, photo inspections" },
-    { href: "/platform/orders", title: "Orders", body: "VIN-level tracking, multi-vehicle, Manheim/ADESA/OVE, customer portal" },
+    { href: "/platform/ai", title: "AI", body: "17 workflows | 15 bots | pricing, matching, vetting" },
     { href: "/platform/carriers", title: "Carriers", body: "Free forever. Driver app, Stripe payouts, IFTA, BOL" },
-    { href: "/platform/dealer-portal", title: "Dealer Portal", body: "White-label, role-based, real-time VIN tracking" },
-    { href: "/platform/accounting", title: "Accounting", body: "AR/AP/GL/P&L, QBO + Xero sync, DamageDesk, Stripe Connect" },
-    { href: "/platform/agents", title: "AI Agents", body: "17 workflows | 15 bots | Margin Guard | Carrier Match | Pricer" },
     { href: "/platform/compliance", title: "Compliance", body: "DOT, FMCSA, BOC-3, BOL, full audit log" },
+    { href: "/platform/agents", title: "AI Agents", body: "Margin Guard | Carrier Match | Pricer | Status Bot" },
+    { href: "/platform/business-intelligence", title: "BI", body: "11 live metrics, anomaly engine, risk scoring" },
+    { href: "/platform/load-optimizer", title: "Load Optimizer", body: "Deck-aware packing for car haulers" },
   ],
   metric: { value: "847", label: "active loads" },
 } as const;
@@ -193,8 +220,8 @@ export const footer = {
       links: [
         { href: "/platform/dispatch", label: "Dispatch" },
         { href: "/platform/agents", label: "AI Agents" },
-        { href: "/platform/accounting", label: "Accounting" },
-        { href: "/platform/dealer-portal", label: "Dealer Portal" },
+        { href: "/platform/ai", label: "AI" },
+        { href: "/platform/compliance", label: "Compliance" },
       ],
     },
     {
@@ -211,6 +238,7 @@ export const footer = {
       links: [
         { href: "/pricing", label: "Pricing" },
         { href: "/about", label: "About" },
+        { href: "/resources/docs", label: "Docs" },
         { href: "/contact", label: "Contact" },
       ],
     },
