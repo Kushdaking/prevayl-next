@@ -28,6 +28,9 @@ export type MarketingPageContent = {
   description?: string;
   primaryCta?: Cta;
   secondaryCta?: Cta;
+  /** Public path e.g. /brand/pages/platform-ai.jpg */
+  heroImage?: string;
+  heroImageAlt?: string;
   sections?: Section[];
   finalCta?: {
     title: string;
@@ -41,7 +44,6 @@ export type DocPageContent = {
   slug: string;
   title: string;
   description?: string;
-  /** Markdown-ish body as structured blocks */
   blocks: DocBlock[];
 };
 
