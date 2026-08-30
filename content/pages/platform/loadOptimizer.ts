@@ -2,6 +2,7 @@ import type { MarketingPageContent } from "../types";
 
 export const loadOptimizer: MarketingPageContent = {
   slug: "platform/load-optimizer",
+  bandImage: "/brand/bands/platform-load-optimizer.jpg",
   eyebrow: "Platform · Load Optimizer",
   title: "Pack every truck to its profitable maximum.",
   lead: "Load Optimizer turns your active VIN queue into the most profitable load a carrier can haul. Drop a vehicle, swap a vehicle, add a rush — the load rebuilds and the carrier rate updates instantly.",
