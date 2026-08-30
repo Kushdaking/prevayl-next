@@ -1,59 +1,65 @@
 import type { MarketingPageContent } from "../types";
 
-/** Live copy from prevaylos.com/platform/ai */
+/** Live copy from prevaylos.com/platform/ai — preserved, not rewritten */
 export const ai: MarketingPageContent = {
   slug: "platform/ai",
   eyebrow: "Platform \u00b7 AI",
   title: "17 workflows. Built for auto transport.",
   lead: "15 specialized AI agents handle pricing, carrier matching, vetting, invoicing, and exception management. Human-in-the-loop by design \u2014 every AI action can be reviewed, overridden, or escalated. Activates at 200 orders/month.",
-  description: "15 specialized AI agents for auto transport. Activates at 200 orders/month.",
+  description:
+    "15 specialized AI agents for auto transport: pricing, matching, vetting, invoicing, exception management. Activates at 200 orders/month.",
   primaryCta: { label: "Start Free Trial", href: "/register" },
   secondaryCta: { label: "Book a Demo", href: "/contact" },
+  heroImage: "/brand/pages/platform-ai.jpg",
+  heroImageAlt:
+    "Prevayl AI Platform — 17 workflows, pricing intelligence, carrier matching, operations automation",
   sections: [
     {
       bullets: [
         "17 AI workflows across pricing, matching, vetting, operations, and finance",
         "15 specialized bots trained on auto-transport data \u2014 not generic LLM prompts",
         "Auto-pricing: lane + season + fuel cost model, updated daily",
-        "Auto-matching: top-3 carrier recommendation per load",
+        "Auto-matching: top-3 carrier recommendation per load based on lane history and real-time availability",
         "Activates at 200 orders/month \u2014 costs $1/VIN, no per-seat license on top",
-        "Human override on every AI decision",
+        "Human override on every AI decision \u2014 your dispatchers always have the final call",
       ],
     },
     {
       heading: "01 \u00b7 Pricing Intelligence",
-      body: "Rate every lane. Automatically. Historical job data, seasonal demand, fuel costs, carrier supply. It doesn't guess \u2014 it scores.",
+      body: "Rate every lane. Automatically. The Prevayl pricing engine builds a rate recommendation for every lane using historical job data, seasonal demand patterns, current fuel costs, and carrier supply on that specific route. It doesn't guess \u2014 it scores. Dispatchers see the recommended rate, the confidence band, and the margin at the quoted price before they commit.",
       bullets: [
-        "Lane-level rate model updated daily",
-        "Seasonal demand weighting",
-        "Fuel cost passthrough",
-        "Confidence band and margin calculator before you commit",
+        "Lane-level rate model updated daily with new job completions",
+        "Seasonal demand weighting: summer auction surge, winter rate premiums",
+        "Fuel cost passthrough: diesel index applied to long-haul lane estimates",
+        "Confidence band: well-priced lanes vs thin data, be cautious",
+        "Margin calculator: see your gross at quoted rate vs carrier cost before you send the quote",
       ],
     },
     {
       heading: "02 \u00b7 Carrier Matching & Vetting",
-      body: "Right carrier. First try. Top 3 with one click. Auto-vetting at assignment: MC, DOT, insurance, BOC-3.",
+      body: "Right carrier. First try. For every load, the matching engine ranks your carrier network by lane performance, on-time rate, damage history, current location, and rate competitiveness. The top 3 surface with one click \u2014 you accept, override, or open it to the broader market. Auto-vetting runs in parallel: MC, DOT, insurance, and BOC-3 checked at every assignment, not just at onboarding.",
       bullets: [
-        "Per-lane carrier scoring",
-        "Real-time location weighting",
-        "Top-3 recommendations",
-        "Expiry alerts 60/30/7 days",
+        "Per-lane carrier scoring: on-time %, damage rate, rate vs market average",
+        "Real-time location weighting: closer carrier scores higher on rush loads",
+        "Top-3 recommendations with one-click acceptance or broadcast to market",
+        "Auto-vetting on every assignment: MC/DOT active, insurance current, BOC-3 on file",
+        "Expiry alerts: 60/30/7 day warnings before carrier documents lapse",
       ],
     },
     {
       heading: "03 \u00b7 Operations Automation",
-      body: "Status notifications, exception escalations, invoice generation, carrier re-engagement \u2014 thresholds you control.",
+      body: "The repetitive work disappears. Beyond pricing and matching, the AI handles the operational work that consumes dispatcher time: status notifications, exception escalations, invoice generation, and re-engagement of silent carriers \u2014 all with thresholds you control.",
       bullets: [
-        "Status only at real customer moments",
-        "Exception escalations with severity",
-        "Invoice on delivery",
-        "Re-engagement with cooldown",
+        "Status notifications only at real customer moments",
+        "Exception escalations with severity tiers",
+        "Invoice generation on delivery",
+        "Carrier re-engagement with cooldown so nobody gets double-emailed",
       ],
     },
   ],
   finalCta: {
     title: "Ready to move?",
-    lead: "Get started in under 10 minutes. Pricing is built around your volume.",
+    lead: "Get started in under 10 minutes. Pricing is built around your volume and the modules you run.",
     primary: { label: "Start Free Trial", href: "/register" },
     secondary: { label: "Book a Demo", href: "/contact" },
   },
