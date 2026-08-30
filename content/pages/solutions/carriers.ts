@@ -1,15 +1,17 @@
 import type { MarketingPageContent } from "../types";
 
-/** Live copy from https://prevaylos.com/solutions/carriers — preserved. */
+/** Live copy from https://prevaylos.com/solutions/carriers */
 export const solutionsCarriers: MarketingPageContent = {
   slug: "solutions/carriers",
   eyebrow: "Solutions \u00b7 For Carriers",
-  title: "Free tools. Real payouts. Built for the truck.",
+  title: "Always free for carriers.",
   goldTitle: true,
-  lead: "Always-free tools for owner-operators and small fleets. Driver app, BOL, IFTA, 1-2 day Stripe payouts. Zero subscription.",
+  lead: "Free forever. Driver app, BOL, IFTA, payouts. Always-free tools for owner-operators and small fleets. Zero subscription.",
   description: "Prevayl free carrier tools: driver app, eBOL, IFTA, Stripe payouts in 1-2 days.",
-  primaryCta: { label: "Get Free Driver App", href: "/register" },
+  primaryCta: { label: "Get the Free Driver App", href: "/register" },
   secondaryCta: { label: "For Brokers", href: "/solutions/brokers" },
+  heroImage: "/brand/pages/solutions-carriers.jpg",
+  heroImageAlt: "Prevayl for Carriers \u2014 free driver app, eBOL, Stripe payouts",
   sections: [
     {
       bullets: [
@@ -34,7 +36,7 @@ export const solutionsCarriers: MarketingPageContent = {
     {
       heading: "Why free forever",
       paragraphs: [
-        "We make money from brokers and dealers who run the platform \u2014 not from the people moving freight. If carriers have to pay to use the tools that make the lane work, the network shrinks and everyone loses.",
+        "We make money from brokers and dealers who run the platform \u2014 not from the people moving freight.",
       ],
     },
   ],

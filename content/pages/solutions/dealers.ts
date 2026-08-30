@@ -1,15 +1,17 @@
 import type { MarketingPageContent } from "../types";
 
-/** Live copy from https://prevaylos.com/solutions/dealers — preserved. */
+/** Live copy from https://prevaylos.com/solutions/dealers */
 export const solutionsDealers: MarketingPageContent = {
   slug: "solutions/dealers",
   eyebrow: "Solutions \u00b7 For Dealers",
-  title: "White-label portal. Track every VIN.",
+  title: "White-label dealer portal.",
   goldTitle: true,
-  lead: "Stop the phone tag. Self-serve booking and dispatch. Your dealers see live status without calling the desk.",
+  lead: "Your branding, your domain, your colors. Real-time VIN tracking. Stop the phone tag. Self-serve booking and dispatch.",
   description: "Prevayl for dealers: white-label portal, real-time VIN tracking, self-serve booking.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
+  primaryCta: { label: "Get Started Free", href: "/register" },
   secondaryCta: { label: "Book a Demo", href: "/contact" },
+  heroImage: "/brand/pages/solutions-dealers.jpg",
+  heroImageAlt: "Prevayl for Dealers \u2014 white-label portal, real-time VIN tracking",
   sections: [
     {
       heading: "The dealer portal",

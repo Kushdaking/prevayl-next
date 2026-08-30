@@ -10,6 +10,8 @@ export const solutionsBrokers: MarketingPageContent = {
   description: "Prevayl for auto transport brokers: real-time load board, AI carrier matching, QuickBooks sync, per-VIN pricing, Stripe carrier payouts.",
   primaryCta: { label: "Start Free Trial", href: "/register" },
   secondaryCta: { label: "Book a Demo", href: "/contact" },
+  heroImage: "/brand/pages/solutions-brokers.jpg",
+  heroImageAlt: "Prevayl for Brokers \u2014 operations console, AI matching, per-VIN pricing",
   sections: [
     {
       heading: "The problems every broker knows.",
@@ -24,48 +26,46 @@ export const solutionsBrokers: MarketingPageContent = {
     },
     {
       heading: "One platform. Dispatch, billing, compliance.",
-      body: "Prevayl consolidates the tools a broker actually needs: a real-time load board with AI carrier matching, an invoicing and AR module that syncs to QuickBooks Online, carrier document tracking, and a customer-facing VIN tracker. You stop context-switching and start dispatching.",
+      body: "Prevayl consolidates the tools a broker actually needs: a real-time load board with AI carrier matching, an invoicing and AR module that syncs to QuickBooks Online, carrier document tracking, and a customer-facing VIN tracker.",
       bullets: [
         "Load board with AI-suggested carrier matching \u2014 top 3 per load based on lane history and rate",
         "Auto-invoice on delivery: branded PDF sent within 60 seconds of BOL signature",
-        "AR aging and QuickBooks Online 2-way sync \u2014 your bookkeeper stays in QB, you stay in Prevayl",
-        "Customer portal: dealers track their own VINs, your phone stops ringing for status",
+        "AR aging and QuickBooks Online 2-way sync",
+        "Customer portal: dealers track their own VINs",
       ],
     },
     {
       heading: "Per-VIN pricing. No seat tax.",
-      body: "Prevayl charges per VIN moved, not per seat. Your second dispatcher, your accounting person, your ops manager \u2014 they all get access. The cost scales with your volume, not your headcount. The AI tier activates at 200 orders/month at $1/VIN \u2014 you're paying for capability, not login count.",
+      body: "Prevayl charges per VIN moved, not per seat. The AI tier activates at 200 orders/month at $1/VIN.",
       bullets: [
         "Unlimited seat access at every plan tier",
         "$1/VIN AI pricing activates at 200 orders/month",
-        "Pricing set to your volume and the modules you run \u2014 not a fixed tier",
+        "Pricing set to your volume and the modules you run",
         "No per-seat add-ons for accounting or ops roles",
       ],
     },
     {
       heading: "Carrier vetting runs itself.",
-      body: "MC/DOT status, insurance currency, BOC-3 verification \u2014 checked automatically at every load assignment. Insurance expiry alerts fire at 60, 30, and 7 days before a policy lapses. If a carrier's authority goes inactive between loads, the next assignment is blocked and your dispatcher sees exactly why.",
+      body: "MC/DOT status, insurance currency, BOC-3 verification \u2014 checked automatically at every load assignment.",
       bullets: [
         "FMCSA check at every assignment \u2014 not just onboarding",
-        "Insurance expiry alerts: 60/30/7 days, to both you and the carrier",
-        "BOC-3 verification at onboarding and scheduled renewal",
+        "Insurance expiry alerts: 60/30/7 days",
         "Assignment block if MC is inactive or insurance is expired",
       ],
     },
     {
       heading: "Stripe Connect: carriers paid in 1-2 days.",
-      body: "Carrier payouts run through Stripe Connect. Once delivery is confirmed and the BOL is signed, the payout initiates. Standard bank transfer timing is 1-2 business days. Carriers who know they'll be paid fast take your loads over someone else's 15-day check cycle.",
+      body: "Once delivery is confirmed and the BOL is signed, the payout initiates. 1-2 business days.",
       bullets: [
         "1-2 business day carrier payouts via Stripe Connect",
-        "No per-carrier ACH setup \u2014 bank account linked once in onboarding",
-        "Deduction workflow: damage or accessorial deductions require a reason code, audit trail preserved",
-        "Carrier payout history visible in the carrier portal \u2014 no where's-my-payment calls",
+        "No per-carrier ACH setup",
+        "Carrier payout history visible in the carrier portal",
       ],
     },
   ],
   finalCta: {
     title: "MOVE MORE. TRACK ALL OF IT.",
-    lead: "Pricing is built around your volume and the modules you run. Get started in under 10 minutes.",
+    lead: "Pricing is built around your volume. Get started in under 10 minutes.",
     primary: { label: "Start Free Trial", href: "/register" },
     secondary: { label: "Book a Demo", href: "/contact" },
   },
