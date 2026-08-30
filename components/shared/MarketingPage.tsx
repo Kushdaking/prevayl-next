@@ -4,6 +4,7 @@ import { Band } from "./Band";
 import { LinkButton } from "@/components/ui/Button";
 import type { MarketingPageContent } from "@/content/pages/types";
 
+/** Band-first marketing. Docs never use this. */
 export function MarketingPage({ page }: { page: MarketingPageContent }) {
   return (
     <main>
@@ -14,11 +15,18 @@ export function MarketingPage({ page }: { page: MarketingPageContent }) {
         lead={page.lead}
         primaryCta={page.primaryCta}
         secondaryCta={page.secondaryCta}
+        bandImage={page.bandImage}
         heroImage={page.heroImage}
         heroImageAlt={page.heroImageAlt}
       />
       {page.sections?.map((section, i) => (
-        <Band key={section.heading ?? i} alt={i % 2 === 1} height="md">
+        <Band
+          key={section.heading ?? i}
+          alt={i % 2 === 1}
+          height="md"
+          image={section.image}
+          imageOpacity={section.image ? 0.28 : undefined}
+        >
           {section.heading && (
             <h2 className="font-display text-3xl sm:text-4xl text-white mb-3">{section.heading}</h2>
           )}

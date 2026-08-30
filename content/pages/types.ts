@@ -11,6 +11,7 @@ export type Section = {
   bullets?: string[];
   features?: FeatureItem[];
   cols?: 2 | 3 | 4;
+  image?: string;
 };
 
 export type Cta = {
@@ -28,7 +29,7 @@ export type MarketingPageContent = {
   description?: string;
   primaryCta?: Cta;
   secondaryCta?: Cta;
-  /** Public path e.g. /brand/pages/platform-ai.jpg */
+  bandImage?: string;
   heroImage?: string;
   heroImageAlt?: string;
   sections?: Section[];
