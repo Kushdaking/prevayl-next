@@ -1,6 +1,9 @@
 import type { MarketingPageContent } from "../types";
 
-/** Live copy from prevaylos.com/platform/ai — preserved, not rewritten */
+/** Live copy from prevaylos.com/platform/ai — preserved, not rewritten.
+ * Visual: heroImage = be5de906 full 3-card design (Pricing / Matching / Operations);
+ * bandImage = constellation atmosphere under scrim.
+ */
 export const ai: MarketingPageContent = {
   slug: "platform/ai",
   bandImage: "/brand/bands/platform-ai.jpg",
@@ -13,7 +16,7 @@ export const ai: MarketingPageContent = {
   secondaryCta: { label: "Book a Demo", href: "/contact" },
   heroImage: "/brand/pages/platform-ai.jpg",
   heroImageAlt:
-    "Prevayl AI Platform — 17 workflows, pricing intelligence, carrier matching, operations automation",
+    "Prevayl AI — 17 workflows: Pricing Intelligence, Carrier Matching & Vetting, Operations Automation",
   sections: [
     {
       bullets: [
