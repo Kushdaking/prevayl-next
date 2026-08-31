@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/PageHero";
 import { Band } from "@/components/shared/Band";
+import { layouts } from "@/content/layouts";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -15,7 +16,7 @@ export default function ContactPage() {
         title="Get started in under 10 minutes."
         lead="Tell us your volume and your worst lane. We'll show you what Prevayl does with them."
       />
-      <Band height="md">
+      <Band height="md" image={layouts["contact"].band}>
         <form className="glass rounded-2xl p-8 max-w-lg" action="/api/contact" method="post">
           <div className="mb-5">
             <label className="block text-sm text-prevayl-muted mb-1.5" htmlFor="name">Name</label>

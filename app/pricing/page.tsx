@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { LinkButton } from "@/components/ui/Button";
 import { pricing } from "@/content/site";
+import { Band } from "@/components/shared/Band";
+import { layouts } from "@/content/layouts";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -9,13 +11,21 @@ export const metadata: Metadata = {
 /** Full pricing page - data from content/site.ts -> pricing */
 export default function PricingPage() {
   return (
-    <main className="pt-28 pb-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-14">
+    <main className="pb-20">
+      <Band
+        height="md"
+        image={layouts["pricing"].band}
+       
+      >
+        <div className="text-center max-w-2xl mx-auto">
           <h1 className="font-display text-4xl sm:text-5xl text-gold-gradient mb-4">
             SIMPLE PRICING. EVERYTHING INCLUDED.
           </h1>
           <p className="text-prevayl-soft/80 text-lg">{pricing.lead}</p>
+        </div>
+      </Band>
+      <div className="max-w-7xl mx-auto px-6 pt-14">
+        <div className="hidden">
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">

@@ -1,43 +1,56 @@
 import Link from "next/link";
-import { brand } from "@/content/site";
+import Image from "next/image";
 
+/**
+ * The real Prevayl mark.
+ *
+ * The previous version was a hand-drawn SVG approximation — a circle, a stem
+ * and scattered dots — not the actual logo. The genuine files live in the
+ * platform repo and are copied into public/brand here:
+ *
+ *   logo-gold.png    gold mark, for dark backgrounds (default)
+ *   logo-white.png   white mark, for dark backgrounds
+ *   logo-onlight.png for light backgrounds
+ *
+ * Native size is 678x395, aspect 1.716. Height is the control; width is
+ * derived so the mark can never be squashed.
+ */
 type LogoProps = {
   className?: string;
-  showWordmark?: boolean;
-  size?: number;
+  /** rendered height in px; width follows the real aspect ratio */
+  height?: number;
+  variant?: "gold" | "white" | "onlight";
+  priority?: boolean;
 };
 
-/** Gold pin mark + wordmark — edit brand.name in content/site.ts */
-export function Logo({ className = "", showWordmark = true, size = 32 }: LogoProps) {
+const SRC = {
+  gold: "/brand/logo-gold.png",
+  white: "/brand/logo-white.png",
+  onlight: "/brand/logo-onlight.png",
+} as const;
+
+const ASPECT = 678 / 395;
+
+export function Logo({
+  className = "",
+  height = 34,
+  variant = "gold",
+  priority = false,
+}: LogoProps) {
+  const width = Math.round(height * ASPECT);
   return (
-    <Link href="/" className={`flex items-center gap-2.5 group ${className}`}>
-      <svg
-        width={size}
-        height={size}
-        viewBox="0 0 40 40"
-        fill="none"
-        className="flex-shrink-0"
-        aria-hidden
-      >
-        <circle cx="20" cy="12" r="5" fill="#C9A84C" />
-        <path d="M20 17 L20 28" stroke="#C9A84C" strokeWidth="2.5" strokeLinecap="round" />
-        <path
-          d="M12 22 Q16 26 20 28 Q24 26 28 22"
-          stroke="#C9A84C"
-          strokeWidth="1.5"
-          fill="none"
-          opacity="0.7"
-        />
-        <circle cx="10" cy="20" r="1.5" fill="#C9A84C" opacity="0.6" />
-        <circle cx="30" cy="20" r="1.5" fill="#C9A84C" opacity="0.6" />
-        <circle cx="14" cy="26" r="1.2" fill="#C9A84C" opacity="0.5" />
-        <circle cx="26" cy="26" r="1.2" fill="#C9A84C" opacity="0.5" />
-      </svg>
-      {showWordmark && (
-        <span className="font-display text-2xl tracking-wide text-white group-hover:text-prevayl-gold transition-colors">
-          {brand.name}
-        </span>
-      )}
+    <Link href="/" className={`inline-flex items-center ${className}`} aria-label="Prevayl — home">
+      <Image
+        src={SRC[variant]}
+        alt="Prevayl"
+        width={width}
+        height={height}
+        priority={priority}
+        className="w-auto"
+        style={{ height }}
+      />
     </Link>
   );
 }
+
+export default Logo;

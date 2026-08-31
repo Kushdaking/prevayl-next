@@ -18,16 +18,45 @@ export const E = {
   truckGold: "/brand/elements/truck-gold.png",
   chartGold: "/brand/elements/chart-gold.png",
   glassPanel: "/brand/elements/glass-panel.png",
-  pinHolo: "/brand/elements/pin-hologram.png",
-  brainHolo: "/brand/elements/brain-hologram.png",
-  brokersConsole: "/brand/elements/brokers-console.png",
   carriersPhone: "/brand/elements/carriers-phone.png",
-  dealersPortal: "/brand/elements/dealers-portal.png",
-  agentsCards: "/brand/elements/agents-cards.png",
-  ordersFlow: "/brand/elements/orders-flow.png",
 } as const;
 
 export const layouts: Record<string, PageLayout> = {
+  // ── Added: every remaining marketing route now carries a band + elements,
+  // so the treatment is consistent site-wide rather than only on the pages
+  // that had mockups. Art is drawn from the 25 bands and 21 elements already
+  // generated; nothing new needed to be rendered.
+  "platform/accounting": {
+    band: "/art/works.webp",
+    elements: [
+      { art: E.chartGold, x: "82%", y: "48%", artW: 260, opacity: 0.55, hideBelow: "lg" },
+    ],
+  },
+  "platform/dealer-portal": {
+    band: "/art/roles.webp",
+    elements: [
+      { art: E.glassPanel, x: "80%", y: "52%", artW: 300, opacity: 0.6, hideBelow: "lg" },
+    ],
+  },
+  "about/company": {
+    band: "/brand/bands/about.jpg",
+    elements: [
+      { art: E.chainGold, x: "78%", y: "72%", artW: 260, opacity: 0.35, hideBelow: "lg" },
+    ],
+  },
+  "about/leadership": {
+    band: "/art/hero-3.webp",
+    elements: [
+      { art: E.nodesGold, x: "83%", y: "45%", artW: 200, opacity: 0.4, hideBelow: "lg" },
+    ],
+  },
+  "about/careers": {
+    band: "/art/hero-1.webp",
+    elements: [
+      { art: E.routeGold, x: "80%", y: "55%", artW: 230, opacity: 0.4, hideBelow: "lg" },
+    ],
+  },
+
   platform: {
     band: "/brand/bands/platform-index.jpg",
     elements: [
@@ -38,23 +67,23 @@ export const layouts: Record<string, PageLayout> = {
   "platform/ai": {
     band: "/brand/bands/platform-ai.jpg",
     elements: [
-      { art: E.pinHolo, x: "18%", y: "62%", artW: 140, opacity: 0.95, hideBelow: "md" },
-      { art: E.brainHolo, x: "78%", y: "48%", artW: 220, opacity: 0.9, hideBelow: "md" },
-      { art: E.nodesGold, x: "88%", y: "28%", artW: 90, opacity: 0.85, hideBelow: "lg" },
+      { art: E.pinGold, x: "18%", y: "62%", artW: 140, opacity: 0.95, hideBelow: "md" },
+      { art: E.brainGold, x: "78%", y: "48%", artW: 220, opacity: 0.9, hideBelow: "md" },
+      { art: E.nodesGold, x: "88%", y: "30%", artW: 90, opacity: 0.85, hideBelow: "lg" },
     ],
   },
   "platform/agents": {
     band: "/brand/bands/platform-agents.jpg",
     elements: [
-      { art: E.agentsCards, x: "78%", y: "48%", artW: 340, opacity: 0.92, hideBelow: "md" },
+      { art: E.cubeGold, x: "78%", y: "48%", artW: 340, opacity: 0.92, hideBelow: "md" },
       { art: E.nodesGold, x: "60%", y: "72%", artW: 100, opacity: 0.8, hideBelow: "lg" },
     ],
   },
   "platform/orders": {
     band: "/brand/bands/platform-orders.jpg",
     elements: [
-      { art: E.ordersFlow, x: "78%", y: "50%", artW: 320, opacity: 0.95, hideBelow: "md" },
-      { art: E.pinGold, x: "62%", y: "28%", artW: 90, opacity: 0.8, hideBelow: "lg" },
+      { art: E.routeGold, x: "78%", y: "50%", artW: 320, opacity: 0.95, hideBelow: "md" },
+      { art: E.pinGold, x: "62%", y: "30%", artW: 90, opacity: 0.8, hideBelow: "lg" },
     ],
   },
   "platform/dispatch": {
@@ -109,8 +138,8 @@ export const layouts: Record<string, PageLayout> = {
   "solutions/brokers": {
     band: "/brand/bands/solutions-brokers.jpg",
     elements: [
-      { art: E.brokersConsole, x: "78%", y: "52%", artW: 320, opacity: 0.95, hideBelow: "md" },
-      { art: E.nodesGold, x: "68%", y: "28%", artW: 90, opacity: 0.8, hideBelow: "lg" },
+      { art: E.chartGold, x: "78%", y: "52%", artW: 320, opacity: 0.95, hideBelow: "md" },
+      { art: E.nodesGold, x: "68%", y: "30%", artW: 90, opacity: 0.8, hideBelow: "lg" },
     ],
   },
   "solutions/carriers": {
@@ -123,8 +152,8 @@ export const layouts: Record<string, PageLayout> = {
   "solutions/dealers": {
     band: "/brand/bands/solutions-dealers.jpg",
     elements: [
-      { art: E.dealersPortal, x: "78%", y: "50%", artW: 300, opacity: 0.95, hideBelow: "md" },
-      { art: E.pinGold, x: "62%", y: "28%", artW: 90, opacity: 0.8, hideBelow: "lg" },
+      { art: E.glassPanel, x: "78%", y: "50%", artW: 300, opacity: 0.95, hideBelow: "md" },
+      { art: E.pinGold, x: "62%", y: "30%", artW: 90, opacity: 0.8, hideBelow: "lg" },
     ],
   },
   "solutions/wholesale": {
