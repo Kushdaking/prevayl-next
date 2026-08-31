@@ -28,41 +28,28 @@ export const layouts: Record<string, PageLayout> = {
   // generated; nothing new needed to be rendered.
   "platform/accounting": {
     band: "/art/works.webp",
-    elements: [
-      { art: E.chartGold, x: "82%", y: "48%", artW: 260, opacity: 0.55, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "platform/dealer-portal": {
     band: "/brand/bands/platform-ai.jpg",
-    elements: [
-      { art: E.glassPanel, x: "80%", y: "52%", artW: 300, opacity: 0.6, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "about/company": {
     band: "/brand/bands/about.jpg",
-    elements: [
-      { art: E.chainGold, x: "78%", y: "72%", artW: 260, opacity: 0.35, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "about/leadership": {
     band: "/art/hero-3.webp",
-    elements: [
-      { art: E.nodesGold, x: "83%", y: "45%", artW: 200, opacity: 0.4, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "about/careers": {
     band: "/art/hero-1.webp",
-    elements: [
-      { art: E.routeGold, x: "80%", y: "55%", artW: 230, opacity: 0.4, hideBelow: "lg" },
-    ],
+    elements: [],
   },
 
   platform: {
     band: "/brand/bands/platform-index.jpg",
-    elements: [
-      { art: E.nodesGold, x: "78%", y: "42%", artW: 160, opacity: 0.9, hideBelow: "md" },
-      { art: E.glassPanel, x: "88%", y: "68%", artW: 100, opacity: 0.75, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "platform/ai": {
     band: "/brand/bands/platform-ai.jpg",
@@ -74,115 +61,88 @@ export const layouts: Record<string, PageLayout> = {
   },
   "platform/agents": {
     band: "/brand/bands/platform-agents.jpg",
-    elements: [
-      { art: E.cubeGold, x: "78%", y: "48%", artW: 340, opacity: 0.92, hideBelow: "md" },
-      { art: E.nodesGold, x: "60%", y: "72%", artW: 100, opacity: 0.8, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "platform/orders": {
     band: "/brand/bands/platform-orders.jpg",
-    elements: [
-      { art: E.routeGold, x: "78%", y: "50%", artW: 320, opacity: 0.95, hideBelow: "md" },
-      { art: E.pinGold, x: "62%", y: "30%", artW: 90, opacity: 0.8, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "platform/dispatch": {
     band: "/brand/bands/platform-dispatch.jpg",
-    elements: [
-      { art: E.routeGold, x: "80%", y: "45%", artW: 160, opacity: 0.9, hideBelow: "md" },
-      { art: E.pinGold, x: "70%", y: "70%", artW: 90, opacity: 0.85, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "platform/agentic-ai": {
     band: "/brand/bands/platform-agentic-ai.jpg",
-    elements: [
-      { art: E.nodesGold, x: "75%", y: "40%", artW: 150, opacity: 0.9, hideBelow: "md" },
-      { art: E.brainGold, x: "88%", y: "62%", artW: 100, opacity: 0.8, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "platform/carriers": {
     band: "/brand/bands/platform-carriers.jpg",
-    elements: [
-      { art: E.truckGold, x: "78%", y: "48%", artW: 150, opacity: 0.9, hideBelow: "md" },
-      { art: E.routeGold, x: "88%", y: "70%", artW: 110, opacity: 0.75, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "platform/compliance": {
     band: "/brand/bands/platform-compliance.jpg",
-    elements: [{ art: E.shieldGold, x: "78%", y: "45%", artW: 150, opacity: 0.95, hideBelow: "md" }],
+    elements: [],
   },
   "platform/business-intelligence": {
     band: "/brand/bands/platform-business-intelligence.jpg",
-    elements: [{ art: E.chartGold, x: "78%", y: "45%", artW: 150, opacity: 0.9, hideBelow: "md" }],
+    elements: [],
   },
   "platform/load-optimizer": {
     band: "/brand/bands/platform-load-optimizer.jpg",
-    elements: [{ art: E.cubeGold, x: "78%", y: "48%", artW: 140, opacity: 0.9, hideBelow: "md" }],
+    elements: [],
   },
   "platform/route-optimizer": {
     band: "/brand/bands/platform-route-optimizer.jpg",
-    elements: [{ art: E.routeGold, x: "78%", y: "45%", artW: 160, opacity: 0.9, hideBelow: "md" }],
+    elements: [],
   },
   "platform/flolens": {
     band: "/brand/bands/platform-flolens.jpg",
-    elements: [{ art: E.lensGold, x: "78%", y: "45%", artW: 150, opacity: 0.9, hideBelow: "md" }],
+    elements: [],
   },
   "platform/pin-protocol": {
     band: "/brand/bands/platform-pin-protocol.jpg",
-    elements: [{ art: E.chainGold, x: "78%", y: "45%", artW: 150, opacity: 0.9, hideBelow: "md" }],
+    elements: [],
   },
   solutions: {
     band: "/brand/bands/solutions-index.jpg",
-    elements: [{ art: E.routeGold, x: "80%", y: "45%", artW: 150, opacity: 0.85, hideBelow: "md" }],
+    elements: [],
   },
   "solutions/brokers": {
     band: "/brand/bands/solutions-brokers.jpg",
-    elements: [
-      { art: E.chartGold, x: "78%", y: "52%", artW: 320, opacity: 0.95, hideBelow: "md" },
-      { art: E.nodesGold, x: "68%", y: "30%", artW: 90, opacity: 0.8, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "solutions/carriers": {
     band: "/brand/bands/solutions-carriers.jpg",
-    elements: [
-      { art: E.carriersPhone, x: "78%", y: "50%", artW: 220, opacity: 0.98, hideBelow: "md" },
-      { art: E.truckGold, x: "62%", y: "72%", artW: 100, opacity: 0.75, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "solutions/dealers": {
     band: "/brand/bands/solutions-dealers.jpg",
-    elements: [
-      { art: E.glassPanel, x: "78%", y: "50%", artW: 300, opacity: 0.95, hideBelow: "md" },
-      { art: E.pinGold, x: "62%", y: "30%", artW: 90, opacity: 0.8, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   "solutions/wholesale": {
     band: "/brand/bands/solutions-wholesale.jpg",
-    elements: [
-      { art: E.routeGold, x: "80%", y: "45%", artW: 150, opacity: 0.9, hideBelow: "md" },
-      { art: E.chainGold, x: "70%", y: "68%", artW: 100, opacity: 0.8, hideBelow: "lg" },
-    ],
+    elements: [],
   },
   about: {
     band: "/brand/bands/about.jpg",
-    elements: [{ art: E.nodesGold, x: "80%", y: "45%", artW: 130, opacity: 0.8, hideBelow: "md" }],
+    elements: [],
   },
   customers: {
     band: "/brand/bands/customers.jpg",
-    elements: [{ art: E.nodesGold, x: "80%", y: "45%", artW: 130, opacity: 0.8, hideBelow: "md" }],
+    elements: [],
   },
   pricing: {
     band: "/brand/bands/pricing.jpg",
-    elements: [{ art: E.chartGold, x: "80%", y: "45%", artW: 130, opacity: 0.85, hideBelow: "md" }],
+    elements: [],
   },
   resources: {
     band: "/brand/bands/resources.jpg",
-    elements: [{ art: E.glassPanel, x: "80%", y: "45%", artW: 120, opacity: 0.8, hideBelow: "md" }],
+    elements: [],
   },
   "resources/blog": { band: "/brand/bands/resources-blog.jpg", elements: [] },
   "resources/security": {
     band: "/brand/bands/resources-security.jpg",
-    elements: [{ art: E.shieldGold, x: "80%", y: "45%", artW: 140, opacity: 0.9, hideBelow: "md" }],
+    elements: [],
   },
   contact: { band: "/brand/bands/contact.jpg", elements: [] },
 };
