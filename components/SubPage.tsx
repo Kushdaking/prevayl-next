@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Band } from "@/components/ui/Band";
 import type { PageDef } from "@/content/pages";
+import { PageShot } from "@/components/ui/PageShot";
 
 /** One layout for every sub-page: image band hero, then the detail points. */
 export function SubPage({ def }: { def: PageDef }) {
@@ -35,6 +36,7 @@ export function SubPage({ def }: { def: PageDef }) {
           ))}
         </div>
       </section>
+          <PageShot slug={def.slug} />
     </>
   );
 }

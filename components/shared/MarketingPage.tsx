@@ -4,6 +4,7 @@ import { Band } from "./Band";
 import { LinkButton } from "@/components/ui/Button";
 import type { MarketingPageContent } from "@/content/pages/types";
 import { layoutFor } from "@/content/layouts";
+import { PageShot } from "@/components/ui/PageShot";
 
 /**
  * Three-layer marketing page:
@@ -105,6 +106,7 @@ export function MarketingPage({ page }: { page: MarketingPageContent }) {
           </div>
         </Band>
       )}
+          <PageShot slug={page.slug} />
     </main>
   );
 }

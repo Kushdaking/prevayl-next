@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ElementStage } from "@/components/ui/ElementStage";
 import { Band } from "@/components/shared/Band";
 import { layoutFor } from "@/content/layouts";
+import { ProductShot } from "@/components/ui/ProductShot";
+import BrokerDashboardMockup from "@/components/mockups/BrokerDashboardMockup";
 
 export const metadata: Metadata = {
   title: "Brokers — One platform for every broker job",
@@ -93,6 +95,14 @@ export default function BrokersPage() {
           </Link>
         </div>
       </Band>
+    
+      <section className="bg-prevayl-navy pb-24 pt-4">
+        <div className="max-w-6xl mx-auto px-6">
+          <ProductShot caption="The broker console: pipeline, margin and carrier health in one view.">
+            <BrokerDashboardMockup />
+          </ProductShot>
+        </div>
+      </section>
     </main>
   );
 }
