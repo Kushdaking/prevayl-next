@@ -5,13 +5,13 @@ export const aboutOverview: MarketingPageContent = {
   eyebrow: "About",
   title: "Why Prevayl exists.",
   lead: "Why Prevayl exists, who we serve, and the values that shape every decision we make about what to build.",
-  description: "Prevayl Inc. — the Michigan company building the AI-native operating system for auto transport. MC #01813480 · DOT #4562182.",
+  description: "Prevayl Inc. — the Michigan company building the AI-native operating system for auto transport.",
   primaryCta: { label: "Company", href: "/about/company" },
   secondaryCta: { label: "Leadership", href: "/about/leadership" },
   sections: [
     {
       features: [
-        { title: "Company", body: "Prevayl Inc. is a Michigan S-Corp building the operating system the auto-transport industry has been patching around for years. Holding company: Cars2Go LLC, MC #01813480." },
+        { title: "Company", body: "Prevayl Inc. is a Michigan S-Corp building the operating system the auto-transport industry has been patching around for years. Affiliated with Cars2Go LLC, an FMCSA-licensed property broker." },
         { title: "Leadership", body: "The operators behind the platform. Founders, advisors, and the team building Prevayl day-to-day." },
         { title: "Careers", body: "Join us. Open roles, hiring philosophy, and what it's like to build with operators-first as the constraint." },
       ],
@@ -42,8 +42,8 @@ export const aboutCompany: MarketingPageContent = {
   slug: "about/company",
   eyebrow: "About · Company",
   title: "Built by operators. Based in Michigan.",
-  lead: "Prevayl Inc. is a Michigan S-Corp building the operating system the auto-transport industry has been patching around for years. Holding company: Cars2Go LLC, MC #01813480.",
-  description: "Prevayl Inc. — Michigan S-Corp. Holding company Cars2Go LLC, MC #01813480. DOT #4562182. Howell, MI.",
+  lead: "Prevayl Inc. is a Michigan S-Corp building the operating system the auto-transport industry has been patching around for years. Affiliated with Cars2Go LLC, an FMCSA-licensed property broker.",
+  description: "Prevayl Inc. — Michigan S-Corp. Howell, MI.",
   sections: [
     {
       heading: "How we go to market",

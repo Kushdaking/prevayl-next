@@ -31,7 +31,7 @@ export function Footer() {
         </div>
         <div className="pt-8 border-t border-prevayl-navy-4 flex flex-col sm:flex-row justify-between gap-4 text-xs text-prevayl-muted">
           <span>
-            © {brand.year} Prevayl Inc. · {brand.mc} · {brand.dot} · {brand.location}
+            © {brand.year} Prevayl Inc. · {brand.location}
           </span>
           <span>Built for the lane.</span>
         </div>

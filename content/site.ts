@@ -11,8 +11,6 @@ export const brand = {
   name: "PREVAYL",
   tagline: "The AI-native operating system for auto transport.",
   year: "2026",
-  mc: "MC#01813480",
-  dot: "DOT#4562182",
   location: "Howell, MI",
   email: "hello@prevaylos.com",
 } as const;

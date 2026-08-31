@@ -23,7 +23,7 @@ hero.lines = ["THE AI-NATIVE", "OPERATING SYSTEM", "FOR AUTO TRANSPORT"]
 hero.liveLoads = [{ lane: "Detroit, MI -> Atlanta, GA", status: "IN TRANSIT", tone: "gold" }]
 pricing.plans = [ ... ]
 nav = [ { label: "Platform", href: "/platform", children: [...] } ]
-brand.mc = "MC#01813480"
+brand.mc — removed: Prevayl holds no MC or DOT authority
 ```
 
 **Day-to-day edits = only `content/site.ts`.**
@@ -66,4 +66,4 @@ Connect this repo to Cloudflare Pages or Vercel as a Next.js project.
 
 ---
 
-(c) 2026 Prevayl Inc. | MC#01813480 | DOT#4562182 | Howell, MI
+(c) 2026 Prevayl Inc. | Howell, MI
