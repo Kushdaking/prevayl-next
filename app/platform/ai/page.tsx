@@ -43,7 +43,7 @@ const CARDS = [
 export default function AiPage() {
   return (
     <main>
-      <ElementStage bandImage={layout.band} elements={layout.elements} height="hero">
+      <ElementStage bandImage={layout.band} elements={layout.elements} height="tall">
         <p className="text-prevayl-gold text-sm font-medium tracking-widest uppercase mb-3">
           Platform · AI
         </p>

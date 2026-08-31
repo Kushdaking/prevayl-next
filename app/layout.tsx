@@ -40,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${bebas.variable} ${mono.variable}`}>
-      <body className="font-sans min-h-screen flex flex-col">
+      <body className="overflow-x-hidden font-sans min-h-screen flex flex-col">
         <Header />
         <div className="flex-1">{children}</div>
         <Footer />

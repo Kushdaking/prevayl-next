@@ -33,7 +33,7 @@ export const layouts: Record<string, PageLayout> = {
     ],
   },
   "platform/dealer-portal": {
-    band: "/art/roles.webp",
+    band: "/brand/bands/platform-ai.jpg",
     elements: [
       { art: E.glassPanel, x: "80%", y: "52%", artW: 300, opacity: 0.6, hideBelow: "lg" },
     ],
@@ -68,8 +68,8 @@ export const layouts: Record<string, PageLayout> = {
     band: "/brand/bands/platform-ai.jpg",
     elements: [
       { art: E.pinGold, x: "18%", y: "62%", artW: 140, opacity: 0.95, hideBelow: "md" },
-      { art: E.brainGold, x: "78%", y: "48%", artW: 220, opacity: 0.9, hideBelow: "md" },
-      { art: E.nodesGold, x: "88%", y: "30%", artW: 90, opacity: 0.85, hideBelow: "lg" },
+      { art: E.brainGold, x: "80%", y: "45%", artW: 260, opacity: 0.85, hideBelow: "md" },
+      { art: E.nodesGold, x: "84%", y: "72%", artW: 120, opacity: 0.5, hideBelow: "lg" },
     ],
   },
   "platform/agents": {
