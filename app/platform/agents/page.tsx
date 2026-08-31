@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ElementStage } from "@/components/ui/ElementStage";
 import { Band } from "@/components/shared/Band";
 import { layoutFor } from "@/content/layouts";
+import { PageShot } from "@/components/ui/PageShot";
 
 export const metadata: Metadata = {
   title: "Meet the Agents — AI Control Center",
@@ -119,6 +120,7 @@ export default function AgentsPage() {
           </Link>
         </div>
       </Band>
+          <PageShot slug="platform/agents" />
     </main>
   );
 }

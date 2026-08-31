@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/shared/PageHero";
 import { Band } from "@/components/shared/Band";
+import { PageShot } from "@/components/ui/PageShot";
 
 export const metadata: Metadata = {
   title: "Platform",
@@ -44,6 +45,7 @@ export default function PlatformOverviewPage() {
           ))}
         </div>
       </Band>
+          <PageShot slug="platform" />
     </main>
   );
 }

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ElementStage } from "@/components/ui/ElementStage";
 import { Band } from "@/components/shared/Band";
 import { layoutFor } from "@/content/layouts";
+import { PageShot } from "@/components/ui/PageShot";
 
 export const metadata: Metadata = {
   title: "Orders — Every VIN, quote to delivered",
@@ -97,6 +98,7 @@ export default function OrdersPage() {
           </Link>
         </div>
       </Band>
+          <PageShot slug="platform/orders" />
     </main>
   );
 }

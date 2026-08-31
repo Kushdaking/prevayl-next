@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ElementStage } from "@/components/ui/ElementStage";
 import { Band } from "@/components/shared/Band";
 import { layoutFor } from "@/content/layouts";
+import { PageShot } from "@/components/ui/PageShot";
 
 export const metadata: Metadata = {
   title: "AI — 17 workflows built for auto transport",
@@ -121,6 +122,7 @@ export default function AiPage() {
           </Link>
         </div>
       </Band>
+          <PageShot slug="platform/ai" />
     </main>
   );
 }
