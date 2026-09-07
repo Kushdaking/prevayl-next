@@ -67,6 +67,10 @@ export const layouts: Record<string, PageLayout> = {
     band: "/brand/bands/platform-orders.jpg",
     elements: [],
   },
+  "platform/dispatcher-bot": {
+    band: "/brand/bands/platform-dispatch.jpg",
+    elements: [],
+  },
   "platform/dispatch": {
     band: "/brand/bands/platform-dispatch.jpg",
     elements: [],

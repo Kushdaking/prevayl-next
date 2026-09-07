@@ -26,6 +26,7 @@ export const nav = [
     href: "/platform",
     children: [
       { label: "Dispatch", href: "/platform/dispatch" },
+      { label: "Dispatcher Bot", href: "/platform/dispatcher-bot" },
       { label: "AI", href: "/platform/ai" },
       { label: "Agentic AI", href: "/platform/agentic-ai" },
       { label: "Business Intelligence", href: "/platform/business-intelligence" },
@@ -217,6 +218,7 @@ export const footer = {
       title: "Platform",
       links: [
         { href: "/platform/dispatch", label: "Dispatch" },
+        { href: "/platform/dispatcher-bot", label: "Dispatcher Bot" },
         { href: "/platform/agents", label: "AI Agents" },
         { href: "/platform/ai", label: "AI" },
         { href: "/platform/compliance", label: "Compliance" },
