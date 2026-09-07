@@ -1,0 +1,251 @@
+{
+  "routes": [
+    {
+      "route": "/.",
+      "visuals": 10,
+      "storySections": 0,
+      "sectionVisuals": 1
+    },
+    {
+      "route": "/platform",
+      "visuals": 16,
+      "storySections": 0,
+      "sectionVisuals": 0
+    },
+    {
+      "route": "/customers",
+      "visuals": 4,
+      "storySections": 3,
+      "sectionVisuals": 3
+    },
+    {
+      "route": "/contact",
+      "visuals": 1,
+      "storySections": 0,
+      "sectionVisuals": 1
+    },
+    {
+      "route": "/pricing",
+      "visuals": 3,
+      "storySections": 0,
+      "sectionVisuals": 0
+    },
+    {
+      "route": "/solutions",
+      "visuals": 2,
+      "storySections": 2,
+      "sectionVisuals": 2
+    },
+    {
+      "route": "/resources",
+      "visuals": 1,
+      "storySections": 1,
+      "sectionVisuals": 1
+    },
+    {
+      "route": "/about",
+      "visuals": 4,
+      "storySections": 4,
+      "sectionVisuals": 4
+    },
+    {
+      "route": "/platform/business-intelligence",
+      "visuals": 5,
+      "storySections": 4,
+      "sectionVisuals": 4
+    },
+    {
+      "route": "/platform/dispatcher-bot",
+      "visuals": 9,
+      "storySections": 0,
+      "sectionVisuals": 0
+    },
+    {
+      "route": "/platform/dealer-portal",
+      "visuals": 1,
+      "storySections": 1,
+      "sectionVisuals": 1
+    },
+    {
+      "route": "/platform/agentic-ai",
+      "visuals": 6,
+      "storySections": 0,
+      "sectionVisuals": 0
+    },
+    {
+      "route": "/platform/orders",
+      "visuals": 4,
+      "storySections": 3,
+      "sectionVisuals": 3
+    },
+    {
+      "route": "/platform/agents",
+      "visuals": 12,
+      "storySections": 0,
+      "sectionVisuals": 0
+    },
+    {
+      "route": "/platform/compliance",
+      "visuals": 1,
+      "storySections": 1,
+      "sectionVisuals": 1
+    },
+    {
+      "route": "/platform/accounting",
+      "visuals": 2,
+      "storySections": 1,
+      "sectionVisuals": 1
+    },
+    {
+      "route": "/platform/ai",
+      "visuals": 4,
+      "storySections": 3,
+      "sectionVisuals": 3
+    },
+    {
+      "route": "/platform/pin-protocol",
+      "visuals": 11,
+      "storySections": 0,
+      "sectionVisuals": 0
+    },
+    {
+      "route": "/platform/dispatch",
+      "visuals": 5,
+      "storySections": 4,
+      "sectionVisuals": 4
+    },
+    {
+      "route": "/platform/flolens",
+      "visuals": 1,
+      "storySections": 1,
+      "sectionVisuals": 1
+    },
+    {
+      "route": "/platform/load-optimizer",
+      "visuals": 4,
+      "storySections": 3,
+      "sectionVisuals": 3
+    },
+    {
+      "route": "/platform/carriers",
+      "visuals": 3,
+      "storySections": 2,
+      "sectionVisuals": 2
+    },
+    {
+      "route": "/platform/route-optimizer",
+      "visuals": 1,
+      "storySections": 1,
+      "sectionVisuals": 1
+    },
+    {
+      "route": "/solutions/brokers",
+      "visuals": 6,
+      "storySections": 5,
+      "sectionVisuals": 5
+    },
+    {
+      "route": "/solutions/carriers",
+      "visuals": 4,
+      "storySections": 3,
+      "sectionVisuals": 3
+    },
+    {
+      "route": "/solutions/dealers",
+      "visuals": 3,
+      "storySections": 2,
+      "sectionVisuals": 2
+    },
+    {
+      "route": "/solutions/wholesale",
+      "visuals": 2,
+      "storySections": 1,
+      "sectionVisuals": 1
+    },
+    {
+      "route": "/resources/blog",
+      "visuals": 1,
+      "storySections": 0,
+      "sectionVisuals": 1
+    },
+    {
+      "route": "/resources/security",
+      "visuals": 4,
+      "storySections": 4,
+      "sectionVisuals": 4
+    },
+    {
+      "route": "/resources/docs",
+      "visuals": 3,
+      "storySections": 0,
+      "sectionVisuals": 0
+    },
+    {
+      "route": "/resources/docs/getting-started",
+      "visuals": 4,
+      "storySections": 0,
+      "sectionVisuals": 4
+    },
+    {
+      "route": "/resources/docs/dealer-portal",
+      "visuals": 2,
+      "storySections": 0,
+      "sectionVisuals": 2
+    },
+    {
+      "route": "/resources/docs/api",
+      "visuals": 2,
+      "storySections": 0,
+      "sectionVisuals": 2
+    },
+    {
+      "route": "/resources/docs/compliance",
+      "visuals": 3,
+      "storySections": 0,
+      "sectionVisuals": 3
+    },
+    {
+      "route": "/resources/docs/accounting",
+      "visuals": 2,
+      "storySections": 0,
+      "sectionVisuals": 2
+    },
+    {
+      "route": "/resources/docs/webhooks",
+      "visuals": 2,
+      "storySections": 0,
+      "sectionVisuals": 2
+    },
+    {
+      "route": "/resources/docs/dispatch",
+      "visuals": 3,
+      "storySections": 0,
+      "sectionVisuals": 3
+    },
+    {
+      "route": "/resources/docs/zapier",
+      "visuals": 2,
+      "storySections": 0,
+      "sectionVisuals": 2
+    },
+    {
+      "route": "/about/careers",
+      "visuals": 3,
+      "storySections": 3,
+      "sectionVisuals": 3
+    },
+    {
+      "route": "/about/company",
+      "visuals": 3,
+      "storySections": 3,
+      "sectionVisuals": 3
+    },
+    {
+      "route": "/about/leadership",
+      "visuals": 2,
+      "storySections": 2,
+      "sectionVisuals": 2
+    }
+  ],
+  "errors": []
+}

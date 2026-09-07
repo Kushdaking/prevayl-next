@@ -1,3 +1,4 @@
+import {SectionVisual} from "@/components/redesign/SectionVisual";
 import { DocsShell, DocH2, DocH3, DocP, DocUl, DocCode, DocNote } from "./DocsShell";
 import type { DocPageContent } from "@/content/pages/types";
 
@@ -6,7 +7,7 @@ export function DocPage({ page }: { page: DocPageContent }) {
     <DocsShell title={page.title} description={page.description}>
       {page.blocks.map((block, i) => {
         switch (block.type) {
-          case "h2": return <DocH2 key={i}>{block.text}</DocH2>;
+          case "h2": return <div className="sx-doc" key={i}><DocH2>{block.text}</DocH2><SectionVisual slug={page.slug} index={page.blocks.slice(0,i).filter(b=>b.type==="h2").length} title={block.text} compact/></div>;
           case "h3": return <DocH3 key={i}>{block.text}</DocH3>;
           case "p": return <DocP key={i}>{block.text}</DocP>;
           case "ul": return <DocUl key={i} items={block.items} />;
@@ -24,3 +25,5 @@ export function DocPage({ page }: { page: DocPageContent }) {
     </DocsShell>
   );
 }
+
+
