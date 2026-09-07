@@ -1,12 +1,4 @@
-import type { Metadata } from "next";
-import { MarketingPage } from "@/components/shared/MarketingPage";
-import { pinProtocol } from "@/content/pages/platform";
-
-export const metadata: Metadata = {
-  title: pinProtocol.title,
-  description: pinProtocol.description,
-};
-
-export default function Page() {
-  return <MarketingPage page={pinProtocol} />;
-}
+import type {Metadata} from "next";
+import {TechExperience} from "@/components/redesign/TechExperience";
+export const metadata:Metadata={title:"PIN Protocol",description:"Explore PREVAYL’s deployed intelligence, operational workflows and role-based assistance."};
+export default function Page(){return <TechExperience mode="pin"/>}

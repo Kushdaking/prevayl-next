@@ -1,12 +1,4 @@
-import type { Metadata } from "next";
-import { MarketingPage } from "@/components/shared/MarketingPage";
-import { agenticAi } from "@/content/pages/platform";
-
-export const metadata: Metadata = {
-  title: agenticAi.title,
-  description: agenticAi.description,
-};
-
-export default function Page() {
-  return <MarketingPage page={agenticAi} />;
-}
+import type {Metadata} from "next";
+import {TechExperience} from "@/components/redesign/TechExperience";
+export const metadata:Metadata={title:"Role-based Agentic AI",description:"Explore PREVAYL’s deployed intelligence, operational workflows and role-based assistance."};
+export default function Page(){return <TechExperience mode="assistant"/>}
