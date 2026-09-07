@@ -1,51 +1,22 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { PageHero } from "@/components/shared/PageHero";
-import { Band } from "@/components/shared/Band";
-import { PageShot } from "@/components/ui/PageShot";
-
-export const metadata: Metadata = {
-  title: "Platform",
-  description:
-    "Dispatch, carriers, compliance, AI, BI, load optimizer, route optimizer, FloLens, PIN Protocol — one Prevayl platform.",
-};
-
-const LINKS = [
-  { href: "/platform/dispatch", title: "Dispatch", body: "Load board, AI match, eBOL" },
-  { href: "/platform/carriers", title: "Carriers", body: "Free forever tools" },
-  { href: "/platform/compliance", title: "Compliance", body: "Vetting at assignment" },
-  { href: "/platform/ai", title: "AI Platform", body: "Matching, pricing, margin" },
-  { href: "/platform/agentic-ai", title: "Agentic AI", body: "Trust-layered agents" },
-  { href: "/platform/agents", title: "Meet the Agents", body: "Each agent explained" },
-  { href: "/platform/business-intelligence", title: "Business Intelligence", body: "Lane P&L, scorecards" },
-  { href: "/platform/load-optimizer", title: "Load Optimizer", body: "VIN-aware truck packing" },
-  { href: "/platform/route-optimizer", title: "Route Optimizer", body: "Multi-stop sequences" },
-  { href: "/platform/flolens", title: "FloLens", body: "Workflow suggestions" },
-  { href: "/platform/pin-protocol", title: "PIN Protocol", body: "Secure handoff" },
-];
-
-export default function PlatformOverviewPage() {
-  return (
-    <main>
-      <PageHero
-        eyebrow="Platform"
-        title="One platform. Every workflow."
-        lead="Dispatch, compliance, AI, BI, and carrier tools share the same VIN-level data. No duct-taped stack."
-        primaryCta={{ label: "Start Free Trial", href: "/register" }}
-        secondaryCta={{ label: "Meet the Agents", href: "/platform/agents" }}
-        bandImage="/brand/bands/platform-index.jpg"
-      />
-      <Band height="md">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {LINKS.map((l) => (
-            <Link key={l.href} href={l.href} className="glass module-card rounded-xl p-5 block">
-              <h3 className="text-prevayl-gold font-semibold mb-1">{l.title}</h3>
-              <p className="text-prevayl-muted text-sm">{l.body}</p>
-            </Link>
-          ))}
-        </div>
-      </Band>
-          <PageShot slug="platform" />
-    </main>
-  );
-}
+import { ProductTour } from "@/components/redesign/ProductTour";
+import { CTA,Links,Eyebrow } from "@/components/redesign/Shared";
+export const metadata:Metadata={title:"Platform — Every team, one operation",description:"Explore the Prevayl workspaces for dispatch, orders, accounting, carriers and AI."};
+export default function Page(){return <main className="pvl-redesign"><PageHero eyebrow="The platform" title="The whole operation. In view." lead="Explore the workspaces that connect your vehicles, customers, carriers and financial records." primaryCta={{href:"/contact?type=demo",label:"Book a demo"}} secondaryCta={{href:"#workspaces",label:"Explore the workspaces"}}/><section className="pvl-wrap pvl-section"><ProductTour/></section><section className="pvl-wrap pvl-section" id="workspaces"><Eyebrow>Find your workspace</Eyebrow><Links items={[
+{href:"/platform/dispatch",title:"Dispatch",body:"Coordinate active work, carrier assignments and exceptions."},
+{href:"/platform/orders",title:"Orders",body:"The vehicle, lane and customer record behind each movement."},
+{href:"/platform/accounting",title:"Accounting",body:"Invoicing, receivables, payables and financial reporting."},
+{href:"/platform/carriers",title:"Carriers",body:"Your carrier network and operating relationships."},
+{href:"/platform/dealer-portal",title:"Dealer portal",body:"A place for your customers to follow their vehicles."},
+{href:"/platform/compliance",title:"Compliance",body:"Carrier documentation and the checks behind assignment."},
+{href:"/platform/agents",title:"AI Bots",body:"Meet Margin Guard, Carrier Match, Pricer and more."},
+{href:"/platform/dispatcher-bot",title:"Dispatcher Bot",body:"Follow the stages of an automated dispatch workflow."},
+{href:"/platform/ai",title:"AI workspace",body:"Tools for pricing, matching and operational assistance."},
+{href:"/platform/agentic-ai",title:"Agentic AI",body:"Context, tools and action controls for your team."},
+{href:"/platform/business-intelligence",title:"Business Intelligence",body:"Reporting across lanes, carriers and the business."},
+{href:"/platform/load-optimizer",title:"Load Optimizer",body:"Plan vehicles against available truck capacity."},
+{href:"/platform/route-optimizer",title:"Route Optimizer",body:"Review stop sequences and routing tradeoffs."},
+{href:"/platform/flolens",title:"FloLens",body:"Bring workflow insights into view."},
+{href:"/platform/pin-protocol",title:"PIN Protocol",body:"Review identity and authorization at the handoff."}
+]}/></section><CTA/></main>}

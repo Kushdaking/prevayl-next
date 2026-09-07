@@ -28,7 +28,7 @@ export function Header() {
                 {item.label}
               </Link>
               {"children" in item && item.children && (
-                <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all absolute top-full left-1/2 -translate-x-1/2 pt-3 min-w-[220px] z-50">
+                <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all absolute top-full left-1/2 -translate-x-1/2 pt-3 min-w-[220px] z-50">
                   <div className="glass-strong rounded-xl p-2 shadow-2xl border border-prevayl-gold/15">
                     <div className="text-[0.7rem] uppercase tracking-wider text-prevayl-gold font-semibold px-3 py-1.5">
                       {item.label}
@@ -62,7 +62,7 @@ export function Header() {
           <button
             type="button"
             className="lg:hidden flex flex-col gap-1.5 p-2"
-            aria-label="Menu"
+            aria-label="Navigation menu" aria-controls="mobile-navigation"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
@@ -76,7 +76,7 @@ export function Header() {
       {open && (
         <nav
           className="lg:hidden border-t border-prevayl-navy-4 bg-prevayl-navy/98 backdrop-blur-xl px-6 py-4 max-h-[calc(100vh-4rem)] overflow-y-auto"
-          aria-label="Mobile"
+          id="mobile-navigation" aria-label="Mobile"
         >
           {nav.map((item) => (
             <div key={item.href}>
@@ -100,6 +100,7 @@ export function Header() {
                 ))}
             </div>
           ))}
+          <Link href="/login" onClick={() => setOpen(false)} className="block py-3 text-prevayl-gold">Sign in →</Link>
         </nav>
       )}
     </header>

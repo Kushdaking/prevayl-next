@@ -1,50 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/PageHero";
-import { Band } from "@/components/shared/Band";
-import { layouts } from "@/content/layouts";
-
-export const metadata: Metadata = {
-  title: "Contact",
-  description: "Get started with Prevayl. Pricing built around your volume.",
-};
-
-export default function ContactPage() {
-  return (
-    <main>
-      <PageHero
-        eyebrow="Contact"
-        title="Get started in under 10 minutes."
-        lead="Tell us your volume and your worst lane. We'll show you what Prevayl does with them."
-      />
-      <Band height="md" image={layouts["contact"].band}>
-        <form className="glass rounded-2xl p-8 max-w-lg" action="/api/contact" method="post">
-          <div className="mb-5">
-            <label className="block text-sm text-prevayl-muted mb-1.5" htmlFor="name">Name</label>
-            <input id="name" name="name" required className="w-full px-4 py-3 rounded-lg border border-prevayl-navy-4 bg-prevayl-navy text-prevayl-soft" />
-          </div>
-          <div className="mb-5">
-            <label className="block text-sm text-prevayl-muted mb-1.5" htmlFor="email">Work email</label>
-            <input id="email" type="email" name="email" required className="w-full px-4 py-3 rounded-lg border border-prevayl-navy-4 bg-prevayl-navy text-prevayl-soft" />
-          </div>
-          <div className="mb-5">
-            <label className="block text-sm text-prevayl-muted mb-1.5" htmlFor="role">Role</label>
-            <select id="role" name="role" className="w-full px-4 py-3 rounded-lg border border-prevayl-navy-4 bg-prevayl-navy text-prevayl-soft">
-              <option>Broker</option>
-              <option>Carrier / Owner-operator</option>
-              <option>Dealer</option>
-              <option>Auction / Wholesale</option>
-            </select>
-          </div>
-          <div className="mb-6">
-            <label className="block text-sm text-prevayl-muted mb-1.5" htmlFor="volume">Monthly volume (cars)</label>
-            <input id="volume" name="volume" placeholder="e.g. 50" className="w-full px-4 py-3 rounded-lg border border-prevayl-navy-4 bg-prevayl-navy text-prevayl-soft" />
-          </div>
-          <button type="submit" className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold bg-gradient-to-br from-prevayl-gold to-prevayl-gold-dark text-prevayl-navy shadow-gold">
-            Request access / Book demo
-          </button>
-          <p className="mt-4 text-xs text-prevayl-muted text-center">No card required. Free for carriers. Always.</p>
-        </form>
-      </Band>
-    </main>
-  );
-}
+import { ContactForm } from "@/components/redesign/ContactForm";
+import { Eyebrow } from "@/components/redesign/Shared";
+export const metadata:Metadata={title:"Contact — Put your operation first",description:"Book a Prevayl demo or discuss your volume and workflows."};
+export default function Page(){return <main className="pvl-redesign"><PageHero eyebrow="Contact" title="Bring the lane that gives you trouble." lead="Show us the work. We’ll walk through how Prevayl fits your customers, carriers and daily operation."/><div className="pvl-wrap pvl-contact-grid"><div><Eyebrow>Your operation, on the screen</Eyebrow><h2>A useful conversation starts with real work.</h2><ol className="pvl-vertical-steps"><li><span>1</span>Tell us your role, lanes and monthly volume.</li><li><span>2</span>Walk through the workflows your team relies on.</li><li><span>3</span>Discuss plans, integrations and the next steps.</li></ol><p>Already using Prevayl? Choose Support in the form so your request has the right context.</p></div><ContactForm/></div></main>}

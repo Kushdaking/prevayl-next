@@ -1,0 +1,4 @@
+/register https://app.prevaylos.com/register 302
+/login https://app.prevaylos.com/login 302
+/signup https://app.prevaylos.com/register 302
+/legal/* https://app.prevaylos.com/legal/:splat 302

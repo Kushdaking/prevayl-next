@@ -1,112 +1,17 @@
-import { ElementStage } from "@/components/ui/ElementStage";
-import { FeatureGrid } from "./FeatureGrid";
-import { Band } from "./Band";
-import { LinkButton } from "@/components/ui/Button";
+import {WorkflowView} from "@/components/redesign/WorkflowView";
+import Link from "next/link";
+import { Screen } from "@/components/redesign/Screen";
+import { CTA, Eyebrow } from "@/components/redesign/Shared";
+import { productViews } from "@/content/product-views";
 import type { MarketingPageContent } from "@/content/pages/types";
-import { layoutFor } from "@/content/layouts";
-import { PageShot } from "@/components/ui/PageShot";
-
-/**
- * Three-layer marketing page:
- * 1. Band atmosphere (layout.band or page.bandImage)
- * 2. Element objects (layout.elements)
- * 3. HTML — every word indexable
- */
-export function MarketingPage({ page }: { page: MarketingPageContent }) {
-  const layout = layoutFor(page.slug);
-  const band = page.bandImage ?? layout?.band;
-  const elements = layout?.elements ?? [];
-
-  return (
-    <main>
-      <ElementStage bandImage={band} elements={elements} height="hero">
-        {page.eyebrow && (
-          <p className="text-prevayl-gold text-sm font-medium tracking-widest uppercase mb-3">
-            {page.eyebrow}
-          </p>
-        )}
-        <h1
-          className={`font-display text-4xl sm:text-5xl lg:text-6xl leading-[0.95] mb-5 max-w-3xl ${
-            page.goldTitle ? "text-gold-gradient" : "text-white"
-          }`}
-        >
-          {page.title}
-        </h1>
-        <p className="text-prevayl-soft/80 text-lg max-w-2xl leading-relaxed mb-8">{page.lead}</p>
-        {(page.primaryCta || page.secondaryCta) && (
-          <div className="flex flex-wrap gap-4">
-            {page.primaryCta && (
-              <LinkButton href={page.primaryCta.href} variant={page.primaryCta.variant ?? "gold"} size="md">
-                {page.primaryCta.label}
-              </LinkButton>
-            )}
-            {page.secondaryCta && (
-              <LinkButton
-                href={page.secondaryCta.href}
-                variant={page.secondaryCta.variant ?? "ghost"}
-                size="md"
-              >
-                {page.secondaryCta.label}
-              </LinkButton>
-            )}
-          </div>
-        )}
-      </ElementStage>
-
-      {page.sections?.map((section, i) => (
-        <Band
-          key={section.heading ?? i}
-          alt={i % 2 === 1}
-          height="md"
-          image={section.image}
-          imageOpacity={section.image ? 0.25 : undefined}
-        >
-          {section.heading && (
-            <h2 className="font-display text-3xl sm:text-4xl text-white mb-3">{section.heading}</h2>
-          )}
-          {section.body && (
-            <p className="text-prevayl-muted text-base max-w-3xl leading-relaxed mb-8">{section.body}</p>
-          )}
-          {section.paragraphs?.map((p) => (
-            <p key={p.slice(0, 40)} className="text-prevayl-muted text-base max-w-3xl leading-relaxed mb-4">
-              {p}
-            </p>
-          ))}
-          {section.bullets && section.bullets.length > 0 && (
-            <ul className="space-y-2 mb-8 max-w-2xl">
-              {section.bullets.map((b) => (
-                <li key={b} className="flex gap-2 text-prevayl-soft/85 text-sm">
-                  <span className="text-prevayl-gold shrink-0">✓</span>
-                  <span>{b}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-          {section.features && section.features.length > 0 && (
-            <FeatureGrid items={section.features} cols={section.cols ?? 3} />
-          )}
-        </Band>
-      ))}
-
-      {page.finalCta && (
-        <Band height="md" align="center" className="border-t border-prevayl-navy-4">
-          <h2 className="font-display text-3xl sm:text-4xl text-white mb-4">{page.finalCta.title}</h2>
-          {page.finalCta.lead && (
-            <p className="text-prevayl-muted max-w-xl mx-auto mb-8">{page.finalCta.lead}</p>
-          )}
-          <div className="flex flex-wrap justify-center gap-4">
-            <LinkButton href={page.finalCta.primary.href} size="md">
-              {page.finalCta.primary.label}
-            </LinkButton>
-            {page.finalCta.secondary && (
-              <LinkButton href={page.finalCta.secondary.href} variant="ghost" size="md">
-                {page.finalCta.secondary.label}
-              </LinkButton>
-            )}
-          </div>
-        </Band>
-      )}
-          <PageShot slug={page.slug} />
-    </main>
-  );
+const sectionLinks:Record<string,string>={"Documentation":"/resources/docs","Security":"/resources/security","Blog":"/resources/blog","Company":"/about/company","Leadership":"/about/leadership","Careers":"/about/careers","Getting started":"/resources/docs/getting-started","Dispatch":"/platform/dispatch","Accounting":"/platform/accounting","Compliance":"/platform/compliance","Dealer Portal":"/platform/dealer-portal","API":"/resources/docs/api","Webhooks":"/resources/docs/webhooks","Zapier":"/resources/docs/zapier"};
+export function MarketingPage({page}:{page:MarketingPageContent}){
+ const view=productViews[page.slug];const sections=page.sections||[];
+ return <main className="pvl-redesign"><section className={"pvl-page-hero "+(view?"has-view":"")}><div className="pvl-wrap"><Eyebrow>{page.eyebrow||page.slug.split("/")[0]}</Eyebrow><div className="pvl-hero-columns"><h1>{page.title}</h1><div><p className="pvl-lead">{page.lead}</p><div className="pvl-actions"><Link className="pvl-button" href={page.primaryCta?.href||"/contact?type=demo"}>{page.primaryCta?.label||"Book a demo"} ↗</Link>{page.secondaryCta&&<Link className="pvl-text-link" href={page.secondaryCta.href}>{page.secondaryCta.label} →</Link>}</div></div></div></div></section>
+ {view&&<div className="pvl-wrap pvl-product-intro"><Screen {...view} eager/></div>}
+ {!view&&<WorkflowView slug={page.slug}/>}
+ {sections.some(s=>s.heading)&&<nav className="pvl-page-index pvl-wrap" aria-label="On this page"><span>On this page</span>{sections.map((s,i)=>s.heading&&<a key={i} href={"#section-"+i}>{s.heading.replace(/^\d+\s*·\s*/,"")}</a>)}</nav>}
+ <div className="pvl-wrap">{sections.map((s,i)=><section key={i} id={"section-"+i} className={"pvl-story "+(s.heading?"":"pvl-story-full")}><div className="pvl-story-heading"><Eyebrow>{String(i+1).padStart(2,"0")} / {page.eyebrow?.split("·").pop()?.trim()||"The details"}</Eyebrow>{s.heading&&<h2>{s.heading.replace(/^\d+\s*·\s*/,"")}</h2>}</div><div className="pvl-story-content">{s.body&&<p className="pvl-story-lead">{s.body}</p>}{s.paragraphs?.map(p=><p key={p}>{p}</p>)}{s.bullets&&<ul className="pvl-checklist">{s.bullets.map(b=><li key={b}><span aria-hidden="true">↗</span>{b}</li>)}</ul>}{s.features&&<div className="pvl-feature-list">{s.features.map((f,j)=><article key={f.title}><span className="pvl-feature-num">{String(j+1).padStart(2,"0")}</span><div><h3>{f.title}</h3><p>{f.body}</p>{sectionLinks[f.title]&&<Link className="pvl-text-link" href={sectionLinks[f.title]}>Explore {f.title.toLowerCase()} →</Link>}</div></article>)}</div>}</div></section>)}</div>
+ {page.finalCta&&<CTA title={page.finalCta.title} body={page.finalCta.lead} primary={page.finalCta.primary} secondary={page.finalCta.secondary}/>}
+ </main>
 }

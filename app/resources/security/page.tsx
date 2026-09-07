@@ -1,12 +1,4 @@
-import type { Metadata } from "next";
-import { MarketingPage } from "@/components/shared/MarketingPage";
-import { resourcesSecurity } from "@/content/pages/resources";
-
-export const metadata: Metadata = {
-  title: resourcesSecurity.title,
-  description: resourcesSecurity.description,
-};
-
-export default function Page() {
-  return <MarketingPage page={resourcesSecurity} />;
-}
+import type {Metadata} from "next";
+import {MarketingPage} from "@/components/shared/MarketingPage";
+export const metadata:Metadata={title:"Security — Discuss your requirements",description:"Review access, data handling and operational security requirements with the Prevayl team."};
+export default function Page(){return <MarketingPage page={{slug:"resources/security",eyebrow:"Resources / Security",title:"Your operation deserves clear answers.",lead:"Review the access, data handling and operational requirements that matter to your business with the Prevayl team.",primaryCta:{href:"/contact?type=support",label:"Discuss security"},sections:[{heading:"Access and responsibilities.",body:"Walk through the roles, organization membership and authentication settings that apply to your deployment.",bullets:["Identify who needs access to each workspace.","Review the permissions required for sensitive actions.","Discuss account administration and multifactor authentication."]},{heading:"Data and integrations.",body:"Understand where information enters the platform, which integrations use it and what your operation needs to retain.",bullets:["Review the data involved in each connected integration.","Discuss retention, export and backup requirements.","Request details relevant to your organization’s vendor review."]},{heading:"Operational controls.",body:"Review the settings and evidence around workflows that affect a vehicle, a document or a financial record.",bullets:["Discuss authorization at pickup and handoff.","Review automation modes and exception handling.","Walk through the activity records relevant to your workflow."]},{heading:"Report a concern.",body:"Contact the team with a description of the issue and the affected area. Avoid including passwords, secret keys or customer records in your initial message."}],finalCta:{title:"Let’s work through your requirements.",primary:{href:"/contact?type=support",label:"Contact the team"},secondary:{href:"/resources/docs",label:"Read the documentation"}}}}/>}

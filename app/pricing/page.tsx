@@ -1,71 +1,7 @@
 import type { Metadata } from "next";
-import { LinkButton } from "@/components/ui/Button";
+import Link from "next/link";
 import { pricing } from "@/content/site";
-import { Band } from "@/components/shared/Band";
-import { layouts } from "@/content/layouts";
-
-export const metadata: Metadata = {
-  title: "Pricing",
-};
-
-/** Full pricing page - data from content/site.ts -> pricing */
-export default function PricingPage() {
-  return (
-    <main className="pb-20">
-      <Band
-        height="md"
-        image={layouts["pricing"].band}
-       
-      >
-        <div className="text-center max-w-2xl mx-auto">
-          <h1 className="font-display text-4xl sm:text-5xl text-gold-gradient mb-4">
-            SIMPLE PRICING. EVERYTHING INCLUDED.
-          </h1>
-          <p className="text-prevayl-soft/80 text-lg">{pricing.lead}</p>
-        </div>
-      </Band>
-      <div className="max-w-7xl mx-auto px-6 pt-14">
-        <div className="hidden">
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {pricing.plans.map((plan) => (
-            <div
-              key={plan.name}
-              className={`rounded-2xl p-7 flex flex-col relative ${
-                plan.featured
-                  ? "glass-strong shadow-gold border border-prevayl-gold/40"
-                  : "glass"
-              }`}
-            >
-              {plan.featured && plan.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-prevayl-gold text-prevayl-navy text-xs font-bold px-3 py-1 rounded-full">
-                  {plan.badge}
-                </div>
-              )}
-              <h2 className="text-white font-semibold text-xl mb-1">{plan.name}</h2>
-              <p className="text-prevayl-muted text-sm mb-6">{plan.range}</p>
-              <ul className="space-y-2.5 text-sm text-prevayl-soft/80 mb-8 flex-1">
-                {plan.features.map((f) => (
-                  <li key={f} className="flex gap-2">
-                    <span className="text-prevayl-gold">✓</span> {f}
-                  </li>
-                ))}
-              </ul>
-              <LinkButton
-                href={plan.href}
-                variant={plan.featured ? "gold" : "ghost"}
-                className="w-full"
-                size="sm"
-              >
-                {plan.cta}
-              </LinkButton>
-            </div>
-          ))}
-        </div>
-
-        <p className="text-center text-prevayl-muted text-sm mt-10">{pricing.footnote}</p>
-      </div>
-    </main>
-  );
-}
+import { PageHero } from "@/components/shared/PageHero";
+import { CTA } from "@/components/redesign/Shared";
+export const metadata:Metadata={title:"Pricing — Find the right fit",description:"Compare Prevayl plans and discuss pricing for your operation."};
+export default function Page(){return <main className="pvl-redesign"><PageHero eyebrow="Plans & pricing" title="Built around your operation." lead={pricing.lead} primaryCta={{href:"/contact?type=sales",label:"Discuss your volume"}} secondaryCta={{href:"#plans",label:"Compare plans"}}/><section className="pvl-wrap" id="plans"><div className="pvl-price-grid">{pricing.plans.map(plan=><article key={plan.name} className={"pvl-price-card "+(plan.featured?"featured":"")}><span className="pvl-pill">{plan.featured?"Most popular":"Prevayl "+plan.name}</span><h2>{plan.name}</h2><p className="pvl-range">{plan.range}</p><ul>{plan.features.map(f=><li key={f}><span aria-hidden="true">✓</span>{f}</li>)}</ul><Link href={plan.href} className={"pvl-button "+(plan.featured?"":"secondary")}>{plan.cta} ↗</Link></article>)}</div><p className="pvl-form-note">{pricing.footnote}</p></section><CTA title="Let’s put a number to your operation." body="Bring your monthly vehicle volume, team size and the workflows you need. We’ll walk through the fit with you." primary={{href:"/contact?type=sales",label:"Talk pricing"}} secondary={{href:"/platform",label:"Review the platform"}}/></main>}

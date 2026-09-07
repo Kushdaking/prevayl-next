@@ -1,0 +1,16 @@
+{
+  "routes": 42,
+  "heroProtectedFiles": {
+    "components/home/Hero.tsx": "318de862d162818492d2d9d418896d4c478685479eec507f767b085f1bb9c93f",
+    "components/ui/Band.tsx": "93b0ecb3cff494198f178a15f93c9b2b90bd55b724d3d7cf6c52a12ef146f4cc",
+    "app/globals.css": "bec0a0981a85c43ba815e03d3fe0176276a32a8723ae2e74c1ec7d7b231486f7",
+    "content/site.ts": "e5ce96ff7c5c9c8cddf7c9bdd4868e48460151599d8275a21d7a53ec8bdde431",
+    "tailwind.config.ts": "04ec54519b055ea4fe00a51128ffa4c02da83756a8d407f3ee84f2c650318eac",
+    "public/art/hero-4.webp": "005a6bd43a945607644aa16e164103b1cb102b636a24aa3a7a1c8e907e27135d"
+  },
+  "productionRedirects": [
+    "/login",
+    "/register"
+  ],
+  "errors": []
+}
