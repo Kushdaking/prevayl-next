@@ -4,6 +4,7 @@ import "./globals.css";
 import "./redesign.css";
 import "./example-visuals.css";
 import "./technology.css";
+import "./role-workspaces.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { brand } from "@/content/site";
