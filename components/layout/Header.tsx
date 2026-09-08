@@ -29,7 +29,7 @@ export function Header() {
               </Link>
               {"children" in item && item.children && (
                 <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all absolute top-full left-1/2 -translate-x-1/2 pt-3 min-w-[220px] z-50">
-                  <div className="glass-strong rounded-xl p-2 shadow-2xl border border-prevayl-gold/15">
+                  <div className="glass-strong rounded-xl p-2 max-h-[calc(100vh-6rem)] overflow-y-auto shadow-2xl border border-prevayl-gold/15">
                     <div className="text-[0.7rem] uppercase tracking-wider text-prevayl-gold font-semibold px-3 py-1.5">
                       {item.label}
                     </div>

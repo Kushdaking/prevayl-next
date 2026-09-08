@@ -37,6 +37,10 @@ export const nav = [
       { label: "Route Optimizer", href: "/platform/route-optimizer" },
       { label: "FloLens", href: "/platform/flolens" },
       { label: "PIN Protocol", href: "/platform/pin-protocol" },
+      { label: "Integrations", href: "/platform/integrations" },
+      { label: "Central Dispatch", href: "/platform/integrations/central-dispatch" },
+      { label: "API Suite", href: "/platform/integrations/api" },
+      { label: "VTIMS / EDI", href: "/platform/integrations/vtims-edi" },
       { label: "Overview", href: "/platform" },
     ],
   },
@@ -180,6 +184,7 @@ export const footer = {
       title: "Platform",
       links: [
         { href: "/platform/dispatch", label: "Dispatch" },
+        { href: "/platform/integrations", label: "Integrations" },
         { href: "/platform/dispatcher-bot", label: "Dispatcher Bot" },
         { href: "/platform/agents", label: "AI Agents" },
         { href: "/platform/ai", label: "AI" },

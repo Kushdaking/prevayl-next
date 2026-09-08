@@ -1,0 +1,3 @@
+import {IntegrationPage} from "@/components/redesign/IntegrationExperience";
+export const metadata={"title": "VTIMS Connection & In-House EDI for Vehicle Logistics", "description": "Explore Prevayl in-house EDI for VTIMS connection, X12 message handling and direct AS2 trading-partner exchange.", "alternates": {"canonical": "https://prevaylos.com/platform/integrations/vtims-edi/"}, "openGraph": {"title": "VTIMS Connection & In-House EDI for Vehicle Logistics | Prevayl", "description": "Explore Prevayl in-house EDI for VTIMS connection, X12 message handling and direct AS2 trading-partner exchange.", "url": "https://prevaylos.com/platform/integrations/vtims-edi/", "type": "website"}};
+export default function Page(){return <IntegrationPage kind="vtims-edi"/>}

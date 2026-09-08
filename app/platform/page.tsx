@@ -1,3 +1,4 @@
+import {IntegrationOverview} from "@/components/redesign/IntegrationExperience";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/PageHero";
 import { ProductTour } from "@/components/redesign/ProductTour";
@@ -19,4 +20,4 @@ export default function Page(){return <main className="pvl-redesign"><PageHero e
 {href:"/platform/route-optimizer",title:"Route Optimizer",body:"Review stop sequences and routing tradeoffs."},
 {href:"/platform/flolens",title:"FloLens",body:"Bring workflow insights into view."},
 {href:"/platform/pin-protocol",title:"PIN Protocol",body:"Review identity and authorization at the handoff."}
-]}/></section><CTA/></main>}
+]}/></section><IntegrationOverview/><CTA/></main>}

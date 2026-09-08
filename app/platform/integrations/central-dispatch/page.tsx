@@ -1,0 +1,3 @@
+import {IntegrationPage} from "@/components/redesign/IntegrationExperience";
+export const metadata={"title": "Central Dispatch Integration for Auto Transport", "description": "Connect Prevayl to Central Dispatch for vehicle listings, carrier dispatches, event updates and shipment documents.", "alternates": {"canonical": "https://prevaylos.com/platform/integrations/central-dispatch/"}, "openGraph": {"title": "Central Dispatch Integration for Auto Transport | Prevayl", "description": "Connect Prevayl to Central Dispatch for vehicle listings, carrier dispatches, event updates and shipment documents.", "url": "https://prevaylos.com/platform/integrations/central-dispatch/", "type": "website"}};
+export default function Page(){return <IntegrationPage kind="central-dispatch"/>}

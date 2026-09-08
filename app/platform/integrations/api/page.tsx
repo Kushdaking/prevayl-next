@@ -1,0 +1,3 @@
+import {IntegrationPage} from "@/components/redesign/IntegrationExperience";
+export const metadata={"title": "Auto Transport API Suite", "description": "Connect orders, shipments, customers, carriers, quotes and invoices with the Prevayl API suite.", "alternates": {"canonical": "https://prevaylos.com/platform/integrations/api/"}, "openGraph": {"title": "Auto Transport API Suite | Prevayl", "description": "Connect orders, shipments, customers, carriers, quotes and invoices with the Prevayl API suite.", "url": "https://prevaylos.com/platform/integrations/api/", "type": "website"}};
+export default function Page(){return <IntegrationPage kind="api"/>}
