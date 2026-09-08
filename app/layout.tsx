@@ -6,6 +6,7 @@ import "./example-visuals.css";
 import "./technology.css";
 import "./role-workspaces.css";
 import "./section-visuals.css";
+import "./visual-context.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { brand } from "@/content/site";
@@ -53,4 +54,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+
 

@@ -1,5 +1,6 @@
 "use client";
 import {useState} from "react";
+import {VisualContext} from "./VisualContext";
 import {VisualIcon} from "./VisualExamples";
 import {visualFor,type VisualKind} from "@/content/section-visuals";
 type Spec={label:string;focus:string[];detail:string[]};
@@ -39,8 +40,10 @@ if(kind==="library")return <div className="sx-library">{["FIRST LOAD","OPERATION
 const steps=kind==="automation"?["Order event","Evaluate context","Next action"]:kind==="onboarding"?["Your lanes","Workspace setup","First load"]:kind==="principles"?["Track the work","Measure the result","Improve the process"]:["Source data","PREVAYL","Connected workflow"];
 return <div className="sx-network">{steps.map((s,i)=><div key={s} className={active===i?"selected":""}><span className="sx-node-icon"><VisualIcon name={i===0?"document":i===1?"chart":"truck"}/></span><strong>{s}</strong><small>{i===0?"INPUT":i===1?"CONTEXT":"NEXT STEP"}</small>{i<2&&<b aria-hidden="true">→</b>}</div>)}</div>;
 }
-export function MiniVisual({kind}:{kind:VisualKind}){return <div className={"sx-mini sx-kind-"+kind} aria-label={specs[kind].label+" illustration"}><span className="sx-mini-label">ILLUSTRATION</span><Graphic kind={kind}/></div>}
+export function MiniVisual({kind}:{kind:VisualKind}){return <div className={"sx-mini sx-kind-"+kind} aria-label={specs[kind].label+" illustration"}><span className="sx-mini-label">ILLUSTRATION</span><VisualContext kind={kind}/></div>}
 export function SectionVisual({slug="",index=0,title,kind,compact=false}:{slug?:string;index?:number;title?:string;kind?:VisualKind;compact?:boolean}){
 const chosen=kind??visualFor(slug,index);const spec=specs[chosen];const [active,setActive]=useState(0);
-return <div className={"sx-visual "+(compact?"sx-compact":"")} data-section-visual={chosen}><div className="sx-topline"><span><i/> {title||spec.label}</span><small>{/api|webhooks|zapier/.test(slug)?"PLANNED WORKFLOW · ILLUSTRATION":["team","principles","library","onboarding","connections","permissions"].includes(chosen)?"WORKFLOW ILLUSTRATION":"ILLUSTRATIVE WORKSPACE · SAMPLE DATA"}</small></div><div className="sx-body"><div className="sx-main"><Graphic kind={chosen} active={active}/></div>{!compact&&<aside className="sx-inspector"><span className="sx-inspector-label">WHAT TO LOOK AT</span><div className="sx-focus" aria-label={"Explore "+(title||spec.label)}>{spec.focus.map((s,i)=><button key={s} onClick={()=>setActive(i)} aria-pressed={active===i}><span>0{i+1}</span>{s}<b>↗</b></button>)}</div><p aria-live="polite">{spec.detail[active]}</p></aside>}</div></div>
+return <div className={"sx-visual "+(compact?"sx-compact":"")} data-section-visual={chosen}><div className="sx-topline"><span><i/> {title||spec.label}</span><small>{/api|webhooks|zapier/.test(slug)?"PLANNED WORKFLOW · ILLUSTRATION":["team","principles","library","onboarding","connections","permissions"].includes(chosen)?"WORKFLOW ILLUSTRATION":"ILLUSTRATIVE WORKSPACE · SAMPLE DATA"}</small></div><div className="sx-body"><div className="sx-main"><VisualContext kind={chosen} active={active}/><Graphic kind={chosen} active={active}/></div>{!compact&&<aside className="sx-inspector"><span className="sx-inspector-label">WHAT TO LOOK AT</span><div className="sx-focus" aria-label={"Explore "+(title||spec.label)}>{spec.focus.map((s,i)=><button key={s} onClick={()=>setActive(i)} aria-pressed={active===i}><span>0{i+1}</span>{s}<b>↗</b></button>)}</div><p aria-live="polite">{spec.detail[active]}</p></aside>}</div></div>
 }
+
+
