@@ -1,4 +1,5 @@
 "use client";
+import {SolutionWorkspace} from "./SolutionWorkspace";
 import {PlatformVisual} from "./PlatformVisual";
 import {useState} from "react";
 import {VisualContext} from "./VisualContext";
@@ -43,7 +44,7 @@ return null;
 export function MiniVisual({kind}:{kind:VisualKind}){return <div className={"sx-mini sx-kind-"+kind} aria-label={specs[kind].label+" illustration"}><span className="sx-mini-label">ILLUSTRATION</span><VisualContext kind={kind}/></div>}
 export function SectionVisual({slug="",index=0,title,kind,compact=false,showSecondary=false}:{slug?:string;index?:number;title?:string;kind?:VisualKind;compact?:boolean;showSecondary?:boolean}){
 const chosen=kind??visualFor(slug,index);const spec=specs[chosen];const [active,setActive]=useState(0);if(!slug.startsWith("platform/")&&["automation","onboarding"].includes(chosen))return null;
-return <div className={"sx-visual "+(compact?"sx-compact":"")} data-section-visual={chosen}><div className="sx-topline"><span><i/> {title||spec.label}</span><small>{/api|webhooks|zapier/.test(slug)?"PLANNED WORKFLOW · ILLUSTRATION":["team","principles","library","onboarding","connections","permissions"].includes(chosen)?"WORKFLOW ILLUSTRATION":"ILLUSTRATIVE WORKSPACE · SAMPLE DATA"}</small></div><div className="sx-body"><div className="sx-main">{slug.startsWith("platform/")?<PlatformVisual kind={chosen} title={title} slug={slug} index={index} active={active}/>:<><VisualContext kind={chosen} active={active}/>{showSecondary&&<Graphic kind={chosen} active={active}/>}</>}</div>{!compact&&<aside className="sx-inspector"><span className="sx-inspector-label">WHAT TO LOOK AT</span><div className="sx-focus" aria-label={"Explore "+(title||spec.label)}>{spec.focus.map((s,i)=><button key={s} onClick={()=>setActive(i)} aria-pressed={active===i}><span>0{i+1}</span>{s}<b>↗</b></button>)}</div><p aria-live="polite">{spec.detail[active]}</p></aside>}</div></div>
+return <div className={"sx-visual "+(compact?"sx-compact":"")} data-section-visual={chosen}><div className="sx-topline"><span><i/> {title||spec.label}</span><small>{/api|webhooks|zapier/.test(slug)?"PLANNED WORKFLOW · ILLUSTRATION":["team","principles","library","onboarding","connections","permissions"].includes(chosen)?"WORKFLOW ILLUSTRATION":"ILLUSTRATIVE WORKSPACE · SAMPLE DATA"}</small></div><div className="sx-body"><div className="sx-main">{slug.startsWith("platform/")?<PlatformVisual kind={chosen} title={title} slug={slug} index={index} active={active}/>:<SolutionWorkspace kind={chosen} title={title} slug={slug} index={index} active={active}/>}</div>{!compact&&<aside className="sx-inspector"><span className="sx-inspector-label">WHAT TO LOOK AT</span><div className="sx-focus" aria-label={"Explore "+(title||spec.label)}>{spec.focus.map((s,i)=><button key={s} onClick={()=>setActive(i)} aria-pressed={active===i}><span>0{i+1}</span>{s}<b>↗</b></button>)}</div><p aria-live="polite">{spec.detail[active]}</p></aside>}</div></div>
 }
 
 
