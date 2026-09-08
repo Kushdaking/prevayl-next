@@ -8,6 +8,7 @@ import "./role-workspaces.css";
 import "./section-visuals.css";
 import "./visual-context.css";
 import "./visual-depth.css";
+import "./bot-scenes.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { brand } from "@/content/site";
@@ -55,8 +56,4 @@ export default function RootLayout({
     </html>
   );
 }
-
-
-
-
 
