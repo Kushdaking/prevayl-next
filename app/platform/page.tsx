@@ -3,7 +3,7 @@ import { PageHero } from "@/components/shared/PageHero";
 import { ProductTour } from "@/components/redesign/ProductTour";
 import { CTA,Links,Eyebrow } from "@/components/redesign/Shared";
 export const metadata:Metadata={title:"Platform — Every team, one operation",description:"Explore the Prevayl workspaces for dispatch, orders, accounting, carriers and AI."};
-export default function Page(){return <main className="pvl-redesign"><PageHero eyebrow="The platform" title="The whole operation. In view." lead="Explore the workspaces that connect your vehicles, customers, carriers and financial records." primaryCta={{href:"/contact?type=demo",label:"Book a demo"}} secondaryCta={{href:"#workspaces",label:"Explore the workspaces"}}/><section className="pvl-wrap pvl-section"><ProductTour/></section><section className="pvl-wrap pvl-section" id="workspaces"><Eyebrow>Find your workspace</Eyebrow><Links items={[
+export default function Page(){return <main className="pvl-redesign"><PageHero eyebrow="The platform" title="The whole operation. In view." lead="Explore the workspaces that connect your vehicles, customers, carriers and financial records." primaryCta={{href:"/contact?type=demo",label:"Book a demo"}} secondaryCta={{href:"#workspaces",label:"Explore the workspaces"}}/><section className="pvl-wrap pvl-section"><ProductTour/></section><section className="pvl-wrap pvl-section" id="workspaces"><Eyebrow>Find your workspace</Eyebrow><Links platform items={[
 {href:"/platform/dispatch",title:"Dispatch",body:"Coordinate active work, carrier assignments and exceptions."},
 {href:"/platform/orders",title:"Orders",body:"The vehicle, lane and customer record behind each movement."},
 {href:"/platform/accounting",title:"Accounting",body:"Invoicing, receivables, payables and financial reporting."},
@@ -20,3 +20,4 @@ export default function Page(){return <main className="pvl-redesign"><PageHero e
 {href:"/platform/flolens",title:"FloLens",body:"Bring workflow insights into view."},
 {href:"/platform/pin-protocol",title:"PIN Protocol",body:"Review identity and authorization at the handoff."}
 ]}/></section><CTA/></main>}
+

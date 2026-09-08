@@ -1,0 +1,92 @@
+{
+  "pages": 16,
+  "coverage": [
+    {
+      "route": "/platform/accounting/",
+      "section_scenes": 1,
+      "context_tiles": 0
+    },
+    {
+      "route": "/platform/agentic-ai/",
+      "section_scenes": 0,
+      "context_tiles": 4
+    },
+    {
+      "route": "/platform/agents/",
+      "section_scenes": 1,
+      "context_tiles": 10
+    },
+    {
+      "route": "/platform/ai/",
+      "section_scenes": 3,
+      "context_tiles": 0
+    },
+    {
+      "route": "/platform/business-intelligence/",
+      "section_scenes": 3,
+      "context_tiles": 0
+    },
+    {
+      "route": "/platform/carriers/",
+      "section_scenes": 2,
+      "context_tiles": 0
+    },
+    {
+      "route": "/platform/compliance/",
+      "section_scenes": 1,
+      "context_tiles": 0
+    },
+    {
+      "route": "/platform/dealer-portal/",
+      "section_scenes": 1,
+      "context_tiles": 0
+    },
+    {
+      "route": "/platform/dispatch/",
+      "section_scenes": 4,
+      "context_tiles": 0
+    },
+    {
+      "route": "/platform/dispatcher-bot/",
+      "section_scenes": 1,
+      "context_tiles": 7
+    },
+    {
+      "route": "/platform/flolens/",
+      "section_scenes": 1,
+      "context_tiles": 0
+    },
+    {
+      "route": "/platform/load-optimizer/",
+      "section_scenes": 3,
+      "context_tiles": 0
+    },
+    {
+      "route": "/platform/orders/",
+      "section_scenes": 3,
+      "context_tiles": 0
+    },
+    {
+      "route": "/platform/",
+      "section_scenes": 0,
+      "context_tiles": 15
+    },
+    {
+      "route": "/platform/pin-protocol/",
+      "section_scenes": 1,
+      "context_tiles": 10
+    },
+    {
+      "route": "/platform/route-optimizer/",
+      "section_scenes": 1,
+      "context_tiles": 0
+    }
+  ],
+  "protected_files_unchanged": [
+    "components/home/Hero.tsx",
+    "components/redesign/RoleWorkspaces.tsx",
+    "components/redesign/BotScenes.tsx",
+    "public/illustrations/lane-ecosystem.webp"
+  ],
+  "browser_visual_qa": false
+}
