@@ -24,3 +24,4 @@ export function FeatureGrid({ items, cols = 3 }: FeatureGridProps) {
     </div>
   );
 }
+

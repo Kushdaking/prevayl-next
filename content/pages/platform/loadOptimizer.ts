@@ -7,7 +7,7 @@ export const loadOptimizer: MarketingPageContent = {
   title: "Pack every truck to its profitable maximum.",
   lead: "Load Optimizer turns your active VIN queue into the most profitable load a carrier can haul. Drop a vehicle, swap a vehicle, add a rush — the load rebuilds and the carrier rate updates instantly.",
   description: "Pack every truck to its profitable maximum. Real-time load building from your active VIN queue.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   sections: [
     {
       bullets: [
@@ -46,7 +46,8 @@ export const loadOptimizer: MarketingPageContent = {
   ],
   finalCta: {
     title: "See Load Optimizer on your queue.",
-    primary: { label: "Start Free Trial", href: "/register" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Book a demo", href: "/contact" },
   },
 };
+

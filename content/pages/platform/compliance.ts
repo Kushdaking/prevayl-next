@@ -8,7 +8,7 @@ export const compliance: MarketingPageContent = {
   title: "The compliance burden, lifted.",
   lead: "DOT and FMCSA documentation, eBOL generation, insurance tracking, and audit-ready records — built into the same platform that runs your loads.",
   description: "Compliance for auto transport: DOT, FMCSA, eBOL, insurance tracking, audit-ready records.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "Book a Demo", href: "/contact" },
   sections: [
     {
@@ -24,7 +24,8 @@ export const compliance: MarketingPageContent = {
   ],
   finalCta: {
     title: "Run compliance where the work already happens.",
-    primary: { label: "Start Free Trial", href: "/register" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Contact", href: "/contact" },
   },
 };
+

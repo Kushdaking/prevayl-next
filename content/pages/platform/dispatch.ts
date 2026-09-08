@@ -8,7 +8,7 @@ export const dispatch: MarketingPageContent = {
   lead: "A real-time load board with drag-and-drop assignment, AI-suggested carrier matches, photo-verified inspections, and a digital BOL — all in one screen.",
   description:
     "Real-time dispatch board with AI carrier matching, drag-and-drop assignment, photo-verified pickup and delivery.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "Tour the Platform", href: "/platform" },
   heroImage: "/brand/pages/platform-dispatch.jpg",
   heroImageAlt:
@@ -58,7 +58,7 @@ export const dispatch: MarketingPageContent = {
         { title: "Lane templates", body: "Reusable lane templates with default rates, transit times, and notes." },
         { title: "Rate confirmations", body: "One-click PDF generation with your branding, signed by carrier in 30 seconds." },
         { title: "Status texts", body: "Auto-text dealers at pickup, in-transit, and delivery." },
-        { title: "Driver app", body: "iOS + Android. Free for carriers. Works offline. Photo + signature capture." },
+        { title: "Driver app", body: "iOS + Android. Capture documents in the driver workflow. Photo + signature capture." },
         { title: "Escalations", body: "Late, breakdown, no-show — escalations route to the right person." },
       ],
       cols: 3,
@@ -66,8 +66,9 @@ export const dispatch: MarketingPageContent = {
   ],
   finalCta: {
     title: "Ready to run dispatch on Prevayl?",
-    lead: "Start free. Pricing built around your volume.",
-    primary: { label: "Start Free Trial", href: "/register" },
+    lead: "Contact Sales to discuss your operation.",
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Book a demo", href: "/contact" },
   },
 };
+

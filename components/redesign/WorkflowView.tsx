@@ -6,3 +6,4 @@ const flows:Record<string,{title:string;lead:string;steps:string[]}>={
  "platform/flolens":{title:"Turn context into a next step.",lead:"Bring workflow information into view before deciding how to act.",steps:["Workflow context","Available evidence","Suggested next step","Team review","Follow-through"]}
 };
 export function WorkflowView({slug}:{slug:string}){const f=flows[slug];return f?<section className="pvl-wrap pvl-workflow-view"><p className="pvl-eyebrow">The workflow</p><h2>{f.title}</h2><p className="pvl-section-lead">{f.lead}</p><Steps items={f.steps}/></section>:null}
+

@@ -49,4 +49,3 @@ export function TechExperience({mode}:{mode:TechMode}){const c=config[mode];retu
 
 
 
-

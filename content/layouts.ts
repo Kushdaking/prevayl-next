@@ -154,3 +154,4 @@ export const layouts: Record<string, PageLayout> = {
 export function layoutFor(slug: string): PageLayout | undefined {
   return layouts[slug];
 }
+

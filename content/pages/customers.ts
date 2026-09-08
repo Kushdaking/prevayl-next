@@ -7,7 +7,7 @@ export const customers: MarketingPageContent = {
   title: "Built for the people who move the cars.",
   lead: "Brokerages, dealer groups and wholesalers run their whole operation on Prevayl \u2014 dispatch through accounting \u2014 without the duct-taped stack.",
   description: "Who Prevayl is for: brokerages, dealer groups, wholesalers, and owner-operators expanding into brokerage.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "Book a Demo", href: "/contact" },
   sections: [
     {
@@ -49,7 +49,8 @@ export const customers: MarketingPageContent = {
   finalCta: {
     title: "Ready to move?",
     lead: "Get started in under 10 minutes. Pricing is built around your volume.",
-    primary: { label: "Start Free Trial", href: "/register" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Book a Demo", href: "/contact" },
   },
 };
+

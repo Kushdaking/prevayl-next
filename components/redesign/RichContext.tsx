@@ -19,4 +19,3 @@ if(kind==="team")return <div className="rc-context rc-team"><header><span>SHARED
 if(kind==="principles")return <div className="rc-context rc-principles"><header><span>OPERATING DISCIPLINE</span><strong>Make the work visible.</strong></header><div className="rc-principle-grid">{list.map((s,i)=><div key={s} className={i===active?"active":""}><span>{["↗","▥","↻"][i]}</span><strong>{s}</strong><small>{["A record of the movement","A view of the outcome","A workflow to use again"][i]}</small></div>)}</div></div>;
 return null;
 }
-

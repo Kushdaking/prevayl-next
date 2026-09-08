@@ -8,11 +8,11 @@ export const solutionsBrokers: MarketingPageContent = {
   title: "One platform for every broker job.",
   goldTitle: true,
   lead: "No duct tape. Auto transport brokers are running their load board, QuickBooks, a carrier rate spreadsheet, and email chains simultaneously. Prevayl replaces all of it — dispatch, billing, compliance, and customer communication in one place.",
-  description: "Prevayl for auto transport brokers: real-time load board, AI carrier matching, QuickBooks sync, per-VIN pricing, Stripe carrier payouts.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
+  description: "Prevayl for auto transport brokers: real-time load board, AI carrier matching, QuickBooks sync, connected order workflows, Stripe carrier payouts.",
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "Book a Demo", href: "/contact" },
   heroImage: "/brand/pages/solutions-brokers.jpg",
-  heroImageAlt: "Prevayl for Brokers — operations console, AI matching, per-VIN pricing",
+  heroImageAlt: "Prevayl for Brokers — operations console, AI matching, connected order workflows",
   sections: [
     {
       heading: "The problems every broker knows.",
@@ -36,13 +36,13 @@ export const solutionsBrokers: MarketingPageContent = {
       ],
     },
     {
-      heading: "Per-VIN pricing. No seat tax.",
-      body: "Prevayl charges per VIN moved, not per seat. The AI tier activates at 200 orders/month at $1/VIN.",
+      heading: "Discuss your operation with Sales.",
+      body: "Bring your monthly vehicle volume, team structure and workflow requirements. Sales will walk through the right setup and commercial terms.",
       bullets: [
-        "Unlimited seat access at every plan tier",
-        "$1/VIN AI pricing activates at 200 orders/month",
-        "Pricing set to your volume and the modules you run",
-        "No per-seat add-ons for accounting or ops roles",
+        "Discuss the roles and access your team needs",
+        "Review the automation workflows you want to enable",
+        "Contact Sales for a proposal",
+        "Confirm the scope, integrations and account terms",
       ],
     },
     {
@@ -67,7 +67,8 @@ export const solutionsBrokers: MarketingPageContent = {
   finalCta: {
     title: "MOVE MORE. TRACK ALL OF IT.",
     lead: "Pricing is built around your volume. Get started in under 10 minutes.",
-    primary: { label: "Start Free Trial", href: "/register" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Book a Demo", href: "/contact" },
   },
 };
+

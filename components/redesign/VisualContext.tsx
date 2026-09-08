@@ -13,4 +13,3 @@ if(kind==="documents"||kind==="ledger"||kind==="pricing")return <div className="
 if(kind==="trend"||kind==="forecast")return <div className="cx-analysis"><div><span>EXAMPLE / OPERATIONAL READ</span><strong>{kind==="forecast"?"Recorded → Projected":"Movement → Performance"}</strong><p>{kind==="forecast"?"Separate what happened from the outlook.":"Read the pattern, then inspect the loads."}</p></div><div className="cx-spark-chart" aria-hidden="true"><svg viewBox="0 0 280 100"><path d="M0 90H280M0 50H280M0 10H280" stroke="#2e4057" strokeWidth="1"/><path d="M4 80L45 61L83 69L123 35L162 44L205 22L270 10" stroke="#C9A84C" strokeWidth="3" fill="none"/>{[[4,80],[83,69],[162,44],[270,10]].map(([x,y])=><circle key={x} cx={x} cy={y} r="4" fill="#F0F4F8"/>)}</svg></div></div>;
 return <RichContext kind={kind} active={active}/>;
 }
-

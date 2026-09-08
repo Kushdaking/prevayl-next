@@ -11,7 +11,7 @@ export const flolens: MarketingPageContent = {
   title: "Watches your workflow, suggests the fix.",
   lead: "The platform watches its own gaps — then tells you where automation would help. FloLens surfaces friction in how your team actually works, not a generic productivity lecture.",
   description: "FloLens workflow intelligence for auto transport operations.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "See platform", href: "/platform" },
   sections: [
     {
@@ -26,7 +26,8 @@ export const flolens: MarketingPageContent = {
   ],
   finalCta: {
     title: "Focus the board, not the noise.",
-    primary: { label: "Start Free Trial", href: "/register" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Contact", href: "/contact" },
   },
 };
+

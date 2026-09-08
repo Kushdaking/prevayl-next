@@ -13,3 +13,4 @@ export function Screen({src,title,caption,eager=false}:Props){
   </dialog>
  </figure>
 }
+

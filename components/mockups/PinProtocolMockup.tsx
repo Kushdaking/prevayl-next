@@ -214,3 +214,4 @@ export default function PinProtocolMockup() {
     </svg>
   );
 }
+

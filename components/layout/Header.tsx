@@ -56,8 +56,8 @@ export function Header() {
           >
             Sign in
           </Link>
-          <LinkButton href="/register" size="sm">
-            Get Started
+          <LinkButton href="/contact?type=sales" size="sm">
+            Contact Sales
           </LinkButton>
           <button
             type="button"

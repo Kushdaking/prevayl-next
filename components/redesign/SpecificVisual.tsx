@@ -16,4 +16,3 @@ if(title==="Recorded price position")return <Box name="negotiation-position"><h4
 if(title==="Operational follow-through")return <Box name="follow-through-agenda"><h4>Follow-up has an owner.</h4><div className="uv-agenda"><div><b>PICKUP</b><span>Confirm the milestone</span></div><div><b>DELIVERY</b><span>Collect the signed POD</span></div><div><b>BILLING</b><span>Review invoice readiness</span></div></div></Box>;
 return null;
 }
-

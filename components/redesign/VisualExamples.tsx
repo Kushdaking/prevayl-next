@@ -32,4 +32,3 @@ const pairs:Record<string,[string,string]>={
 const panels:Record<string,()=>ReactNode>={attention:Attention,margin:Margin,movement:Movement,carrier:Carrier,ranking:Ranking,money:Money,message:Message,trend:Trend};
 export function VisualExamples({slug}:{slug:string}){const pair=pairs[slug];if(!pair)return null;return <section className="pvl-wrap vx-section" aria-label="Workflow examples"><div className="vx-section-title"><div><p className="pvl-eyebrow">The details that move the work</p><h2>A closer look at the next step.</h2></div><p>Illustrative interfaces<br/>Sample data</p></div><div className="vx-grid">{pair.map(key=>{const Panel=panels[key];return <Panel key={key}/>})}</div></section>}
 export {BotScenes as BotVisual} from "./BotScenes";
-

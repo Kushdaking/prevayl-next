@@ -38,3 +38,4 @@ export const platformPages: Record<string, MarketingPageContent> = {
   flolens,
   "pin-protocol": pinProtocol,
 };
+

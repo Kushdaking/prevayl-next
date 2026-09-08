@@ -11,7 +11,7 @@ export const pinProtocol: MarketingPageContent = {
   title: "High-value handoffs that cannot be faked.",
   lead: "Cryptographic context binding for high-value vehicle handoffs — so the person releasing or receiving a VIN is the person who was authorized, with an audit trail that holds up later.",
   description: "PIN Protocol secure handoff for auto transport pickup and delivery.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "See platform", href: "/platform" },
   sections: [
     {
@@ -26,7 +26,8 @@ export const pinProtocol: MarketingPageContent = {
   ],
   finalCta: {
     title: "Handoffs that leave a trail.",
-    primary: { label: "Start Free Trial", href: "/register" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Contact", href: "/contact" },
   },
 };
+

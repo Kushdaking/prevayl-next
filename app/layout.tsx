@@ -37,12 +37,13 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://prevaylos.com"),
   title: {
     default: `The AI-native OS for auto transport · ${brand.name}`,
     template: `%s · ${brand.name}`,
   },
   description:
-    "TMS, CRM, accounting, dispatch, AI — one platform. Free for carriers. Per-VIN economics for brokers.",
+    "TMS, CRM, accounting, dispatch and AI in one platform. Contact Sales to discuss your operation.",
 };
 
 export default function RootLayout({
@@ -60,4 +61,3 @@ export default function RootLayout({
     </html>
   );
 }
-

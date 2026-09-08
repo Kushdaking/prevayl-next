@@ -77,11 +77,11 @@ export const hero = {
   eyebrow: "Auto Transport | TMS | CRM | OS",
   lines: ["THE AI-NATIVE", "OPERATING SYSTEM", "FOR AUTO TRANSPORT"],
   gradientLine: 1,
-  sub: "TMS, CRM, accounting, dispatch, AI - one platform. One subscription. Free for carriers. Predictable per-VIN economics for brokers.",
-  highlightInSub: "Free for carriers.",
-  primaryCta: { label: "Get Started Free", href: "/register" },
+  sub: "TMS, CRM, accounting, dispatch, AI - one platform. Built around your operation. Contact Sales to discuss your team, volume and workflows.",
+  highlightInSub: "Built around your operation.",
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "Tour the Platform", href: "/platform" },
-  note: "Pricing built to your volume | No card required",
+  note: "Talk through your operation with our sales team",
   liveStats: { activeLoads: 47, aiMatch: "94%" },
   liveLoads: [
     { lane: "Detroit, MI -> Atlanta, GA", status: "IN TRANSIT", tone: "gold" as const },
@@ -96,15 +96,15 @@ export const features = {
   items: [
     {
       title: "One living platform",
-      body: "17 workflows, 15 specialized bots. Auto-pricing, auto-matching, auto-vetting, auto-invoicing. Activates at 200 orders/month.",
+      body: "17 workflows, 15 specialized bots. Auto-pricing, auto-matching, auto-vetting, auto-invoicing. Discuss automation scope with Sales.",
     },
     {
-      title: "Always free for carriers",
-      body: "Owner-operators and small fleets pay nothing. Driver app, BOL, IFTA, payouts - all free. We make money from brokers, not from the people moving freight.",
+      title: "Built for carriers",
+      body: "Connect loads, driver paperwork and payment records. Contact Sales to discuss your operation.",
     },
     {
-      title: "Per-VIN, not per-load",
-      body: "$1 per VIN. That is it. No per-load fees, no per-mile cuts, no surprise quarterlies. Predictable economics that scale with you.",
+      title: "A fit for your operation",
+      body: "Contact Sales to discuss your team, vehicle volume, workflows and account requirements.",
     },
   ],
 } as const;
@@ -118,13 +118,13 @@ export const roles = {
       n: "01",
       title: "Brokers",
       href: "/solutions/brokers",
-      body: "AI carrier matching, per-VIN pricing, full TMS + accounting. Replace load board + QuickBooks.",
+      body: "AI carrier matching, connected order workflows, full TMS + accounting. Replace load board + QuickBooks.",
     },
     {
       n: "02",
       title: "Carriers",
       href: "/solutions/carriers",
-      body: "Always free. Driver app, BOL, IFTA, Stripe payouts in 1-2 days. $0/mo forever.",
+      body: "Driver workflows, BOL, trip records and payment visibility. Contact Sales.",
     },
     {
       n: "03",
@@ -149,7 +149,7 @@ export const modules = {
   items: [
     { href: "/platform/dispatch", title: "Dispatch", body: "Live load board, AI top-3 matching, drag-and-drop, eBOL, photo inspections" },
     { href: "/platform/ai", title: "AI", body: "17 workflows | 15 bots | pricing, matching, vetting" },
-    { href: "/platform/carriers", title: "Carriers", body: "Free forever. Driver app, Stripe payouts, IFTA, BOL" },
+    { href: "/platform/carriers", title: "Carriers", body: "Driver workflows, payment visibility, trip records and BOL" },
     { href: "/platform/compliance", title: "Compliance", body: "DOT, FMCSA, BOC-3, BOL, full audit log" },
     { href: "/platform/agents", title: "AI Agents", body: "Margin Guard | Carrier Match | Pricer | Status Bot" },
     { href: "/platform/business-intelligence", title: "BI", body: "11 live metrics, anomaly engine, risk scoring" },
@@ -159,56 +159,18 @@ export const modules = {
 } as const;
 
 export const pricing = {
-  title: "SIMPLE. PER-VIN.",
-  titleGold: "PREDICTABLE.",
-  lead: "Free for carriers. Always. Per-VIN for brokers. Volume pricing available.",
-  plans: [
-    {
-      name: "Solo",
-      range: "5-25 cars/month",
-      features: ["Free for carriers", "Dispatch + load board", "eBOL + inspection photos", "Basic invoicing + AR"],
-      featured: false,
-      cta: "Start Free Trial",
-      href: "/register",
-    },
-    {
-      name: "Pro",
-      range: "25-200 cars/month",
-      features: [
-        "Everything in Solo",
-        "AI Control Center (17 workflows)",
-        "Full accounting (replaces QuickBooks)",
-        "DamageDesk + Stripe Connect",
-        "QBO / Xero 2-way sync",
-      ],
-      featured: true,
-      badge: "MOST POPULAR",
-      cta: "Start Free Trial",
-      href: "/register",
-    },
-    {
-      name: "Growth",
-      range: "200-1,000 cars/month",
-      features: [
-        "Everything in Pro",
-        "Dedicated onboarding",
-        "Custom-branded dispatcher UI",
-        "Advanced analytics + BI",
-        "SSO + priority support",
-      ],
-      featured: false,
-      cta: "Start Free Trial",
-      href: "/register",
-    },
-  ],
-  footnote: "Annual prepay 10-15% off | Volume pricing set on a call",
-  fullComparisonHref: "/pricing",
+  title: "LET’S TALK.",
+  titleGold: "YOUR OPERATION.",
+  lead: "Contact Sales to discuss your team, monthly vehicle volume, workflows and integrations.",
+  plans: [],
+  footnote: "Pricing and account terms are provided directly by our sales team.",
+  fullComparisonHref: "/contact?type=sales",
 } as const;
 
 export const finalCta = {
   title: "READY TO MOVE?",
   lead: "Get started in under 10 minutes. Pricing is built around your volume and the modules you run.",
-  primary: { label: "Start Free Trial", href: "/register" },
+  primary: { label: "Contact Sales", href: "/contact?type=sales" },
   secondary: { label: "Book a 30-min Demo", href: "/contact?type=demo" },
 } as const;
 
@@ -244,3 +206,4 @@ export const footer = {
     },
   ],
 } as const;
+

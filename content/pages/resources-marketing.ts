@@ -130,3 +130,4 @@ export const docsIndex: MarketingPageContent = {
     primary: { label: "Getting started", href: "/resources/docs/getting-started" },
   },
 };
+

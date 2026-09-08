@@ -8,7 +8,7 @@ export const businessIntelligence: MarketingPageContent = {
   title: "Eleven live metrics. Two delay breakdowns. One click to drill in.",
   lead: "The real dashboard — not a mockup of one. Predict, flag, and explain. Not a black box.",
   description: "Business intelligence for auto transport: live metrics, delay breakdowns, anomaly detection, volume forecast, risk scoring.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "Book a Demo", href: "/contact" },
   sections: [
     {
@@ -54,7 +54,8 @@ export const businessIntelligence: MarketingPageContent = {
   finalCta: {
     title: "Ready to move?",
     lead: "Get started in under 10 minutes. Pricing is built around your volume and the modules you run.",
-    primary: { label: "Start Free Trial", href: "/register" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Book a Demo", href: "/contact" },
   },
 };
+

@@ -17,3 +17,4 @@ export const productViews:Record<string,{src:string;title:string;caption:string}
  "solutions/wholesale":{src:"/screenshots/platform/orders.webp",title:"Vehicle movements",caption:"Order records keep vehicle movements organized from intake onward."},
  "customers":{src:"/screenshots/platform/dispatch.webp",title:"Inside the platform",caption:"Explore the operating workspace during your demo."}
 };
+

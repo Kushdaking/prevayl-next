@@ -39,11 +39,11 @@ export const pageMedia = {
   },
   "solutions/brokers": {
     src: "/brand/pages/solutions-brokers.jpg",
-    alt: "Prevayl for Brokers — operations console, AI matching, per-VIN pricing",
+    alt: "Prevayl for Brokers — operations console, AI matching, connected order workflows",
   },
   "solutions/carriers": {
     src: "/brand/pages/solutions-carriers.jpg",
-    alt: "Prevayl for Carriers — free driver app, eBOL, Stripe payouts",
+    alt: "Prevayl for Carriers — driver workflows, eBOL and payment visibility",
   },
   "solutions/dealers": {
     src: "/brand/pages/solutions-dealers.jpg",
@@ -52,3 +52,4 @@ export const pageMedia = {
 } as const;
 
 export type PageMediaKey = keyof typeof pageMedia;
+

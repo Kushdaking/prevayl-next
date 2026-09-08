@@ -98,16 +98,16 @@ export const pages: PageDef[] = [
   {
     slug: "solutions/carriers",
     eyebrow: "Solutions · For Carriers",
-    title: "ALWAYS FREE.",
+    title: "BUILT FOR CARRIERS.",
     titleGold: "NO ASTERISK.",
-    lead: "Owner-operators and small fleets pay nothing. Prevayl earns from brokers, not from the people actually moving the freight.",
+    lead: "Connect your carrier operation with the dispatch desk. Contact Sales to discuss account access.",
     art: "/art/hero-3.webp",
     align: "right",
     points: [
       { title: "Driver app on iOS and Android", body: "Accept loads, capture inspection photos, and close jobs from the cab." },
       { title: "eBOL and IFTA", body: "Bill of lading and fuel tax handling included, not an add-on." },
       { title: "Stripe payouts", body: "Settlement in one to two days rather than on thirty-day terms." },
-      { title: "No monthly fee", body: "Free forever for carriers. Not a trial and not a loss-leader tier." },
+      { title: "Discuss your setup", body: "Contact Sales for pricing, access and account terms." },
     ],
   },
   {
@@ -141,3 +141,4 @@ export const pages: PageDef[] = [
     ],
   },
 ];
+

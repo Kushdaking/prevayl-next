@@ -337,3 +337,4 @@ export default function LoadBoardMockup() {
     </svg>
   );
 }
+

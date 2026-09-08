@@ -11,7 +11,7 @@ export const routeOptimizer: MarketingPageContent = {
   title: "Empty miles cost everyone money. Stop having them.",
   lead: "Route Optimizer scans your network and load book for deadhead reduction, better sequencing, and denser days on the road — without treating a car hauler like a generic LTL truck.",
   description: "Multi-stop route optimization for auto transport.",
-  primaryCta: { label: "Start Free Trial", href: "/register" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "See platform", href: "/platform" },
   sections: [
     {
@@ -26,7 +26,8 @@ export const routeOptimizer: MarketingPageContent = {
   ],
   finalCta: {
     title: "Plan the path. Keep the control.",
-    primary: { label: "Start Free Trial", href: "/register" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Contact", href: "/contact" },
   },
 };
+

@@ -1,8 +1,8 @@
 "use client";
 import { useState,useEffect,FormEvent } from "react";
-export function ContactForm(){
- const [busy,setBusy]=useState(false),[sent,setSent]=useState(false),[error,setError]=useState(""),[subject,setSubject]=useState("Book a demo"),[preview,setPreview]=useState(true);
- useEffect(()=>{const q=new URLSearchParams(window.location.search);setSubject(q.get("type")==="support"?"Support":q.get("type")==="sales"?"Pricing inquiry":q.get("type")==="partner"?"Partner inquiry":"Book a demo");setPreview(!["prevaylos.com","www.prevaylos.com"].includes(window.location.hostname))},[]);
+export function ContactForm({defaultSubject="Book a demo"}:{defaultSubject?:string}={}){
+ const [busy,setBusy]=useState(false),[sent,setSent]=useState(false),[error,setError]=useState(""),[subject,setSubject]=useState(defaultSubject),[preview,setPreview]=useState(true);
+ useEffect(()=>{const q=new URLSearchParams(window.location.search);setSubject(q.get("type")==="support"?"Support":q.get("type")==="sales"?"Pricing inquiry":q.get("type")==="partner"?"Partner inquiry":defaultSubject);setPreview(!["prevaylos.com","www.prevaylos.com"].includes(window.location.hostname))},[defaultSubject]);
  async function submit(e:FormEvent<HTMLFormElement>){e.preventDefault();setError("");if(preview){setError("This is the design preview. Your message has not been sent.");return}if(busy||sent)return;const form=e.currentTarget;const data=new FormData(form);setBusy(true);
  try{const response=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:data.get("name"),email:data.get("email"),company:data.get("company"),phone:data.get("phone"),subject,message:"Role: "+data.get("role")+"\nMonthly vehicles: "+data.get("volume")+"\n\n"+data.get("message")})});const result=await response.json();if(!response.ok||result.success!==true)throw new Error("We couldn’t submit your request. Please try again.");setSent(true)}catch{setError("We couldn’t submit your request. Your details are still here. Please try again.")}finally{setBusy(false)}}
  return <form className="pvl-form" onSubmit={submit}><h2 style={{fontSize:"2.4rem",marginBottom:25}}>Let’s talk through your operation.</h2>{preview&&<p className="pvl-form-note" style={{marginBottom:22}}>Design preview — submissions are disabled.</p>}<div className="pvl-form-grid">

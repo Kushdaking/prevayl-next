@@ -1,2 +1,3 @@
 import Link from "next/link";
 export default function NotFound(){return <main className="pvl-redesign"><section className="pvl-wrap pvl-page-hero" style={{paddingBottom:120}}><p className="pvl-eyebrow">404 / Page not found</p><h1>Let’s get you<br/>back on route.</h1><p className="pvl-section-lead">This page isn’t available. Explore the platform or head back to the homepage.</p><div className="pvl-actions"><Link href="/" className="pvl-button">Back to home →</Link><Link href="/platform" className="pvl-button secondary">Explore the platform</Link></div></section></main>}
+

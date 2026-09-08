@@ -5,18 +5,18 @@ export const solutionsCarriers: MarketingPageContent = {
   slug: "solutions/carriers",
   bandImage: "/brand/bands/solutions-carriers.jpg",
   eyebrow: "Solutions · For Carriers",
-  title: "Always free for carriers.",
+  title: "Built for carriers.",
   goldTitle: true,
-  lead: "Free forever. Driver app, BOL, IFTA, payouts. Always-free tools for owner-operators and small fleets. Zero subscription.",
-  description: "Prevayl free carrier tools: driver app, eBOL, IFTA, Stripe payouts in 1-2 days.",
-  primaryCta: { label: "Get the Free Driver App", href: "/register" },
+  lead: "Keep loads, driver paperwork and payment records connected. Contact Sales to discuss access for your operation.",
+  description: "Prevayl carrier tools: driver workflows, eBOL, trip records and payment visibility. Contact Sales.",
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "For Brokers", href: "/solutions/brokers" },
   heroImage: "/brand/pages/solutions-carriers.jpg",
-  heroImageAlt: "Prevayl for Carriers — free driver app, eBOL, Stripe payouts",
+  heroImageAlt: "Prevayl for Carriers — driver workflows, eBOL and payment visibility",
   sections: [
     {
       bullets: [
-        "Always free — no subscription, no per-load fee for carriers",
+        "Contact Sales for access and account terms",
         "iOS + Android driver app with offline support",
         "eBOL, photo inspections, signature capture",
         "IFTA-friendly trip records",
@@ -35,15 +35,16 @@ export const solutionsCarriers: MarketingPageContent = {
       cols: 2,
     },
     {
-      heading: "Why free forever",
+      heading: "Built around carrier work",
       paragraphs: [
-        "We make money from brokers and dealers who run the platform — not from the people moving freight.",
+        "Drivers need clear assignments, usable paperwork and visibility into the work ahead. Discuss your fleet and workflow with our sales team.",
       ],
     },
   ],
   finalCta: {
-    title: "Get the free driver app.",
-    primary: { label: "Start Free", href: "/register" },
+    title: "Explore the driver workflow.",
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Book a Demo", href: "/contact" },
   },
 };
+

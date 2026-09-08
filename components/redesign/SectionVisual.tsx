@@ -49,4 +49,3 @@ return <div className={"sx-visual "+(compact?"sx-compact":"")} data-section-visu
 
 
 
-

@@ -20,4 +20,3 @@ export default function Page(){return <main className="pvl-redesign"><PageHero e
 {href:"/platform/flolens",title:"FloLens",body:"Bring workflow insights into view."},
 {href:"/platform/pin-protocol",title:"PIN Protocol",body:"Review identity and authorization at the handoff."}
 ]}/></section><CTA/></main>}
-

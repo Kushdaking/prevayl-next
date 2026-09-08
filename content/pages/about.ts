@@ -27,8 +27,8 @@ export const aboutOverview: MarketingPageContent = {
       body: "If a process can't be tracked, it can't be measured. If it can't be measured, it can't be improved. If it can't be improved repeatably, it can't scale. Every workflow on Prevayl gets built against this lens.",
     },
     {
-      heading: "Free for the truckers",
-      body: "Owner-operators and small fleets pay nothing on Prevayl. Driver app, BOL, IFTA, payouts — all free. The brokers and dealers who profit from the lane are the ones who pay for the tooling. Not the truckers.",
+      heading: "Built for the truckers",
+      body: "Owner-operators and small fleets need the same connected information as the dispatch desk: loads, documents, trip records and payment status. Contact Sales to discuss your operation.",
     },
   ],
   finalCta: {
@@ -136,3 +136,4 @@ export const aboutCareers: MarketingPageContent = {
     primary: { label: "Contact", href: "/contact" },
   },
 };
+

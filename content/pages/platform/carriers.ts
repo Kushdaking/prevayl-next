@@ -5,15 +5,15 @@ export const carriers: MarketingPageContent = {
   slug: "platform/carriers",
   bandImage: "/brand/bands/platform-carriers.jpg",
   eyebrow: "Platform · Carriers",
-  title: "Free for carriers. Built to be used.",
-  lead: "Owner-operators and small fleets pay nothing. Driver app, BOL, IFTA, payouts — all free. The brokers who profit from the lane are the ones who pay for the tooling. Not the truckers.",
-  description: "Free carrier tools: driver app, BOL, IFTA, Stripe payouts. Always free for carriers.",
-  primaryCta: { label: "Get the Free Driver App", href: "/register" },
+  title: "Carrier tools. Built to be used.",
+  lead: "Give owner-operators and small fleets a connected view of loads, documents, trip records and payment status. Contact Sales to discuss your operation.",
+  description: "Carrier tools: driver workflows, BOL, trip records and payment visibility. Contact Sales.",
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "For Brokers", href: "/solutions/brokers" },
   sections: [
     {
       bullets: [
-        "Always free — no subscription, no per-load fee for carriers",
+        "Contact Sales for access and account terms",
         "iOS + Android driver app with offline support",
         "eBOL, photo inspections, signature capture",
         "IFTA-friendly trip records",
@@ -33,8 +33,9 @@ export const carriers: MarketingPageContent = {
     },
   ],
   finalCta: {
-    title: "Get the free driver app.",
-    primary: { label: "Start Free", href: "/register" },
+    title: "Explore the driver workflow.",
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Book a Demo", href: "/contact" },
   },
 };
+

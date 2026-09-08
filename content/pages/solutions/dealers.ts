@@ -9,7 +9,7 @@ export const solutionsDealers: MarketingPageContent = {
   goldTitle: true,
   lead: "Your branding, your domain, your colors. Real-time VIN tracking. Stop the phone tag. Self-serve booking and dispatch.",
   description: "Prevayl for dealers: white-label portal, real-time VIN tracking, self-serve booking.",
-  primaryCta: { label: "Get Started Free", href: "/register" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "Book a Demo", href: "/contact" },
   heroImage: "/brand/pages/solutions-dealers.jpg",
   heroImageAlt: "Prevayl for Dealers — white-label portal, real-time VIN tracking",
@@ -40,7 +40,8 @@ export const solutionsDealers: MarketingPageContent = {
   ],
   finalCta: {
     title: "Give dealers a portal that works.",
-    primary: { label: "Start Free Trial", href: "/register" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Book a Demo", href: "/contact" },
   },
 };
+

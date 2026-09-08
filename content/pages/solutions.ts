@@ -9,13 +9,13 @@ export const solutionsOverview: MarketingPageContent = {
   goldTitle: true,
   lead: "Auto transport has four roles, four sets of pain points, and one shared workflow. Prevayl serves all of them on one platform — without forcing anyone to compromise.",
   description: "Solutions for brokers, carriers, dealers, and wholesale auctions.",
-  primaryCta: { label: "Get Started Free", href: "/register" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "Book a 30-min Demo", href: "/contact" },
   sections: [
     {
       features: [
-        { n: "01", title: "For Brokers", body: "Replace your load board, QuickBooks, and spreadsheets with one platform. AI carrier matching, per-VIN pricing, no per-seat tax. TMS · billing · compliance · AI" },
-        { n: "02", title: "For Carriers", body: "Always-free tools for owner-operators and small fleets. Driver app, BOL, IFTA, 1-2 day Stripe payouts. Zero subscription. $0/mo · iOS + Android · payouts in days" },
+        { n: "01", title: "For Brokers", body: "Replace your load board, QuickBooks, and spreadsheets with one platform. AI carrier matching, connected workflows and account terms discussed with Sales. TMS · billing · compliance · AI" },
+        { n: "02", title: "For Carriers", body: "Connected tools for owner-operators and small fleets. Loads, driver paperwork, trip records and payment visibility. Contact Sales." },
         { n: "03", title: "For Dealers", body: "White-label customer portal. Track every VIN you order. Stop the phone tag. Self-serve booking and dispatch. Branded portal · real-time VIN tracking" },
         { n: "04", title: "Wholesale Auctions", body: "From auction lot to buyer location in one workflow. Direct integrations with Manheim, Adesa, OVE. Eliminate the handoff lag. Manheim · Adesa · OVE integrations" },
       ],
@@ -29,8 +29,9 @@ export const solutionsOverview: MarketingPageContent = {
     },
   ],
   finalCta: {
-    title: "Get started free.",
-    primary: { label: "Get Started Free", href: "/register" },
+    title: "Talk to Sales.",
+    primary: { label: "Contact Sales", href: "/contact?type=sales" },
     secondary: { label: "Book a 30-min Demo", href: "/contact" },
   },
 };
+
