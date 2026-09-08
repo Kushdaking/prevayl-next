@@ -5,3 +5,5 @@
 .tech-links .sx-tech-link{display:block;padding:16px;min-width:0}.sx-tech-link>.sx-mini{margin:0 0 20px;height:160px}.sx-tech-link>span{display:block}.tech-detail .sx-mini{max-width:600px}.sx-compact .sx-main{min-height:220px}.pvl-empty+.sx-visual{margin-bottom:70px}
 
 .sx-mini{position:relative;padding-top:28px}.sx-mini-label{position:absolute;top:7px;right:10px;font:9px var(--font-inter);letter-spacing:.1em;color:#a8c4d8;line-height:1}
+
+.pvl-story{row-gap:36px}.pvl-story>.sx-visual{align-self:start;min-height:min-content}
