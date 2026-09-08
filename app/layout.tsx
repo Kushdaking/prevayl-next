@@ -11,6 +11,7 @@ import "./visual-depth.css";
 import "./bot-scenes.css";
 import "./platform-visuals.css";
 import "./resources.css";
+import "./unique-visuals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { brand } from "@/content/site";
