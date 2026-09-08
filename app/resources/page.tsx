@@ -1,12 +1,4 @@
-import type { Metadata } from "next";
-import { MarketingPage } from "@/components/shared/MarketingPage";
-import { resourcesOverview } from "@/content/pages/resources";
+import {ResourceHub} from "@/components/redesign/ResourceHub";
+export const metadata={title:"Resources",description:"Practical Prevayl guides for dispatch, customers, accounting and integrations."};
+export default function Page(){return <ResourceHub/>}
 
-export const metadata: Metadata = {
-  title: resourcesOverview.title,
-  description: resourcesOverview.description,
-};
-
-export default function Page() {
-  return <MarketingPage page={resourcesOverview} />;
-}

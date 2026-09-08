@@ -1,0 +1,56 @@
+{
+  "pages": 12,
+  "guides": 8,
+  "original_operating_notes": 3,
+  "routes": [
+    {
+      "route": "/resources/blog/",
+      "in_page_links": 3
+    },
+    {
+      "route": "/resources/docs/accounting/",
+      "in_page_links": 5
+    },
+    {
+      "route": "/resources/docs/api/",
+      "in_page_links": 5
+    },
+    {
+      "route": "/resources/docs/compliance/",
+      "in_page_links": 5
+    },
+    {
+      "route": "/resources/docs/dealer-portal/",
+      "in_page_links": 5
+    },
+    {
+      "route": "/resources/docs/dispatch/",
+      "in_page_links": 5
+    },
+    {
+      "route": "/resources/docs/getting-started/",
+      "in_page_links": 5
+    },
+    {
+      "route": "/resources/docs/",
+      "in_page_links": 1
+    },
+    {
+      "route": "/resources/docs/webhooks/",
+      "in_page_links": 5
+    },
+    {
+      "route": "/resources/docs/zapier/",
+      "in_page_links": 5
+    },
+    {
+      "route": "/resources/",
+      "in_page_links": 1
+    },
+    {
+      "route": "/resources/security/",
+      "in_page_links": 0
+    }
+  ],
+  "browser_visual_qa": false
+}
