@@ -9,8 +9,8 @@ export const solutionsBrokers: MarketingPageContent = {
   goldTitle: true,
   lead: "No duct tape. Auto transport brokers are running their load board, QuickBooks, a carrier rate spreadsheet, and email chains simultaneously. Prevayl replaces all of it — dispatch, billing, compliance, and customer communication in one place.",
   description: "Prevayl for auto transport brokers: real-time load board, AI carrier matching, QuickBooks sync, connected order workflows, Stripe carrier payouts.",
-  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
-  secondaryCta: { label: "Book a Demo", href: "/contact" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales&role=brokers" },
+  secondaryCta: { label: "Book a Demo", href: "/contact?type=demo&role=brokers" },
   heroImage: "/brand/pages/solutions-brokers.jpg",
   heroImageAlt: "Prevayl for Brokers — operations console, AI matching, connected order workflows",
   sections: [
@@ -67,8 +67,8 @@ export const solutionsBrokers: MarketingPageContent = {
   finalCta: {
     title: "MOVE MORE. TRACK ALL OF IT.",
     lead: "Pricing is built around your volume. Get started in under 10 minutes.",
-    primary: { label: "Contact Sales", href: "/contact?type=sales" },
-    secondary: { label: "Book a Demo", href: "/contact" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales&role=brokers" },
+    secondary: { label: "Book a Demo", href: "/contact?type=demo&role=brokers" },
   },
 };
 

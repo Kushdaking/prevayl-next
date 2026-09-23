@@ -9,8 +9,8 @@ export const solutionsWholesale: MarketingPageContent = {
   goldTitle: true,
   lead: "Direct integrations with Manheim, ADESA, OVE. Eliminate the handoff lag. VIN-level tracking across all active units.",
   description: "Prevayl for auctions and wholesale: Manheim, ADESA, OVE, multi-carrier loads, condition chain of custody.",
-  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
-  secondaryCta: { label: "Book a Demo", href: "/contact" },
+  primaryCta: { label: "Contact Sales", href: "/contact?type=sales&role=wholesale" },
+  secondaryCta: { label: "Book a Demo", href: "/contact?type=demo&role=wholesale" },
   sections: [
     {
       heading: "Auction imports that become orders",
@@ -55,8 +55,8 @@ export const solutionsWholesale: MarketingPageContent = {
   ],
   finalCta: {
     title: "MOVE MORE. TRACK ALL OF IT.",
-    primary: { label: "Contact Sales", href: "/contact?type=sales" },
-    secondary: { label: "Book a Demo", href: "/contact" },
+    primary: { label: "Contact Sales", href: "/contact?type=sales&role=wholesale" },
+    secondary: { label: "Book a Demo", href: "/contact?type=demo&role=wholesale" },
   },
 };
 

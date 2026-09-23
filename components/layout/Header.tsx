@@ -87,17 +87,18 @@ export function Header() {
               >
                 {item.label}
               </Link>
-              {"children" in item &&
-                item.children?.map((child) => (
+              {"children" in item && item.children && <details className="py-2">
+                <summary className="cursor-pointer py-2 text-sm text-prevayl-gold">Explore {item.label.toLowerCase()}</summary>
+                {item.children.map((child) => (
                   <Link
                     key={child.href}
                     href={child.href}
-                    className="block py-2 pl-4 text-sm text-prevayl-muted border-b border-prevayl-navy-4/30"
+                    className="block py-3 pl-4 text-sm text-prevayl-muted border-b border-prevayl-navy-4/30"
                     onClick={() => setOpen(false)}
                   >
                     — {child.label}
                   </Link>
-                ))}
+                ))}</details>}
             </div>
           ))}
           <Link href="/login" onClick={() => setOpen(false)} className="block py-3 text-prevayl-gold">Sign in →</Link>

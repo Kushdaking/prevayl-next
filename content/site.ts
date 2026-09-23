@@ -81,10 +81,10 @@ export const hero = {
   eyebrow: "Auto Transport | TMS | CRM | OS",
   lines: ["THE AI-NATIVE", "OPERATING SYSTEM", "FOR AUTO TRANSPORT"],
   gradientLine: 1,
-  sub: "TMS, CRM, fleet operations, accounting and AI—one platform for brokers and trucking companies. Built around your operation. Connect dispatch, live tracking and driver reconciliation from order to settlement.",
+  sub: "Connect brokers, trucking companies, dealers and wholesale teams around the same vehicle movement. Built around your operation. From the first order to delivery and settlement.",
   highlightInSub: "Built around your operation.",
   primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
-  secondaryCta: { label: "Tour the Platform", href: "/platform" },
+  secondaryCta: { label: "Find your workflow", href: "#everyone-in-the-lane" },
   note: "Talk through your operation with our sales team",
   liveStats: { activeLoads: 47, aiMatch: "94%" },
   liveLoads: [
@@ -211,3 +211,4 @@ export const footer = {
     },
   ],
 } as const;
+

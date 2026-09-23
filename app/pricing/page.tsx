@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/PageHero";
 import { ContactForm } from "@/components/redesign/ContactForm";
 export const metadata: Metadata = {
-  title: "Contact Sales",
+  title: "Pricing — Built around your operation",
   description: "Discuss your team, vehicle volume and workflows with Prevayl Sales. Contact us for pricing and account terms.",
   alternates: { canonical: "https://prevaylos.com/pricing/" },
 };
 export default function Page() {
   return <main className="pvl-redesign">
-    <PageHero eyebrow="Contact Sales" title="Built around your operation."
+    <PageHero eyebrow="Pricing" title="Built around your operation."
       lead="Tell us how your team moves vehicles. We’ll walk through the platform, your requirements and a proposal."
       primaryCta={{href:"#sales",label:"Contact Sales"}}
       secondaryCta={{href:"/platform",label:"Explore the platform"}} />
