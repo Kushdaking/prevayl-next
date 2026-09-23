@@ -1,3 +1,4 @@
+import "./contact.css";
 import {SectionVisual} from "@/components/redesign/SectionVisual";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/PageHero";
