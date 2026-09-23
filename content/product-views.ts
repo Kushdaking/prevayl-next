@@ -8,13 +8,12 @@ export const productViews:Record<string,{src:string;title:string;caption:string}
  "platform/agents":{src:"/screenshots/platform/ai.png",title:"AI workspace",caption:"Explore the platform’s AI workspace alongside the bot walkthrough."},
  "platform/dispatcher-bot":{src:"/screenshots/platform/ai.png",title:"AI workspace",caption:"The AI workspace. Automation behavior depends on your enabled stages and settings."},
  "platform/business-intelligence":{src:"/screenshots/platform/business-intelligence.png",title:"Business Intelligence",caption:"Operational reporting across the business."},
- "platform/carriers":{src:"/screenshots/platform/carriers.png",title:"Carrier network",caption:"Carrier network visibility inside Prevayl."},
+
  "platform/load-optimizer":{src:"/screenshots/platform/load-optimizer.webp",title:"Load planning",caption:"The load-planning workspace."},
  "platform/pin-protocol":{src:"/screenshots/platform/pin-protocol.png",title:"PIN Protocol",caption:"The PIN Protocol workspace. Review your organization’s settings before enabling a workflow."},
  "solutions/brokers":{src:"/screenshots/platform/dispatch.png",title:"Broker Command Center",caption:"One operational view for the brokerage team."},
- "solutions/carriers":{src:"/screenshots/platform/carriers.png",title:"Carrier network",caption:"The network view used to coordinate carrier operations."},
+
  "solutions/dealers":{src:"/screenshots/platform/orders.png",title:"Order coordination",caption:"The order workspace used to coordinate vehicle movements."},
  "solutions/wholesale":{src:"/screenshots/platform/orders.png",title:"Vehicle movements",caption:"Order records keep vehicle movements organized from intake onward."},
  "customers":{src:"/screenshots/platform/dispatch.png",title:"Inside the platform",caption:"Explore the operating workspace during your demo."}
 };
-

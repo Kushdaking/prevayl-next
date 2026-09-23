@@ -1,41 +1,97 @@
 import type { MarketingPageContent } from "../types";
-
-/** Live copy from prevaylos.com/platform/carriers */
 export const carriers: MarketingPageContent = {
-  slug: "platform/carriers",
-  bandImage: "/brand/bands/platform-carriers.jpg",
-  eyebrow: "Platform · Carriers",
-  title: "Carrier tools. Built to be used.",
-  lead: "Give owner-operators and small fleets a connected view of loads, documents, trip records and payment status. Contact Sales to discuss your operation.",
-  description: "Carrier tools: driver workflows, BOL, trip records and payment visibility. Contact Sales.",
-  primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
-  secondaryCta: { label: "For Brokers", href: "/solutions/brokers" },
-  sections: [
-    {
-      bullets: [
-        "Contact Sales for access and account terms",
-        "iOS + Android driver app with offline support",
-        "eBOL, photo inspections, signature capture",
-        "IFTA-friendly trip records",
-        "Stripe Connect payouts in 1–2 days after delivery",
-      ],
-    },
-    {
-      heading: "Driver app",
-      body: "Built for the cab, not a desktop. Live loads, status updates, required photos, and eBOL without calling the desk for every step.",
-      features: [
-        { title: "Live loads", body: "See assigned loads, addresses, and notes without calling dispatch." },
-        { title: "Photos + eBOL", body: "Required-photo enforcement and digital signature at pickup and delivery." },
-        { title: "Offline capable", body: "Capture evidence when signal is bad; sync when you're back online." },
-        { title: "Payouts", body: "Stripe Connect. 1–2 day settlements after delivery confirmation." },
-      ],
-      cols: 2,
-    },
-  ],
-  finalCta: {
-    title: "Explore the driver workflow.",
-    primary: { label: "Contact Sales", href: "/contact?type=sales" },
-    secondary: { label: "Book a Demo", href: "/contact" },
+  "slug": "platform/carriers",
+  "eyebrow": "Platform · Carrier TMS",
+  "title": "The TMS behind your trucking operation.",
+  "goldTitle": true,
+  "lead": "Manage the full operating cycle: customer orders, dispatch, fleet and drivers, live tracking, delivery records, accounting and reconciliation. Built for auto transport companies running their own business.",
+  "description": "Auto transport TMS for trucking companies: dispatch, fleet management, live tracking, ELD connections, OEM EDI, accounting and driver reconciliation.",
+  "primaryCta": {
+    "label": "Book a trucking company demo",
+    "href": "/contact?type=demo"
   },
+  "secondaryCta": {
+    "label": "For trucking companies",
+    "href": "/solutions/carriers"
+  },
+  "sections": [
+    {
+      "heading": "Plan and dispatch your fleet",
+      "body": "Run the work you already have: direct customer orders, brokered loads and recurring lanes. The load board is one source of freight. Prevayl gives your office and drivers the tools to manage the company that moves it.",
+      "features": [
+        {
+          "title": "Dispatch & load planning",
+          "body": "Organize orders, assign drivers and equipment, plan vehicle capacity and coordinate pickup and delivery stops."
+        },
+        {
+          "title": "Fleet operations",
+          "body": "Keep trucks, trailers, maintenance, expenses and operating records connected to the work your fleet performs."
+        },
+        {
+          "title": "Customer relationships",
+          "body": "Manage customer and order context from the first request through delivery and billing."
+        }
+      ]
+    },
+    {
+      "heading": "Connect the truck to the office",
+      "body": "Connect vehicle location and driver activity to the operating plan. Give dispatch visibility into work in motion and the information needed to respond when a trip changes.",
+      "features": [
+        {
+          "title": "Live fleet visibility",
+          "body": "Follow vehicle positions and shipment progress using connected tracking sources. Location freshness depends on device reporting and connectivity."
+        },
+        {
+          "title": "ELD connections",
+          "body": "Bring supported ELD and telematics data into fleet workflows, including location and available hours-of-service information. Confirm your provider, permissions and data coverage during setup."
+        },
+        {
+          "title": "Driver execution",
+          "body": "Keep assignments, pickup instructions, inspection photos, signatures and eBOL with the load so the office can follow the same record."
+        }
+      ]
+    },
+    {
+      "heading": "Connect OEM and enterprise freight",
+      "body": "Support OEM and enterprise transportation workflows through in-house EDI and the VTIMS connection. Bring tender and shipment-status exchange into the same operating process your dispatchers use to move vehicles.",
+      "bullets": [
+        "EDI workflows for load tenders, responses, shipment status and acknowledgments",
+        "Partner-specific mapping, credentials and acceptance testing during onboarding",
+        "API connections for the systems your customers and office already use"
+      ],
+      "paragraphs": [
+        "Bring us your OEM or logistics partner requirements. We will scope the connection, transaction set and onboarding steps with you."
+      ]
+    },
+    {
+      "heading": "Reconcile the work and the money",
+      "body": "Carry the load record forward into customer billing, driver pay, settlements and financial review.",
+      "features": [
+        {
+          "title": "Accounting",
+          "body": "Work through invoicing, accounts receivable, accounts payable, general ledger and financial reporting with the operational records behind the numbers."
+        },
+        {
+          "title": "Driver reconciliation",
+          "body": "Review load-level driver pay and adjustments, resolve differences and apply approved reconciliations to settlement and payroll workflows."
+        },
+        {
+          "title": "Costs & profitability",
+          "body": "Review revenue alongside driver pay, fuel, expenses and equipment costs to understand where the operation earns its margin."
+        }
+      ]
+    }
+  ],
+  "finalCta": {
+    "title": "Show us how your trucking company runs.",
+    "lead": "Bring your fleet size, driver pay process, ELD provider and OEM requirements. Walk through dispatch, tracking, accounting and reconciliation with your operation in mind.",
+    "primary": {
+      "label": "Book a trucking company demo",
+      "href": "/contact?type=demo"
+    },
+    "secondary": {
+      "label": "Explore EDI & VTIMS",
+      "href": "/platform/integrations/vtims-edi"
+    }
+  }
 };
-

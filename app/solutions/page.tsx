@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const ROLE_LINKS = [
   { href: "/solutions/brokers", label: "Brokers" },
-  { href: "/solutions/carriers", label: "Carriers" },
+  { href: "/solutions/carriers", label: "Trucking Companies" },
   { href: "/solutions/dealers", label: "Dealers" },
   { href: "/solutions/wholesale", label: "Auctions / Wholesale" },
 ];
@@ -35,4 +35,3 @@ export default function Page() {
     </>
   );
 }
-

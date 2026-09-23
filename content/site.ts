@@ -30,7 +30,7 @@ export const nav = [
       { label: "AI", href: "/platform/ai" },
       { label: "Agentic AI", href: "/platform/agentic-ai" },
       { label: "Business Intelligence", href: "/platform/business-intelligence" },
-      { label: "Carriers", href: "/platform/carriers" },
+      { label: "Carrier TMS", href: "/platform/carriers" },
       { label: "Compliance", href: "/platform/compliance" },
       { label: "Meet the Agents", href: "/platform/agents" },
       { label: "Load Optimizer", href: "/platform/load-optimizer" },
@@ -49,7 +49,7 @@ export const nav = [
     href: "/solutions",
     children: [
       { label: "Brokers", href: "/solutions/brokers" },
-      { label: "Carriers", href: "/solutions/carriers" },
+      { label: "Trucking Companies", href: "/solutions/carriers" },
       { label: "Dealers", href: "/solutions/dealers" },
       { label: "Auctions / Wholesale", href: "/solutions/wholesale" },
     ],
@@ -81,7 +81,7 @@ export const hero = {
   eyebrow: "Auto Transport | TMS | CRM | OS",
   lines: ["THE AI-NATIVE", "OPERATING SYSTEM", "FOR AUTO TRANSPORT"],
   gradientLine: 1,
-  sub: "TMS, CRM, accounting, dispatch, AI - one platform. Built around your operation. Contact Sales to discuss your team, volume and workflows.",
+  sub: "TMS, CRM, fleet operations, accounting and AI—one platform for brokers and trucking companies. Built around your operation. Connect dispatch, live tracking and driver reconciliation from order to settlement.",
   highlightInSub: "Built around your operation.",
   primaryCta: { label: "Contact Sales", href: "/contact?type=sales" },
   secondaryCta: { label: "Tour the Platform", href: "/platform" },
@@ -128,7 +128,7 @@ export const roles = {
       n: "02",
       title: "Carriers",
       href: "/solutions/carriers",
-      body: "Driver workflows, BOL, trip records and payment visibility. Contact Sales.",
+      body: "Run your trucking company: dispatch, fleet management, live tracking, ELD, accounting and driver reconciliation.",
     },
     {
       n: "03",
@@ -153,7 +153,7 @@ export const modules = {
   items: [
     { href: "/platform/dispatch", title: "Dispatch", body: "Live load board, AI top-3 matching, drag-and-drop, eBOL, photo inspections" },
     { href: "/platform/ai", title: "AI", body: "17 workflows | 15 bots | pricing, matching, vetting" },
-    { href: "/platform/carriers", title: "Carriers", body: "Driver workflows, payment visibility, trip records and BOL" },
+    { href: "/platform/carriers", title: "Carrier TMS", body: "Fleet dispatch, live tracking, ELD, accounting and driver reconciliation" },
     { href: "/platform/compliance", title: "Compliance", body: "DOT, FMCSA, BOC-3, BOL, full audit log" },
     { href: "/platform/agents", title: "AI Agents", body: "Margin Guard | Carrier Match | Pricer | Status Bot" },
     { href: "/platform/business-intelligence", title: "BI", body: "11 live metrics, anomaly engine, risk scoring" },
@@ -195,7 +195,7 @@ export const footer = {
       title: "Solutions",
       links: [
         { href: "/solutions/brokers", label: "Brokers" },
-        { href: "/solutions/carriers", label: "Carriers" },
+        { href: "/solutions/carriers", label: "Trucking Companies" },
         { href: "/solutions/dealers", label: "Dealers" },
         { href: "/solutions/wholesale", label: "Auctions" },
       ],
@@ -211,4 +211,3 @@ export const footer = {
     },
   ],
 } as const;
-

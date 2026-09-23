@@ -15,7 +15,7 @@ export const solutionsOverview: MarketingPageContent = {
     {
       features: [
         { n: "01", title: "For Brokers", body: "Replace your load board, QuickBooks, and spreadsheets with one platform. AI carrier matching, connected workflows and account terms discussed with Sales. TMS · billing · compliance · AI" },
-        { n: "02", title: "For Carriers", body: "Connected tools for owner-operators and small fleets. Loads, driver paperwork, trip records and payment visibility. Contact Sales." },
+        { n: "02", title: "For Trucking Companies", body: "A TMS for running your company: dispatch, fleet and drivers, live tracking, ELD connections, OEM EDI workflows, accounting and driver reconciliation." },
         { n: "03", title: "For Dealers", body: "White-label customer portal. Track every VIN you order. Stop the phone tag. Self-serve booking and dispatch. Branded portal · real-time VIN tracking" },
         { n: "04", title: "Wholesale Auctions", body: "From auction lot to buyer location in one workflow. Direct integrations with Manheim, Adesa, OVE. Eliminate the handoff lag. Manheim · Adesa · OVE integrations" },
       ],
@@ -34,4 +34,3 @@ export const solutionsOverview: MarketingPageContent = {
     secondary: { label: "Book a 30-min Demo", href: "/contact" },
   },
 };
-

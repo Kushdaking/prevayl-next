@@ -8,7 +8,7 @@ export default function Page(){return <main className="pvl-redesign"><PageHero e
 {href:"/platform/dispatch",title:"Dispatch",body:"Coordinate active work, carrier assignments and exceptions."},
 {href:"/platform/orders",title:"Orders",body:"The vehicle, lane and customer record behind each movement."},
 {href:"/platform/accounting",title:"Accounting",body:"Invoicing, receivables, payables and financial reporting."},
-{href:"/platform/carriers",title:"Carriers",body:"Your carrier network and operating relationships."},
+{href:"/platform/carriers",title:"Carrier TMS",body:"Run fleet dispatch, driver workflows, ELD and live tracking, accounting and reconciliation."},
 {href:"/platform/dealer-portal",title:"Dealer portal",body:"A place for your customers to follow their vehicles."},
 {href:"/platform/compliance",title:"Compliance",body:"Carrier documentation and the checks behind assignment."},
 {href:"/platform/agents",title:"AI Bots",body:"Meet Margin Guard, Carrier Match, Pricer and more."},
