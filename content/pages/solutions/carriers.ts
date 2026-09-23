@@ -21,7 +21,7 @@ export const solutionsCarriers: MarketingPageContent = {
       "features": [
         {
           "title": "Dispatch & load planning",
-          "body": "Organize orders, assign drivers and equipment, plan vehicle capacity and coordinate pickup and delivery stops."
+          "body": "Use the load builder to select vehicles from your order pool, including mapped EDI tenders. Group movements, review truck capacity and stops, then stage the load or assign a driver."
         },
         {
           "title": "Fleet operations",
@@ -34,12 +34,12 @@ export const solutionsCarriers: MarketingPageContent = {
       ]
     },
     {
-      "heading": "Live tracking. ELD context. A clearer dispatch desk.",
-      "body": "Connect vehicle location and driver activity to the operating plan. Give dispatch visibility into work in motion and the information needed to respond when a trip changes.",
+      "heading": "Your ELD feeds the live operations map.",
+      "body": "Your ELD connection populates the live fleet map with truck positions. Operations managers can select a vehicle to review its driver, active load, reporting freshness and available hours-of-service data, keeping the fleet and the work in one view.",
       "features": [
         {
           "title": "Live fleet visibility",
-          "body": "Follow vehicle positions and shipment progress using connected tracking sources. Location freshness depends on device reporting and connectivity."
+          "body": "ELD-fed vehicle positions appear directly on the live map. See where trucks are, inspect the movement behind each marker and identify stale location reports."
         },
         {
           "title": "ELD connections",
