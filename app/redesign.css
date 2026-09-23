@@ -42,7 +42,7 @@
 .pvl-lightbox-head{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1px solid #334354}
 .pvl-lightbox-head button{padding:8px 16px;border:1px solid #41536a;border-radius:5px}
 .pvl-lightbox-scroll{overflow:auto;max-height:calc(94vh - 85px)}
-.pvl-lightbox-scroll img{display:block;width:100%;min-width:1200px;height:auto}
+.pvl-lightbox-scroll img{display:block;width:auto;max-width:100%;height:auto;margin-inline:auto}
 .pvl-page-index{display:flex;gap:22px;padding:20px 0 24px;flex-wrap:wrap;border-bottom:1px solid var(--pvl-line);font-size:.84rem}
 .pvl-page-index>span{color:var(--pvl-muted)}
 .pvl-page-index a{color:var(--pvl-text)}
@@ -174,3 +174,4 @@
 .pvl-workflow-stage[open] .pvl-workflow-plus{transform:rotate(45deg)}
 .pvl-workflow-body{padding:5px 30px 30px 90px;max-width:1100px}
 @media(max-width:700px){.pvl-workflow-view{padding:24px}.pvl-workflow-stage summary{padding:20px;gap:18px}.pvl-workflow-body{padding:0 22px 25px}.pvl-workflow-stage summary strong{font-size:1.05rem}}
+
