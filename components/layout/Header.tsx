@@ -50,6 +50,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <a href="https://app.prevaylos.com/carrier/apply" className="hidden sm:block text-sm font-semibold text-prevayl-gold">Carrier signup</a>
           <Link
             href="/login"
             className="hidden sm:block text-sm font-medium text-prevayl-muted hover:text-prevayl-gold px-3 py-1.5 transition-colors"
@@ -101,6 +102,7 @@ export function Header() {
                 ))}</details>}
             </div>
           ))}
+          <a href="https://app.prevaylos.com/carrier/apply" className="block py-3 text-prevayl-gold">Free carrier signup →</a>
           <Link href="/login" onClick={() => setOpen(false)} className="block py-3 text-prevayl-gold">Sign in →</Link>
         </nav>
       )}
