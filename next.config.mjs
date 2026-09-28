@@ -1,3 +1,5 @@
+const PAGES_ORIGIN = 'https://prevayl-web.pages.dev';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -14,7 +16,17 @@ const nextConfig = {
   // the platform (droplet). Both are Next apps, so both would claim /_next/*.
   // Pointing assets at the pages.dev origin removes that collision entirely —
   // same pattern already running on cars2godelivers.com.
-  assetPrefix: process.env.ASSET_PREFIX || undefined,
+  //
+  // Production builds DEFAULT to the pages.dev prefix. A build without it
+  // renders every marketing page unstyled on prevaylos.com (the Worker sends
+  // /_next/* to the droplet, which 404s) — that shipped on 2026-09-25 and sat
+  // broken for three days. Set ASSET_PREFIX="" only for a local preview.
+  assetPrefix:
+    process.env.ASSET_PREFIX !== undefined
+      ? process.env.ASSET_PREFIX || undefined
+      : process.env.NODE_ENV === 'production'
+        ? PAGES_ORIGIN
+        : undefined,
 };
 
 export default nextConfig;
