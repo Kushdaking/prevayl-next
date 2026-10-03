@@ -175,3 +175,30 @@
 .pvl-workflow-body{padding:5px 30px 30px 90px;max-width:1100px}
 @media(max-width:700px){.pvl-workflow-view{padding:24px}.pvl-workflow-stage summary{padding:20px;gap:18px}.pvl-workflow-body{padding:0 22px 25px}.pvl-workflow-stage summary strong{font-size:1.05rem}}
 
+
+/* Carrier app store launch, shared by the homepage and trucking companies page. */
+.pvl-carrier-app{border-block:1px solid #344657}
+.pvl-carrier-app .pvl-section-heading{align-items:center;margin-bottom:0}
+.pvl-carrier-app .pvl-section-heading>div:first-child{flex:1 1 52%}
+.pvl-carrier-app-copy{flex:1 1 42%;max-width:570px}
+.pvl-carrier-app-copy>p:first-child{font-size:1.05rem;line-height:1.8;margin:0 0 20px}
+.pvl-store-badges{display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin:0 0 21px}
+.pvl-store-badges a{display:inline-flex;align-items:center;justify-content:center;min-height:60px;border-radius:6px}
+.pvl-store-badges a:hover{filter:brightness(1.14)}
+.pvl-store-badges img{display:block;max-width:100%;height:auto}
+.pvl-store-badges a:first-child img{width:120px;height:40px}
+.pvl-store-badges a:last-child img{width:155px;height:60px}
+.pvl-carrier-app .pvl-carrier-app-note{font-size:.78rem;color:var(--pvl-muted);margin:15px 0 0}
+@media(max-width:700px){.pvl-carrier-app .pvl-section-heading>div:first-child{margin-bottom:25px}.pvl-carrier-app-copy>p:first-child{font-size:1rem}.pvl-store-badges{gap:0 6px}}
+
+/* Store availability is visible immediately below the fixed site navigation. */
+.pvl-carrier-launch{padding-top:64px;background:#111820;border-bottom:1px solid #344657}
+.pvl-carrier-launch-inner{width:min(1380px,calc(100% - 96px));margin-inline:auto;min-height:94px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.pvl-carrier-launch-copy{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pvl-carrier-launch-copy strong{color:#C9A84C;font-size:.74rem;letter-spacing:.16em;line-height:1.3}
+.pvl-carrier-launch-copy span{color:#F0F4F8;font-size:.95rem;line-height:1.4}
+.pvl-carrier-launch .pvl-store-badges{flex:none;margin:0}
+.pvl-carrier-launch-more{flex:none;color:#C9A84C;font-size:.8rem;font-weight:600;white-space:nowrap}
+.pvl-carrier-launch-more:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1100px){.pvl-carrier-launch-more{display:none}.pvl-carrier-launch-inner{width:calc(100% - 48px)}}
+@media(max-width:700px){.pvl-carrier-launch-inner{width:calc(100% - 36px);min-height:0;padding:16px 0 10px;display:block;text-align:center}.pvl-carrier-launch-copy{gap:4px}.pvl-carrier-launch-copy strong{font-size:.68rem}.pvl-carrier-launch-copy span{font-size:.82rem}.pvl-carrier-launch .pvl-store-badges{justify-content:center;margin-top:7px}}
