@@ -13,6 +13,12 @@ export function FreeCarrierSignup() {
           <StoreBadges />
           <a className="pvl-button" href="https://app.prevaylos.com/carrier/apply">Apply to haul loads →</a>
           <p className="pvl-carrier-app-note">Free download · Carrier approval required before hauling</p>
+          <div className="pvl-carrier-guide">
+            <span>NEW CARRIER GUIDE</span>
+            <h3>Know each step before you start.</h3>
+            <p>See how to apply, activate your company account, invite drivers, and complete the first pickup and delivery.</p>
+            <a href="/resources/docs/carrier-onboarding">Read the illustrated onboarding guide →</a>
+          </div>
         </div>
       </div>
     </section>

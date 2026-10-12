@@ -9,7 +9,7 @@
 export const DOCS_NAV = [
   {
     group: "Start",
-    items: [{ href: "/resources/docs/getting-started", label: "Getting started" }, { href: "/resources/docs/carrier-onboarding", label: "Carrier onboarding" }],
+    items: [{ href: "/resources/docs/getting-started", label: "Getting started" }],
   },
   {
     group: "Modules",
