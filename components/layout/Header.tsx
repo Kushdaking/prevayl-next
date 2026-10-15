@@ -14,11 +14,12 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
+    <>
     <header className="fixed top-0 inset-x-0 z-50 glass-strong border-b border-prevayl-gold/10">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 min-h-16 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 py-3 sm:py-0">
         <Logo />
 
-        <nav className="hidden lg:flex items-center gap-8" aria-label="Main">
+        <nav className="hidden xl:flex items-center gap-5" aria-label="Main">
           {nav.map((item) => (
             <div key={item.href} className="relative group">
               <Link
@@ -49,20 +50,22 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <a href="https://app.prevaylos.com/carrier/apply" className="hidden sm:block text-sm font-semibold text-prevayl-gold">Carrier signup</a>
+        <div className="flex w-full sm:w-auto items-center justify-end gap-2 sm:gap-3">
           <Link
             href="/login"
             className="hidden sm:block text-sm font-medium text-prevayl-muted hover:text-prevayl-gold px-3 py-1.5 transition-colors"
           >
             Sign in
           </Link>
-          <LinkButton href="/contact?type=sales" size="sm">
+          <LinkButton href="https://app.prevaylos.com/carrier/apply" size="sm" className="min-h-11 whitespace-nowrap max-[400px]:!px-3 max-[400px]:!text-xs focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-prevayl-gold">
+            Carrier sign up
+          </LinkButton>
+          <LinkButton href="/contact?type=sales" size="sm" className="min-h-11 whitespace-nowrap max-[400px]:!px-3 max-[400px]:!text-xs">
             Contact Sales
           </LinkButton>
           <button
             type="button"
-            className="lg:hidden flex flex-col gap-1.5 p-2"
+            className="xl:hidden flex flex-col gap-1.5 p-2"
             aria-label="Navigation menu" aria-controls="mobile-navigation"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -76,7 +79,7 @@ export function Header() {
 
       {open && (
         <nav
-          className="lg:hidden border-t border-prevayl-navy-4 bg-prevayl-navy/98 backdrop-blur-xl px-6 py-4 max-h-[calc(100vh-4rem)] overflow-y-auto"
+          className="xl:hidden border-t border-prevayl-navy-4 bg-prevayl-navy/98 backdrop-blur-xl px-6 py-4 max-h-[calc(100dvh-7.25rem)] sm:max-h-[calc(100dvh-4rem)] overflow-y-auto"
           id="mobile-navigation" aria-label="Mobile"
         >
           {nav.map((item) => (
@@ -102,10 +105,11 @@ export function Header() {
                 ))}</details>}
             </div>
           ))}
-          <a href="https://app.prevaylos.com/carrier/apply" className="block py-3 text-prevayl-gold">Free carrier signup →</a>
           <Link href="/login" onClick={() => setOpen(false)} className="block py-3 text-prevayl-gold">Sign in →</Link>
         </nav>
       )}
     </header>
+    <div aria-hidden="true" className="h-20 sm:hidden" />
+    </>
   );
 }
