@@ -14,6 +14,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
+    <>
     <header className="fixed top-0 inset-x-0 z-50 glass-strong border-b border-prevayl-gold/10">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 min-h-16 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 py-3 sm:py-0">
         <Logo />
@@ -49,7 +50,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
+        <div className="flex w-full sm:w-auto flex-wrap items-center justify-end gap-2 sm:gap-3">
           <Link
             href="/login"
             className="hidden sm:block text-sm font-medium text-prevayl-muted hover:text-prevayl-gold px-3 py-1.5 transition-colors"
@@ -78,7 +79,7 @@ export function Header() {
 
       {open && (
         <nav
-          className="xl:hidden border-t border-prevayl-navy-4 bg-prevayl-navy/98 backdrop-blur-xl px-6 py-4 max-h-[calc(100vh-4rem)] overflow-y-auto"
+          className="xl:hidden border-t border-prevayl-navy-4 bg-prevayl-navy/98 backdrop-blur-xl px-6 py-4 max-h-[calc(100dvh-7.25rem)] sm:max-h-[calc(100dvh-4rem)] overflow-y-auto"
           id="mobile-navigation" aria-label="Mobile"
         >
           {nav.map((item) => (
@@ -108,5 +109,7 @@ export function Header() {
         </nav>
       )}
     </header>
+    <div aria-hidden="true" className="h-14 sm:hidden" />
+    </>
   );
 }
