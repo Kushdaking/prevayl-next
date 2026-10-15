@@ -50,17 +50,17 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex w-full sm:w-auto flex-wrap items-center justify-end gap-2 sm:gap-3">
+        <div className="flex w-full sm:w-auto items-center justify-end gap-2 sm:gap-3">
           <Link
             href="/login"
             className="hidden sm:block text-sm font-medium text-prevayl-muted hover:text-prevayl-gold px-3 py-1.5 transition-colors"
           >
             Sign in
           </Link>
-          <LinkButton href="https://app.prevaylos.com/carrier/apply" size="sm" className="min-h-11 whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-prevayl-gold">
+          <LinkButton href="https://app.prevaylos.com/carrier/apply" size="sm" className="min-h-11 whitespace-nowrap max-[400px]:!px-3 max-[400px]:!text-xs focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-prevayl-gold">
             Carrier sign up
           </LinkButton>
-          <LinkButton href="/contact?type=sales" size="sm">
+          <LinkButton href="/contact?type=sales" size="sm" className="min-h-11 whitespace-nowrap max-[400px]:!px-3 max-[400px]:!text-xs">
             Contact Sales
           </LinkButton>
           <button
