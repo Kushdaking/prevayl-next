@@ -109,7 +109,7 @@ export function Header() {
         </nav>
       )}
     </header>
-    <div aria-hidden="true" className="h-14 sm:hidden" />
+    <div aria-hidden="true" className="h-20 sm:hidden" />
     </>
   );
 }
